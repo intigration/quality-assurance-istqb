@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec">
+
+<!-- Mirrored from tryqa.com/complete-guide-to-defect-management-for-test-qa-managers/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:43:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>Complete guide to defect management for Test / QA Managers</title> <meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="http://s.w.org/" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Complete guide to defect management for Test / QA Managers Comments Feed" href="feed/index.html" />
+<link rel="canonical" href="index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tryqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.27"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="eleven40-pro-css" href="../wp-content/themes/eleven40-pro/style950a.css?ver=2.2.3" type="text/css" media="all" />
+<link rel="stylesheet" id="toc-screen-css" href="../wp-content/plugins/table-of-contents-plus/screen.min6528.css?ver=1509" type="text/css" media="all" />
+<link rel="stylesheet" id="dashicons-css" href="../wp-includes/css/dashicons.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A400%7COswald%3A400&amp;ver=2.4.2" type="text/css" media="all" />
+<link rel="stylesheet" id="addthis_all_pages-css" href="../wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<script type="text/javascript" src="../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/skip-links2754.js?ver=4.7.27"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://tryqa.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type="text/javascript" src="../wp-content/themes/eleven40-pro/js/responsive-menu8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="../wp-content/plugins/optinmonster215a/assets/js/apid63f.js?ver=2.1.5"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedfa00.json?url=http%3A%2F%2Ftryqa.com%2Fcomplete-guide-to-defect-management-for-test-qa-managers%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embeda179?url=http%3A%2F%2Ftryqa.com%2Fcomplete-guide-to-defect-management-for-test-qa-managers%2F&amp;format=xml" />
+<link rel="icon" href="../wp-content/themes/eleven40-pro/images/favicon.ico" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38219227-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:404843,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+    var isTryMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isTryMobile.Android() || isTryMobile.BlackBerry() || isTryMobile.iOS() || isTryMobile.Opera() || isTryMobile.Windows());
+        }
+    };	
+</script>
+</head>
+<body class="post-template-default single single-post postid-2778 single-format-standard header-full-width sidebar-content-sidebar eleven40-pro-red" itemscope itemtype="http://schema.org/WebPage"><div class="site-container"><section><h2 class="screen-reader-text">Skip links</h2><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li><li><a href="#genesis-sidebar-secondary" class="screen-reader-shortcut"> Skip to secondary sidebar</a></li></ul></section>
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="../index.html"><img style="height:40px;display:inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAByCAMAAAAcYFjwAAACUlBMVEXmShn///8AAADmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShnmShk3R083R0/mShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShk3R083R083R083R083R083R0/mShnmShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShk3R083R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R08qzSuZAAAAxHRSTlMAAAAportFDnjk9pkiBlnPcg86tchOH5L0/KQqCW/d6H4RA0/J0lgyqrI3GYbw8oll19lkBUbBvECe+/eUJRR95g1dxUv+JJbqhSF346MtAVLLxE2t4pMe7j3UXALvghj5py/GcAuVtzzWYeuEFTB0M8xEqqCIRO40VXf4YDirgBY1szmQIGkEvWYim7vdZojMEfXndjMs8/0o8SdaBztVmY7sPz7pHRsa5eASznXe3NDaCrnt0Ul5+sp7K1FTn3+prDFja9gXxAAACGJJREFUeNrt3fl/E0UUAPA0sgJNyo0WCylbQKIICtYDylUERBbBq7JgOT1AsdKkJDUr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" alt="Genislab">Genislab Technologies</a></h1></div><h2 class="screen-reader-text">Main navigation</h2><nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation"><div class="wrap"><ul id="menu-topnav" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1910"><a href="../index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-1909" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><a title="Software Testing Blog" href="../category/software-testing-pro/index.html" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a title="ISTQB Foundation Certification" href="../istqb-certification-the-definitive-guide/index.html" itemprop="url"><span itemprop="name">ISTQB Foundation Level</span></a></li>
+<li id="menu-item-3025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3025"><a href="../istqb-advanced-level-test-manager-study-material/index.html" itemprop="url"><span itemprop="name">ISTQB Advanced Level Test Manager</span></a></li>
+<li id="menu-item-1837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="../istqb-agile-testing-certification/index.html" itemprop="url"><span itemprop="name">Agile Testing Tutorial</span></a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1663"><a href="../istqb-dumps-download-mock-tests-and-sample-question-papers/index.html" itemprop="url"><span itemprop="name">ISTQB Dumps &#8211; Mock Tests</span></a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1155"><a href="../contact-us/index.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+<ul class="sub-menu">
+<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="../privacy-policy/index.html" itemprop="url"><span itemprop="name">Privacy Policy</span></a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="../terms-of-use/index.html" itemprop="url"><span itemprop="name">Terms of Use</span></a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../disclaimer/index.html" itemprop="url"><span itemprop="name">Disclaimer</span></a></li>
+<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="../about-us/index.html" itemprop="url"><span itemprop="name">About Us</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><div class="site-inner"><div class="wrap"><h2 class="site-description" itemprop="description">Study material for ISTQB Exam Certification Foundation level, Premium &amp; Free for ISTQB and ASTQB Exam, Certification questions, answers, software testing tutorials and more</h2><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-2778 post type-post status-publish format-standard category-istqb-test-manager tag-assessing-process-capability tag-cost-of-quality tag-cross-functional-defect-management tag-defect-data tag-defect-lifecycle tag-defect-management tag-defect-management-process tag-defect-report-information tag-defect-reports tag-defect-states tag-defects tag-failure tag-invalid-defect-reports tag-istqb-advanced-level tag-istqb-advanced-level-exam tag-istqb-advanced-level-test-manager tag-istqb-test-manager-exam tag-manage-defect-reports tag-managing-defects tag-managing-duplicate-defects tag-process-improvements-using-defect-report-information tag-qa-manager tag-reduce-cost tag-software-development-lifecycle tag-software-testing tag-test-manager-certification tag-test-manager-roles-and-responsibilities tag-workflow entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How to manage formal reviews & management audits? Skills, metrics, responsibilities"><a href="../manage-formal-reviews-management-audits-skills-metrics-responsibilities/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: Software Testing Process Improvements for Test / QA Managers"><a href="../software-testing-process-improvements-for-test-qa-managers/index.html" rel="next">Next Topic &raquo;</a></div></div><h1 class="entry-title" itemprop="headline">Complete guide to defect management for Test / QA Managers</h1>
+</header><div class="entry-content" itemprop="text"><div class="at-above-post addthis_tool" data-url="http://tryqa.com/complete-guide-to-defect-management-for-test-qa-managers/"></div><p>After detecting the defects, managing defects is the most important activity for any organization, not just for the testing team but for everyone engaged in the software development or project management process. The <strong>processes and tools used for managing the defects</strong> are critically important because they can identify the areas that need improvement for overall enhancement of development and testing processes.<span id="more-2778"></span></p>
+<div style><center>
+<style>
+  .responsive-test { display: block;}
+  @media(max-width: 768px) { .responsive-test { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<h3>Table of contents</h3>
+<ol>
+<li><a href="#defect_lifecycle_sdlc">The Defect Lifecycle and the Software Development Lifecycle</a></li>
+<li><a href="#defect_states_workflow">Defect States and Workflow</a></li>
+<li><a href="#managing_duplicate_invalid_defect_reports">Managing Duplicate Defects and Invalid Defect Reports</a></li>
+<li><a href="#cross_functional_defect_management">Cross Functional Defect Management</a></li>
+<li><a href="#defect_report">Defect Report</a></li>
+<li><a href="#defect_data">Defect data</a></li>
+<li><a href="#assessing_process_capability">Assessing Process Capability with Defect Report Information</a></li>
+<li><a href="#examples_of_process_improvements">Examples of process improvements using defect report information</a></li>
+</ol>
+<p>Test Manager or QA Manager needs to know which data must be collected at all costs and promote correct usage of processes and tools used for <strong>defect management</strong>.</p>
+<h2><a name="defect_lifecycle_sdlc"></a>The Defect Lifecycle and the Software Development Lifecycle</h2>
+<p>As you know, when anyone commits an error during the product development or maintenance, a corresponding defect is introduced in any work product. The defect may be introduced into any work product like requirements specification, technical document, <a href="../what-is-use-case-testing-in-software-testing/index.html">use case</a>, <a href="../test-case/index.html">test case</a>, code, etc.,</p>
+<div style><center>
+<style>
+  .responsive-random { display: block;}
+  @media(min-width: 780px) { .responsive-random { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle responsive-random" data-ad-client="ca-pub-4095780395347512" data-ad-slot="7347353014" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p>As defects may occur in any work product, defect detection and removal must be an integral part of every step of <a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">software development life cycle</a>. Sooner the defects are identified and fixed, <a href="../what-is-cost-of-quality-in-software-testing/index.html"><strong>lesser the total cost of quality</strong></a> of whole system.</p>
+<p>As discussed in the syllabus for <a href="../istqb-certification-the-definitive-guide/index.html">Foundation Level</a>, <strong><a href="../what-is-static-testing-technique/index.html">static testing</a> process detects the defects directly</strong>, without the need for debugging. This <strong>reduces cost of fixing defects</strong> considerably.</p>
+<p>In contrast, <a href="../what-is-dynamic-testing-technique/index.html"><strong>dynamic tests</strong></a> like <a href="../what-is-unit-testing/index.html">unit testing</a>, <a href="../what-is-system-testing/index.html">system testing</a> or <a href="../what-is-integration-testing/index.html">integration testing</a>, <strong>defects are discovered only after they cause system failures</strong>. Once the tester observes the <a href="../what-is-a-failure-in-software-testing/index.html">failure</a>, a defect report is filed and further investigation into the defect starts.</p>
+<p>In a Test Driven Development (TDD) technique, automated tests are built into the product design itself. The specified product development phase is not considered over till the automated tests are executed.</p>
+<p>It must be noted that in TDD, tests will fail until the complete unit is developed. So there is no need to track failures till the unit is complete.</p>
+<h2><a name="defect_states_workflow"></a>Defect States and Workflow</h2>
+<p>Many of the organizations that conduct software testing use a tool that keeps track of the defects throughout <a href="../what-is-a-defect-life-cycle/index.html">defect lifecycle</a> and to manage defect reports.</p>
+<p>Usually, there is one owner of the defects report at each state of defect lifecycle, who is also responsible for completing a task that would move defect report to the subsequent state.</p>
+<p>In the last phases of defect lifecycle, <strong>defect report may not have an owner in these situations</strong>:</p>
+<ul>
+<li>The defect has been fixed and tested and hence defect report considered closed</li>
+<li>Defect report is cancelled because it is invalid</li>
+<li>Defect report is deferred if the defect won&#8217;t be fixed as part of the project</li>
+<li>Defect report is considered not reproducible if the defect cannot be observed any more</li>
+</ul>
+<p>If defects are detected during testing, the <strong>testing team</strong> must take action to <strong>manage them in these three situations</strong>:</p>
+<ul>
+<li><strong>Initial state</strong> &#8211; Also referred as new or open state. Here one / multiple testers are responsible for collecting necessary information for fixing the defects.</li>
+<li><strong>Returned state</strong> &#8211; This is also called the rejected state or clarification state. Here the person receiving the test rejects the report and asks the report creator to give more information. Testers have the option of providing more information or accepting the rejection of the report. If many reports are rejected, Test Manager should look out for shortcomings in the preliminary information collection process itself.</li>
+<li><strong>Confirmation state</strong> &#8211; Also called the verified or resolved state, here the tester does a <a href="../what-is-confirmation-testing-in-software/index.html">confirmation testing</a> to ensure that defect has really been resolved. This is done by repeating the steps that detected the defect during testing. The report is closed if the defect was fixed. The report is reopened if the defect was not fixed and sent back to the owner who previously owned the defect report, for fixing.</li>
+</ul>
+<h2><a name="managing_duplicate_invalid_defect_reports"></a>Managing Duplicate Defects and Invalid Defect Reports</h2>
+<p>The tester may detect an irregularity due to an issue in test environment, testware or test data or tester’s own mistake. If it is reported as a defect and later found to be unrelated to any work product defect, it is called as <strong>false-positive result</strong>.</p>
+<p>The report is closed after terming it an <strong>invalid defect</strong> or <strong>directly cancelled</strong>.</p>
+<p>Sometimes one defect can lead to results which may look like multiple unrelated issues to testers. If more than one defect is reported, which have a common root cause. In such situations, one defect report remains open while others defects are closed by marking them as duplicate.</p>
+<p>Though <strong>duplicate and invalid reports indicate inefficiency</strong>, Test Managers must recognize them as inevitable. If they try to eliminate such reports completely, amount of false negative reports increases because testers are not willing to file reports for all defects detected.</p>
+<p>This in turn <strong>decreases the organization’s testing efficiency</strong>.</p>
+<h2><a name="cross_functional_defect_management"></a>Cross Functional Defect Management</h2>
+<p>Usually defect management is owned by the Test Manager and the testing organization. However, a team which is cross-functional, comprising members from product development, product management, project management, etc. is <strong>accountable for managing defects</strong> reported by test teams.</p>
+<p>As defects are reported through the tools used for defect management, the committee for defect management must consider the costs, risks and benefits associated with each risk to decide whether the defect should be fixed or deferred.</p>
+<p>If a defect needs to be fixed, its <strong>priority must be finalized</strong> with respect to <a href="../how-to-perform-test-prioritization-effort-allocation-in-test-process/index.html">other tasks in the project</a>. The committee can consult Test Manager &amp; the testing team members to discuss the priority and severity level of any defect.</p>
+<p>It must be remembered that <strong>no tracking tool can take the place of proper communication</strong>. Similarly, defects committee consultations cannot be a replacement for optimum use of the tool used for tracking defects.</p>
+<p>To <strong>ensure efficient and effective defect management</strong>, <strong>all these factors are necessary</strong>:</p>
+<ul>
+<li>Good communication</li>
+<li>Efficient usage of a defect tracking tool</li>
+<li>Sufficient support for the tool</li>
+<li>Clearly established defect lifecycle</li>
+<li>Proactive committee for defect management</li>
+</ul>
+<h2><a name="defect_report"></a>Defect Report</h2>
+<p>When static testing detects a defect or static testing observes a failure, the testers must include them in their defect report. It is necessary for:</p>
+<ul>
+<li>Managing reports through each level of defect lifecycle</li>
+<li>Assessing project status in context of testing progress and product quality</li>
+<li>Assessing process ability</li>
+</ul>
+<p>Information needed for managing defect report or assessing project status depends upon the lifecycle stage in which the defect has been reported. As the lifecycle progresses, more information is needed for defect report management.</p>
+<p>Nevertheless, the <strong>core data collected must be constant</strong> across not just the current lifecycle but all projects so that process defect data comparisons can be done to get meaningful insights.</p>
+<p>Gathering defect data helps in <a href="../what-is-test-monitoring-and-test-control/index.html"><strong>monitoring and controlling test progress</strong></a> and <a href="../what-are-test-closure-activities-evaluating-exit-criteria-and-reporting/index.html">evaluating test exit conditions</a>. For instance, defect data can provide insights into analysis of defect density, trends in defect detection and resolution, average time needed to fix a defect and intensity of observed failure.</p>
+<h2><a name="defect_data"></a>Defect data</h2>
+<p>Information pertaining to <strong>defect data can include these</strong>:</p>
+<ul>
+<li>Name of tester who detected the defect</li>
+<li>Tester role, like developer, business analyst, technical support analyst, etc.</li>
+<li>Testing type that caught the defect &#8211; like <a href="../what-is-regression-testing-in-software/index.html">Regression testing</a>, <a href="../what-is-smoke-testing-when-to-use-it-advantages-and-disadvantages-2/index.html">smoke testing</a>, <a href="../what-is-usability-testing-in-software-and-its-benifits-to-end-user/index.html">usability testing</a> etc</li>
+<li>Problem summary</li>
+<li>Problem description</li>
+<li>Testing steps to recreate the observed failure, including expected and actual results, screenshots, logs, database dumps, etc.</li>
+<li>Lifecycle phase where defect was introduced, detected and removed along with test level where required</li>
+<li>Work product where defect was initiated</li>
+<li>Severity of impact on system / stakeholder</li>
+<li>Defect priority (generally dependant on the issue&#8217;s business impact)</li>
+<li>Component or subsystem where the defect was found &#8211; for analyzing defect cluster</li>
+<li>Project task which was in progress when the issue was found</li>
+<li>Method of identification used that detected the defect &#8211; like regular production use, static analysis, <a href="../manage-formal-reviews-management-audits-skills-metrics-responsibilities/index.html">review</a>, dynamic testing etc</li>
+<li>Defect type and its taxonomy, if used</li>
+<li>Quality attribute impacted by the bug</li>
+<li>Test environment where the bug was detected, if applicable</li>
+<li>Product and project that has the defect</li>
+<li>Defect owner who at present has been allotted the issue</li>
+<li>Work products where defect was detected and where it was fixed. This should include release numbers, specific test item details etc.</li>
+<li>Defect reports current state</li>
+<li>Recommendation, approval and conclusion for corrective action performed or deferred</li>
+<li>Costs, benefits, risks and opportunities linked to whether defect is fixed or not</li>
+<li>Dates for various changes in the lifecycle of the defect. Report owner of each lifecycle transition / change. Activities undertaken to isolate and fix the defect and verify the solution.</li>
+<li>Description for defect resolution and details of how the fix can be tested</li>
+<li>Other references like tests performed to identify defects and test basis elements like risk linked to the bug</li>
+</ul>
+<p>Test Manager can refer to many documents and standards like ISO 25000, IEEE 1044, IEEE 829 and Orthogonal Defect Classification to <strong>decide what data must be collected for reporting the defect</strong>.</p>
+<p>Testers must enter complete, accurate, precise, timely and relevant defect information. Even manual intervention or correct communication cannot undo the effect if such defect information is not entered and it will affect project status evaluation, testing progress and ability level of the process.</p>
+<h2><a name="assessing_process_capability"></a>Assessing Process Capability with Defect Report Information</h2>
+<p>Under Test Management, we discussed in detail how defect reports assist in monitoring project status and creating related reports.</p>
+<p>Test Managers must understand the role of defect reports in <strong>evaluating software development process capabilities</strong> and testing.</p>
+<p>Besides information used for monitoring test progress, discussed in Test Management as well as in Defect Report, information captured in the defect must <strong>support initiatives for process enhancement</strong>.</p>
+<h2><a name="examples_of_process_improvements"></a>Examples of process improvements using defect report information</h2>
+<ul>
+<li>Using information about phases in which the defects were introduced, detected and removed to evaluate phase containment while proposing how defect detection efficiency can be enhanced in all phases</li>
+<li>Using information about phases where defects were introduced in Pareto Analysis of phases where maximum defects were detected, so that targeted improvement measures can be taken to reduce defects</li>
+<li>Using information about root cause behind the defects to find the reason why defect was introduced, so that process could be improved to decrease overall amount of defects</li>
+<li>Utilizing information about phases in which the defects were introduced, detected and removed to carry out quality costs analysis and decrease cost of defects.</li>
+<li>Using information about defective product component to analyze defect clusters and understand the technical risks in a better way and help in re-building of defective components.</li>
+</ul>
+<p>Sometimes, teams may <strong>decide to not track the defects</strong> detected for some or whole of the SDLC.</p>
+<p>Though this is apparently done for efficiency and decreasing process overheads, it diminishes insights into capabilities of software development and testing processes. This also hinders process improvements recommended earlier due to dearth of trustworthy data.</p>
+<p>We inspect <a href="../software-testing-process-improvements-for-test-qa-managers/index.html">software testing process improvements</a> in the next topic.</p>
+<h4>Other popular articles:</h4>
+<ul class="similar-posts">
+<li><a href="../what-is-configuration-management-in-software-testing/index.html" rel="bookmark" title="What is configuration management in software testing?">What is configuration management in software testing?</a></li>
+<li><a href="../what-are-incident-reports-in-software-testing/index.html" rel="bookmark" title="What are incident reports in software testing?">What are incident reports in software testing?</a></li>
+<li><a href="../what-is-incident-management-tools/index.html" rel="bookmark" title="What is Incident management tools?">What is Incident management tools?</a></li>
+<li><a href="../how-to-communicate-effectively-as-a-test-qa-manager/index.html" rel="bookmark" title="How to communicate effectively as a Test / QA Manager?">How to communicate effectively as a Test / QA Manager?</a></li>
+<li><a href="../how-to-write-a-good-incident-report-in-software-testing/index.html" rel="bookmark" title="How to write a good incident report in software testing?">How to write a good incident report in software testing?</a></li>
+</ul>
+<p></p>
+
+<div style><center><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="8321861017" data-ad-format="rectangle"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div><div class="at-below-post addthis_tool" data-url="http://tryqa.com/complete-guide-to-defect-management-for-test-qa-managers/"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="../category/istqb-test-manager/index.html" rel="category tag">ISTQB Test Manager</a></span> <span class="entry-tags">Tagged With: <a href="../tag/assessing-process-capability/index.html" rel="tag">Assessing Process Capability</a>, <a href="../tag/cost-of-quality/index.html" rel="tag">cost of quality</a>, <a href="../tag/cross-functional-defect-management/index.html" rel="tag">Cross Functional Defect Management</a>, <a href="../tag/defect-data/index.html" rel="tag">defect data</a>, <a href="../tag/defect-lifecycle/index.html" rel="tag">Defect Lifecycle</a>, <a href="../tag/defect-management/index.html" rel="tag">defect management</a>, <a href="../tag/defect-management-process/index.html" rel="tag">defect management process</a>, <a href="../tag/defect-report-information/index.html" rel="tag">Defect Report Information</a>, <a href="../tag/defect-reports/index.html" rel="tag">defect reports</a>, <a href="../tag/defect-states/index.html" rel="tag">defect states</a>, <a href="../tag/defects/index.html" rel="tag">defects</a>, <a href="../tag/failure/index.html" rel="tag">failure</a>, <a href="../tag/invalid-defect-reports/index.html" rel="tag">Invalid Defect Reports</a>, <a href="../tag/istqb-advanced-level/index.html" rel="tag">ISTQB Advanced Level</a>, <a href="../tag/istqb-advanced-level-exam/index.html" rel="tag">ISTQB Advanced level exam</a>, <a href="../tag/istqb-advanced-level-test-manager/index.html" rel="tag">ISTQB Advanced Level Test Manager</a>, <a href="../tag/istqb-test-manager-exam/index.html" rel="tag">ISTQB Test Manager Exam</a>, <a href="../tag/manage-defect-reports/index.html" rel="tag">manage defect reports</a>, <a href="../tag/managing-defects/index.html" rel="tag">managing defects</a>, <a href="../tag/managing-duplicate-defects/index.html" rel="tag">Managing Duplicate Defects</a>, <a href="../tag/process-improvements-using-defect-report-information/index.html" rel="tag">process improvements using defect report information</a>, <a href="../tag/qa-manager/index.html" rel="tag">qa manager</a>, <a href="../tag/reduce-cost/index.html" rel="tag">reduce cost</a>, <a href="../tag/software-development-lifecycle/index.html" rel="tag">Software Development Lifecycle</a>, <a href="../tag/software-testing/index.html" rel="tag">software testing</a>, <a href="../tag/test-manager-certification/index.html" rel="tag">Test Manager Certification</a>, <a href="../tag/test-manager-roles-and-responsibilities/index.html" rel="tag">Test Manager Roles and Responsibilities</a>, <a href="../tag/workflow/index.html" rel="tag">Workflow</a></span></p><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How to manage formal reviews & management audits? Skills, metrics, responsibilities"><a href="../manage-formal-reviews-management-audits-skills-metrics-responsibilities/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: Software Testing Process Improvements for Test / QA Managers"><a href="../software-testing-process-improvements-for-test-qa-managers/index.html" rel="next">Next Topic &raquo;</a></div></div></footer></article><h2 class="screen-reader-text">Reader Interactions</h2><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list">
+<li class="comment even thread-even depth-1" id="comment-77754">
+<article itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name">Milan Milovancev</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2023-06-04T22:36:10+00:00" itemprop="datePublished"><a href="index.html#comment-77754" class="comment-time-link" itemprop="url">June 4, 2023 at 10:36 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Many thanks for the above article.</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="index3b85.html?replytocom=77754#respond" onclick="return addComment.moveForm( &quot;comment-77754&quot;, &quot;77754&quot;, &quot;respond&quot;, &quot;2778&quot; )" aria-label="Reply to Milan Milovancev">Reply</a></div>
+</article>
+</li>
+</ol></div> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3> <form action="http://tryqa.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value size="30" maxlength="245" aria-required="true" required="required" /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type="hidden" name="comment_post_ID" value="2778" id="comment_post_ID" />
+<input type="hidden" name="comment_parent" id="comment_parent" value="0" />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3c6fb4b7e6" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="156" /></p> </form>
+</div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search</h3>
+<div class="textwidget"><form class="iec-search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://tryqa.com/" role="search">
+<meta itemprop="target" content="../index1f8a.html?s={s}">
+<input itemprop="query-input" name="s" placeholder=" Search this website " type="search">&nbsp;&nbsp;
+<input value="Search" type="submit">
+</form></div>
+</div></section>
+<section id="advanced_text-5" class="widget advanced_text"><div class="widget-wrap"><div class="AdvancedText"><h3 class="widgettitle widget-title">ISTQB Advanced Level Test Manager Study Material</h3>
+<table border="0" cellspacing="1">
+<tbody>
+<tr><td class="menuItem"><a title="ISTQB Advanced Level Test Manager Study Material" href="../istqb-advanced-level-test-manager-study-material/index.html">ISTQB Advanced Level Test Manager - Introduction</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 1: Testing Process
+</td>
+</tr>
+<tr><td class="menuItem">1. <a title="What is Test Planning? What are Work Products in Testing?" href="../what-is-test-planning-what-are-work-products-in-testing/index.html">What is Test Planning? What are Work Products in Testing?</a></td></tr>
+<tr><td class="menuItem">2. <a href="../what-is-test-monitoring-and-test-control/index.html">What is Test Monitoring and Test Control?</a></td></tr>
+<tr><td class="menuItem">3. <a href="../what-is-test-condition-test-analysis-advantages-disadvantages-level-of-detail/index.html">What is Test Condition & Test Analysis? Advantages, Disadvantages & Level of Detail</a></td></tr>
+<tr><td class="menuItem">4. <a href="../what-is-test-design-when-to-create-it/index.html">What is Test Design? When to create Test Design?</a></td></tr>
+<tr><td class="menuItem">5. <a href="../what-is-test-implementation-advantages-disadvantage-of-early-implementation/index.html">What is Test Implementation? Advantages & Disadvantage of early implementation</a></td></tr>
+<tr><td class="menuItem">6. <a href="../what-is-test-execution/index.html">What is Test Execution?</a></td></tr>
+<tr><td class="menuItem">7. <a href="../what-are-test-closure-activities-evaluating-exit-criteria-and-reporting/index.html">What Are Test Closure Activities? Evaluating Exit Criteria and Reporting</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 2: Test Management
+</td>
+</tr>
+<tr><td class="menuItem">8. <a href="../how-to-identify-stakeholders-for-testing/index.html">Who are the stakeholders in software testing? How to identify them?</a></td></tr>
+<tr><td class="menuItem">9. <a href="../software-development-lifecycle-activities-work-products-affect-testing/index.html">How Do Software Development Lifecycle Activities & Work Products Affect Testing?</a></td></tr>
+<tr><td class="menuItem">10. <a href="../align-software-testing-activities-with-product-development-lifecycle-activities/index.html">How to align software testing activities with product / development lifecycle activities?</a></td></tr>
+<tr><td class="menuItem">11. <a href="../how-to-manage-non-functional-testing/index.html">How to manage Non-Functional Testing?</a></td></tr>
+<tr><td class="menuItem">12. <a href="../how-to-manage-experience-based-testing-what-are-test-sessions/index.html">How to manage Experience Based Testing? What are Test Sessions?</a></td></tr>
+<tr><td class="menuItem">13. <a href="../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">What is Risk Based Testing? Identifying, Assessing, Minimizing & Managing Risks</a></td></tr>
+<tr><td class="menuItem">14. <a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html">What are the different Risk Based Testing (RBT) Techniques?</a></td></tr>
+<tr><td class="menuItem">15. <a href="../test-selection-techniques-requirement-model-based-checklists-reactive-testing/index.html">Test selection techniques - Requirement / Model based, Checklists, Reactive testing</a></td></tr>
+<tr><td class="menuItem">16. <a href="../how-to-perform-test-prioritization-effort-allocation-in-test-process/index.html">How to perform test prioritization & effort allocation in test process?</a></td></tr>
+<tr><td class="menuItem">17. <a href="../what-is-test-policy-what-does-it-contain/index.html">What is Test Policy? What does it contain?</a></td></tr>
+<tr><td class="menuItem">18. <a href="../what-is-test-strategy-types-of-strategies-with-examples/index.html">What is Test Strategy? Types of strategies with examples</a></td></tr>
+<tr><td class="menuItem">19. <a href="../what-are-master-test-plans-level-test-plan-examples-when-to-use/index.html">What are Master Test Plans & Level Test Plan? Examples, When to use</a></td></tr>
+<tr><td class="menuItem">20. <a href="../what-is-test-estimation-factors-and-techniques/index.html">What is test estimation? Related Factors, Estimation Techniques</a></td></tr>
+<tr><td class="menuItem">21. <a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></td></tr>
+<tr><td class="menuItem">22. <a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of quality</a></td></tr>
+<tr><td class="menuItem">23. <a href="../what-are-distributed-outsourced-and-insourced-testing/index.html">What are Distributed, Outsourced and Insourced Testing?</a></td></tr>
+<tr><td class="menuItem">24. <a href="../manage-apply-industry-standards-to-software-testing-projects/index.html">How to manage & apply industry standards to software testing projects?</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 3: Reviews
+</td>
+</tr>
+<tr><td class="menuItem">25. <a href="../manage-formal-reviews-management-audits-skills-metrics-responsibilities/index.html">How to manage formal reviews & management audits? Skills, metrics, responsibilities</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 4: Defect Management
+</td>
+</tr>
+<tr><td class="menuItem">26. <a href="index.html">Complete guide to defect management for Test / QA Managers</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 5: Improving the Testing Process
+</td>
+</tr>
+<tr><td class="menuItem">27. <a href="../software-testing-process-improvements-for-test-qa-managers/index.html">Software Testing Process Improvements for Test / QA Managers</a></td></tr>
+<tr><td class="menuItem">28. <a href="../ideal-model-for-test-process-improvement/index.html">What is the IDEAL model for test process improvement?</a></td></tr>
+<tr><td class="menuItem">29. <a href="../software-testing-process-improvement-models-tmmi-tpi-next-ctp-step/index.html">Software testing process improvement models - TMMi, TPI Next, CTP, STEP</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 6: Test Tools and Automation
+</td>
+</tr>
+<tr><td class="menuItem">30. <a href="../select-testing-tools-open-source-vendor-tools-custom-development/index.html">How to select a testing tool? Open Source, Vendor Tools & Custom Development</a></td></tr>
+<tr><td class="menuItem">31. <a href="../testing-tool-roi-one-time-recurring-costs-risks-related-to-tools/index.html">What is Testing Tool ROI? One time/Recurring Costs & Risks related to tools?</a></td></tr>
+<tr><td class="menuItem">32. <a href="../parameters-for-selecting-a-testing-tool/index.html">What are the parameters for selecting a testing tool?</a></td></tr>
+<tr><td class="menuItem">33. <a href="../manage-software-testing-tool-lifecycle-and-tool-metrics/index.html">How to manage software testing tool lifecycle and tool metrics?</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 7: People Skills
+</td>
+</tr>
+<tr><td class="menuItem">34. <a href="../assess-manage-develop-skills-in-testers/index.html">How to assess, manage & develop skills in testers as a Test Manager?</a></td></tr>
+<tr><td class="menuItem">35. <a href="../manage-hiring-team-dynamics-as-test-manager/index.html">How to manage hiring & team dynamics as a Test Manager?</a></td></tr>
+<tr><td class="menuItem">36. <a href="../manage-testing-team-different-levels-of-independence/index.html">How to manage testing team at different levels of independence?</a></td></tr>
+<tr><td class="menuItem">37. <a href="../testing-team-motivation-for-test-qa-managers/index.html">How to motivate software testing team as a Test / QA Manager?</a></td></tr>
+<tr><td class="menuItem">38. <a href="../how-to-communicate-effectively-as-a-test-qa-manager/index.html">How to communicate effectively as a Test / QA Manager?</a></td></tr>
+</tbody>
+</table></div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-secondary"><h2 class="genesis-sidebar-title screen-reader-text">Secondary Sidebar</h2><section id="text-11" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Popular Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../what-to-do-team-project-lead-is-burning-you-out/index7caf.html?ref=sidebar">What to do when Team Lead is burning you out?</a></li>
+<li><a href="../interview-question-should-testers-be-paid-same-salary-as-developers/index7caf.html?ref=sidebar">Interview Question: Should Testers be paid same salary as Developers?</a></li>
+<li><a href="../mobile-application-development-and-testing-checklist/index7caf.html?ref=sidebar">Mobile app testing checklist</a></li>
+<li><a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Waterfall model? When to use it?</a></li>
+<li><a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">SDLC</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">What is V-model? When to use it?</a></li>
+<li><a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Spiral model? When to use it?</a></li>
+<li><a href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model - When to use it?</a>
+</li>
+</ul></div>
+</div></section>
+<section id="text-21" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Trending Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html">Guide to crowdtesting - Earn extra income as a freelance tester</a></li>
+<li><a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of Quality (COQ)</a></li>
+<li><a href="../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">Risk Based Testing - Identifying, Assessing, Mitigating & Managing Risks</a></li>
+<li><a href="index.html">Complete guide to defect management</a></li>
+<li><a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></li>
+<li><a href="../beginners-guide-to-career-in-software-testing-growth/index.html">Complete Guide to Career in Software Testing - Career Growth, Roles, Responsibilities</a></li>
+<li><a href="../big-data-testing/index.html">Big Data Testing - Complete beginner's guide for Software Testers</a></li>
+<li><a href="../test-case/index.html">What is a Test Case? Example Template, Types, Best Practices</a></li>
+</ul></div>
+</div></section>
+<section id="categories-3" class="widget widget_categories"><div class="widget-wrap"><h3 class="widgettitle widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-3"><a href="../category/fundamentals-of-testing/index.html">Fundamentals of testing</a> (15)
+</li>
+<li class="cat-item cat-item-814"><a href="../category/agile-testing-certification/index.html">ISTQB Agile Testing Certification</a> (31)
+</li>
+<li class="cat-item cat-item-724"><a href="../category/istqb-certification/index.html" title="Everything you need to know regarding the ISTQB Exam. ISTQB Exam dates, locations, syllabus, basic qualifications or per-requisites etc">ISTQB Certification</a> (14)
+</li>
+<li class="cat-item cat-item-1387"><a href="../category/istqb-test-manager/index.html">ISTQB Test Manager</a> (39)
+</li>
+<li class="cat-item cat-item-1962"><a href="../category/java-tutorials/index.html">Java Tutorials</a> (4)
+</li>
+<li class="cat-item cat-item-777"><a href="../category/software-testing-pro/index.html">Software Testing</a> (29)
+</li>
+<li class="cat-item cat-item-4"><a href="../category/static-techniques/index.html">Static techniques</a> (13)
+</li>
+<li class="cat-item cat-item-6"><a href="../category/test-design-techniques/index.html">Test design techniques</a> (29)
+</li>
+<li class="cat-item cat-item-7"><a href="../category/test-management/index.html">Test Management</a> (22)
+</li>
+<li class="cat-item cat-item-8"><a href="../category/testing-throughout-the-testing-life-cycle/index.html">Testing throughout the testing life cycle</a> (53)
+</li>
+<li class="cat-item cat-item-9"><a href="../category/tool-support-for-testing/index.html">Tool support for testing</a> (22)
+</li>
+</ul>
+</div></section>
+<section id="text-18" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="9038480616" data-ad-format="auto"></ins>
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '780848918707398']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=780848918707398&amp;ev=PixelInitialized" /></noscript>
+
+<script type="text/javascript">
+var sc_project=8529562; 
+var sc_invisible=1; 
+var sc_security="f7a5d401"; 
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/8529562/0/f7a5d401/1/"
+alt="Web Analytics"></a></div></noscript>
+
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.4"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.27"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":false,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.4","plugin_mode":"AddThis","anonymous_profile_id":"wp-4f9ca8de0eb327b43ae8f1ff2269f594","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc254ae5c3cb48"></script><script type="text/javascript" src="../wp-content/plugins/table-of-contents-plus/front.min6528.js?ver=1509"></script>
+<script type="text/javascript" src="../wp-includes/js/comment-reply.min2754.js?ver=4.7.27"></script>
+<script type="text/javascript" src="../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.args.mina305.js?ver=2.4.2"></script>
+<script type="text/javascript" src="../wp-includes/js/wp-embed.min2754.js?ver=4.7.27"></script>
+<script async="async" type="text/javascript" src="../wp-content/plugins/akismet/_inc/form0235.js?ver=4.1.1"></script>
+</body>
+<!-- Mirrored from tryqa.com/complete-guide-to-defect-management-for-test-qa-managers/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:43:55 GMT -->
+</html>

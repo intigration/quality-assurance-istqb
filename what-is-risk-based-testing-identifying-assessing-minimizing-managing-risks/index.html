@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec">
+
+<!-- Mirrored from tryqa.com/what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:24:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>What is Risk Based Testing? Identifying, Assessing, Mitigating &#038; Managing Risks</title> <meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="http://s.w.org/" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; What is Risk Based Testing? Identifying, Assessing, Mitigating &#038; Managing Risks Comments Feed" href="feed/index.html" />
+<link rel="canonical" href="index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tryqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.27"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="eleven40-pro-css" href="../wp-content/themes/eleven40-pro/style950a.css?ver=2.2.3" type="text/css" media="all" />
+<link rel="stylesheet" id="toc-screen-css" href="../wp-content/plugins/table-of-contents-plus/screen.min6528.css?ver=1509" type="text/css" media="all" />
+<link rel="stylesheet" id="dashicons-css" href="../wp-includes/css/dashicons.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A400%7COswald%3A400&amp;ver=2.4.2" type="text/css" media="all" />
+<link rel="stylesheet" id="addthis_all_pages-css" href="../wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<script type="text/javascript" src="../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/skip-links2754.js?ver=4.7.27"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://tryqa.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type="text/javascript" src="../wp-content/themes/eleven40-pro/js/responsive-menu8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="../wp-content/plugins/optinmonster215a/assets/js/apid63f.js?ver=2.1.5"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed58e1.json?url=http%3A%2F%2Ftryqa.com%2Fwhat-is-risk-based-testing-identifying-assessing-minimizing-managing-risks%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embeddb9d?url=http%3A%2F%2Ftryqa.com%2Fwhat-is-risk-based-testing-identifying-assessing-minimizing-managing-risks%2F&amp;format=xml" />
+<link rel="icon" href="../wp-content/themes/eleven40-pro/images/favicon.ico" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38219227-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:404843,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+    var isTryMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isTryMobile.Android() || isTryMobile.BlackBerry() || isTryMobile.iOS() || isTryMobile.Opera() || isTryMobile.Windows());
+        }
+    };	
+</script>
+</head>
+<body class="post-template-default single single-post postid-2815 single-format-standard header-full-width sidebar-content-sidebar eleven40-pro-red" itemscope itemtype="http://schema.org/WebPage"><div class="site-container"><section><h2 class="screen-reader-text">Skip links</h2><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li><li><a href="#genesis-sidebar-secondary" class="screen-reader-shortcut"> Skip to secondary sidebar</a></li></ul></section>
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="../index.html"><img style="height:40px;display:inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAByCAMAAAAcYFjwAAACUlBMVEXmShn///8AAADmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShnmShk3R083R0/mShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShk3R083R083R083R083R083R0/mShnmShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShk3R083R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R08qzSuZAAAAxHRSTlMAAAAportFDnjk9pkiBlnPcg86tchOH5L0/KQqCW/d6H4RA0/J0lgyqrI3GYbw8oll19lkBUbBvECe+/eUJRR95g1dxUv+JJbqhSF346MtAVLLxE2t4pMe7j3UXALvghj5py/GcAuVtzzWYeuEFTB0M8xEqqCIRO40VXf4YDirgBY1szmQIGkEvWYim7vdZojMEfXndjMs8/0o8SdaBztVmY7sPz7pHRsa5eASznXe3NDaCrnt0Ul5+sp7K1FTn3+prDFja9gXxAAACGJJREFUeNrt3fl/E0UUAPA0sgJNyo0WCylbQKIICtYDylUERBbBq7JgOT1AsdKkJDUr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" alt="Genislab">Genislab Technologies</a></h1></div><h2 class="screen-reader-text">Main navigation</h2><nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation"><div class="wrap"><ul id="menu-topnav" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1910"><a href="../index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-1909" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><a title="Software Testing Blog" href="../category/software-testing-pro/index.html" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a title="ISTQB Foundation Certification" href="../istqb-certification-the-definitive-guide/index.html" itemprop="url"><span itemprop="name">ISTQB Foundation Level</span></a></li>
+<li id="menu-item-3025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3025"><a href="../istqb-advanced-level-test-manager-study-material/index.html" itemprop="url"><span itemprop="name">ISTQB Advanced Level Test Manager</span></a></li>
+<li id="menu-item-1837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="../istqb-agile-testing-certification/index.html" itemprop="url"><span itemprop="name">Agile Testing Tutorial</span></a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1663"><a href="../istqb-dumps-download-mock-tests-and-sample-question-papers/index.html" itemprop="url"><span itemprop="name">ISTQB Dumps &#8211; Mock Tests</span></a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1155"><a href="../contact-us/index.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+<ul class="sub-menu">
+<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="../privacy-policy/index.html" itemprop="url"><span itemprop="name">Privacy Policy</span></a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="../terms-of-use/index.html" itemprop="url"><span itemprop="name">Terms of Use</span></a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../disclaimer/index.html" itemprop="url"><span itemprop="name">Disclaimer</span></a></li>
+<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="../about-us/index.html" itemprop="url"><span itemprop="name">About Us</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><div class="site-inner"><div class="wrap"><h2 class="site-description" itemprop="description">Study material for ISTQB Exam Certification Foundation level, Premium &amp; Free for ISTQB and ASTQB Exam, Certification questions, answers, software testing tutorials and more</h2><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-2815 post type-post status-publish format-standard category-istqb-test-manager tag-assess-risk tag-assessing-risk tag-classifying-risk tag-depth-first-risk-testing-technique tag-identify-risks tag-identifying-risk tag-istqb-advanced-level tag-istqb-advanced-level-exam tag-istqb-advanced-level-test-manager tag-istqb-test-manager-exam tag-lifecycle-risk tag-manage-lifecycle-risk tag-managing-risks tag-minimizing-risk tag-mitigate-risks tag-planning-risks tag-probability-of-risk tag-product-quality-risks tag-product-risks tag-project-risk-management tag-project-risks tag-qa-manager tag-quality-risks tag-risk-based-testing tag-risk-level tag-risk-priority-number tag-risk-triggers tag-test-manager-certification tag-test-manager-roles-and-responsibilities tag-what-is-risk-based-testing tag-zero-quality-risk entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How to manage Experience Based Testing? What are Test Sessions?"><a href="../how-to-manage-experience-based-testing-what-are-test-sessions/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: What are the different Risk Based Testing (RBT) Techniques?"><a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html" rel="next">Next Topic &raquo;</a></div></div><h1 class="entry-title" itemprop="headline">What is Risk Based Testing? Identifying, Assessing, Mitigating &#038; Managing Risks</h1>
+</header><div class="entry-content" itemprop="text"><div class="at-above-post addthis_tool" data-url="http://tryqa.com/what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/"></div><p>Risk can be defined as <strong>possibility of an adverse</strong> <strong>or unwanted result</strong> or occurrence. If <a href="../how-to-identify-stakeholders-for-testing/index.html">stakeholders</a>, users or customer opinion about the <strong>project&#8217;s quality</strong> or <strong>successful completion</strong> of the project can potentially be reduced due to a problem or issue, <strong>risk is said to exist</strong>.<span id="more-2815"></span></p>
+<div style><center>
+<style>
+  .responsive-test { display: block;}
+  @media(max-width: 768px) { .responsive-test { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p>If the main impact of risk is on <strong>quality of the product</strong>, the problems are termed <strong>product risks, quality risks or product quality risks</strong>.</p>
+<h3>Table of contents</h3>
+<ol>
+<li><a href="#what_is_risk_based_testing">What is Risk Based Testing?</a></li>
+<li><a href="#how_to_identify_risks">How to identify risks?</a></li>
+<li><a href="#how_to_assess_risk">How to assess risk?</a></li>
+<li><a href="#how_to_mitigate_risks">How to mitigate risks?</a></li>
+<li><a href="#how_to_manage_lifecycle_risk">How to manage lifecycle risk?</a></li>
+<li><a href="#project_risk_management">Project Risk Management</a></li>
+</ol>
+<p>If the main impact of the problem is on <strong>success of the project</strong>, the problems are termed <strong>planning risks or project risks</strong>.</p>
+<div style><center>
+<style>
+  .responsive-random { display: block;}
+  @media(min-width: 780px) { .responsive-random { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle responsive-random" data-ad-client="ca-pub-4095780395347512" data-ad-slot="7347353014" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p>A common challenge in test management lies in correct <strong>selection of a limited set of <a href="../what-is-test-condition-test-analysis-advantages-disadvantages-level-of-detail/index.html">test conditions</a></strong> from an almost unlimited set of tests, then allocating resources, <a href="../how-to-perform-test-prioritization-effort-allocation-in-test-process/index.html">effort and prioritizing the tests</a> effectively.</p>
+<p>After the test conditions are chosen, the team must allocate requisite resources to create <a href="../test-case/index.html">test cases</a>, then decide a sequence for the test cases so that overall test efficiency and effectiveness is optimized.</p>
+<p>Test Managers can use <a href="../what-is-risk-analysis/index.html">risk analysis</a> to decide on appropriate test cases and their sequencing but there exist many variable factors and constraints that must be taken into account, <strong>even if it means compromising</strong> on test solution.</p>
+<h2><a name="what_is_risk_based_testing"></a>What is Risk Based Testing?</h2>
+<p>In <strong>risk based testing</strong>, <strong>the selection</strong> of <strong>test conditions</strong> are guided by the risks identified to product quality. These <strong>product quality risks</strong> also are used to determine the allocation of effort for the testing the test conditions and for prioritizing the created test cases.</p>
+<p>Many types of testing techniques &#8211; depending on documentation and formality level &#8211; are available to perform <a href="../what-is-risk-based-testing/index.html">risk based testing</a>.</p>
+<p>The main aim of risk based testing is to <strong>minimize quality risks</strong> to an <strong>acceptable level</strong>.</p>
+<p>Achieving <strong>zero quality risk</strong> is close to <strong>impossible</strong>.</p>
+<p>While carrying out risk based testing, the product risks or quality risks are detected and reviewed during risk analysis of product quality with stakeholders.</p>
+<p>After risk analysis, test team carries out <a href="../what-is-test-design-when-to-create-it/index.html">test design</a>, <a href="../what-is-test-implementation-advantages-disadvantage-of-early-implementation/index.html">test implementation</a> and <a href="../what-is-test-execution/index.html">test execution</a> activities with the <strong>objective of minimizing the risks</strong>.</p>
+<p>Here, quality refers to all the product features, characteristics and behaviors that have the potential to affect satisfaction experienced by users, customers and other stakeholders.</p>
+<p>When <a href="../what-is-defect-or-bugs-or-faults-in-software-testing/index.html">defects</a> are identified before product release, testing has reduced quality risk by identifying the defects and providing methods to handle them.</p>
+<p>Here are some examples of quality risks:</p>
+<ul>
+<li>Delayed response to users action: Non-functional risk pertaining to performance</li>
+<li>Reports with wrong result or incorrect calculations: Functional risk pertaining to precision</li>
+<li>Complicated UI and input fields: Non-functional risk pertaining to usability &amp; system adoption</li>
+</ul>
+<p>If defects are not found after testing, testing has reduced quality risks by confirming that the system performs correctly under tested state.</p>
+<p>Risk based testing has several techniques for implementation which differ in the documentation level, type of documentation and formality level.</p>
+<p>There are <strong>four main steps in risk based testing</strong>:</p>
+<ol>
+<li><a href="#how_to_identify_risks">Identifying risks</a></li>
+<li><a href="#how_to_assess_risk">Assessing the risks</a></li>
+<li><a href="#how_to_mitigate_risks">Mitigating risks</a></li>
+<li><a href="#how_to_manage_lifecycle_risk">Managing risk</a></li>
+</ol>
+<p>The activities listed here are not sequential but overlapping. In the subsequent sections we will look at all these activities in detail. The cost incurred in these activities are part of the <a href="../what-is-cost-of-quality-in-software-testing/index.html">cost of quality</a>.</p>
+<p>For maximum efficiency, the team undertaking risk assessment and identification must comprise members from all stakeholders groups – be it the project on the whole or product development team.</p>
+<p>However, in reality, some stakeholders take on the responsibility of representing some additional stakeholders.</p>
+<p>Let us consider a scenario: When software is being developed for mass market, a small representative sample of prospective customers could possibly assist in identifying those defects which might affect the extent to which they use the software the most.</p>
+<p>Here, the small section of prospective customers is the representative for complete customer base.</p>
+<p>The <strong>testers should also be a part of risk identification process</strong> because of their experience in performing quality risks analysis and defect identification.</p>
+<h2><a name="how_to_identify_risks"></a>How to identify risks?</h2>
+<p>The stakeholders can use any <strong>methods given below to identify risks</strong>:</p>
+<ul>
+<li>Interviewing experts</li>
+<li>Making independent reviews</li>
+<li>Existing templates of risks</li>
+<li>Retrospective meetings in projects</li>
+<li>Conducting risk workshops</li>
+<li>Brainstorming with all stakeholders</li>
+<li>Creating and using checklists</li>
+<li>Revisiting previous experiences</li>
+</ul>
+<p>If widest possible cross-section of stakeholders is used, the risk detection process would be able to detect a large majority among the important product quality risks. <a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html#stakeholders_role_risk_management">Stakeholders role in risk based testing</a> is quite significant.</p>
+<p><strong>Risk identification</strong> process also <strong>delivers other results</strong>, i.e. they <strong>identify issues that are not really risks</strong> to the quality of the product. For example, generic concerns of the product, issues related to documents like requirements specifications etc.</p>
+<p><strong>It is important to manage project risks for overall testing</strong>, it should not be limited to risk based testing.</p>
+<h2><a name="how_to_assess_risk"></a>How to assess risk?</h2>
+<p>After risks have been identified, their assessment can start. <strong>Risk assessment</strong> is the analysis and <strong>evaluation of identified risks</strong>.</p>
+<p>Risk assessment usually involves these activities:</p>
+<ul>
+<li>Classifying each risk</li>
+<li>Identifying probability of each risk occurring</li>
+<li>Impact of each risk</li>
+<li>Identifying or assigning risk properties like risk owner</li>
+</ul>
+<p><strong>Risk is classified</strong> on the basis of different <strong>parameters like performance, functionality, reliability</strong>, etc.</p>
+<p>Companies are adopting ISO 25000 standard which replaced ISO 9126 standard quality characteristics for classification.</p>
+<p>Many companies also used other classification models to classify the risks. The checklist used in <strong>identification of risks</strong> is usually used in <strong>classification of risks</strong> as well.</p>
+<p>There are many general checklists available freely, which are customized by the organizations for their own use. If checklists are used for risk identification, risk classification is also done simultaneously.</p>
+<p>To find the risk level of a risk, you need to ascertain the <strong>probability of that risk occurring</strong> and <strong>its impact</strong> when it happens. Probability of that risk occurring implies the probability of existence of the problem in application while it was being tested.</p>
+<p>Likelihood can also be determined by evaluating the technical risk level.</p>
+<p><strong>Issues affecting this likelihood or probability</strong> include:</p>
+<ul>
+<li>Both technology being used and teams being employed</li>
+<li>Training level of business analysts, project managers, architects and developers</li>
+<li>Level of disagreement among team members</li>
+<li>Physically spread teams across the country/globe</li>
+<li>Old versus modern approach</li>
+<li>Testing tools and techniques</li>
+<li>Strength of leaders &#8211; technical &amp; managerial</li>
+<li>Non-availability of previous quality assurance reports</li>
+<li>High rate of change</li>
+<li>High rate of early defects</li>
+<li>Problems in interfacing as well as integrating</li>
+</ul>
+<p>The impact of a risk when it occurs is the importance of its effect on all stakeholders like users and consumers.</p>
+<p>Some of the factors that <strong>influence product as well as project risks</strong> include:</p>
+<ul>
+<li>Rate at which the risky feature is used</li>
+<li>How crucial the feature is for achieving business objective</li>
+<li>Loss of reputation</li>
+<li>Damage to business</li>
+<li>Probable losses or liabilities in terms of finances, ecology or societal pressures</li>
+<li>Probability of criminal or civil legal sanctions</li>
+<li>Annulment of license</li>
+<li>Safety</li>
+<li>Non-availability of feasible workarounds</li>
+<li>Negative publicity because product failure is prominent</li>
+</ul>
+<p><strong>Risk level</strong> can be evaluated <strong>qualitatively or quantitatively</strong>.</p>
+<p>If the <strong>probability of a risk</strong> and <strong>its impact</strong> is calculated then these numbers can be multiplied to get a <strong>risk priority number </strong>which is quantitative.</p>
+<p>However, usually risk level can be determined only qualitatively. So probability of a risk occurring can be called very low, low, medium, high or very high. But a percentage value for the probability cannot be calculated to any degree of precision.</p>
+<p>In the same way, impact of a risk can be very low, low, medium, high or very high but it <strong>cannot be depicted in financial numbers</strong>. However, <strong>qualitative evaluation of risk levels</strong> should be taken to be <strong>below par</strong> as compared to <strong>quantitative methods</strong>.</p>
+<p>In fact, <strong>incorrect use of quantitative evaluations</strong> of the risk levels can result in <strong>misguiding the stakeholders</strong> regarding level to which the risks are actually understood and can be managed.</p>
+<p>Risk analysis which isn&#8217;t based on broad and statistically validated risk data will be based on stakeholders’ perspectives.</p>
+<p>The stakeholders &#8211; project managers, architects, business analysts, programmers and testers &#8211; tend to have their own subjective view of the risk probability and its impact.</p>
+<p>So they will have different and at times <strong>highly varied opinions</strong> about each risk.</p>
+<p>The process of risk analysis must incorporate some method of reaching a consensus or at least an established risk level. This prior agreed level could be through management order or by calculating mathematical figures like mean, median and mode.</p>
+<p>The risk level should also have a good enough distribution in the given range, so rate of risks can provide correct guidelines for deciding on sequence, priority or effort allocation for test cases. Else, risk levels will not be able to act as risk mitigation guideposts.</p>
+<h2><a name="how_to_mitigate_risks"></a>How to mitigate risks?</h2>
+<p>The <strong>first step </strong>is <strong>analysis of quality risks</strong> i.e. identification and then evaluation of risks to product quality. All <a href="../what-are-master-test-plans-level-test-plan-examples-when-to-use/index.html">test plans</a> are based on this analysis of quality risks.</p>
+<p>Test designing, test implementation and test execution is done to mitigate the risks as per the test plan. The <a href="../how-to-perform-test-prioritization-effort-allocation-in-test-process/index.html"><strong>effort allocated</strong></a> to developing, implementing and then test execution is <strong>directly proportional to the risk level</strong>.</p>
+<p>This implies that <strong>thorough techniques</strong> like pair wise testing are designed for <strong>higher level risks</strong> while not so detailed techniques like <a href="../what-is-exploratory-testing-in-software-testing/index.html">exploratory testing</a> for limited time or <a href="../what-is-equivalence-partitioning-in-software-testing/index.html">equivalence partitioning</a> are designed for lower level risks.</p>
+<p><strong>Development and execution priority</strong> of a test also depends upon risk level.</p>
+<p><strong>Risk level should also influence</strong> these decisions:</p>
+<ul>
+<li>Should the project artifacts and tests documents be reviewed?</li>
+<li>How <a href="../manage-testing-team-different-levels-of-independence/index.html">independent should the testers</a> be?</li>
+<li>What should be the experience level of the tester?</li>
+<li>How much <a href="../what-is-retesting/index.html">retesting</a> should be done?</li>
+<li>How much <a href="../what-is-regression-testing-in-software/index.html">regression testing</a> should be done?</li>
+</ul>
+<p>While the project is continuing, some extra information may change the quality risks that the test team was working with or impact level of the risks.</p>
+<p>Test team must always be alert to such information and tweak tests as and when required. The adjustments like <strong>detecting fresh risks</strong>, <strong>re-evaluating risk levels</strong>, assessing efficacy of risk mitigation tasks completed, etc. must be <strong>done at</strong> <strong>key milestones</strong> of the project.</p>
+<p>For example, if risk detection and evaluation session was held on the basis of requirement specification in the requirements phase, it is advisable to re-asses the risks after design specification is complete.</p>
+<p>Let us look at one more example. If number of defects in any part of the product is much higher than the anticipated amount of defects during testing, the testers can safely summarize that the probability of a defect occurring in this region is higher than anticipated.</p>
+<p>So, the probability of risks must be revised upward for that part of the product.  This would also raise the extent of testing to be done for this part of the product.</p>
+<p><strong>Risks in product quality</strong> can be minimized <strong>even before execution of test cases</strong> begins.</p>
+<p>For instance, if the issues concerning the requirements were detected during risk identification itself, the issues can be mitigated just after the process through reviews.</p>
+<p>As this is done before subsequent phases in product development lifecycle, it will reduce the number of tests needed during subsequent quality risk testing process.</p>
+<h2><a name="how_to_manage_lifecycle_risk"></a>How to manage lifecycle risk?</h2>
+<p>Ideally, managing risk is a continuous effort through the complete product <a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">development lifecycle</a>. If available, documents pertaining to <a href="../what-is-test-policy-what-does-it-contain/index.html">test policy</a> or <strong><a href="../what-is-test-strategy-types-of-strategies-with-examples/index.html">test strategy</a> must explain the following</strong>:</p>
+<ul>
+<li>Process to be followed for managing tests for project as well as product risks</li>
+<li>Integration of risk management to all test levels</li>
+<li>Impact of risk management to associated <a href="../what-are-software-testing-levels/index.html">test levels</a></li>
+</ul>
+<p>In an experienced organization, the project team is highly aware of risks and committed to managing risks at multiple levels, not only for testing.</p>
+<p>In such a scenario, critical risks are dealt with at all test levels, as soon as they are identified.</p>
+<p>For instance, in case of performance being a risk factor for product quality, <a href="../what-is-performance-testing-in-software/index.html">testing of performance</a> is performed at multiple levels like design testing, <a href="../what-is-unit-testing/index.html">unit testing</a> along with <a href="../what-is-integration-testing/index.html">integration testing</a>.</p>
+<p>Experienced organizations do not stop at identifying the risks. They also <strong>identify the source of risks</strong> as well as the consequences.</p>
+<p>Often, <strong>root cause analysis</strong> is performed to understand risk source in depth and apply improvements in processes to avoid the defects from occurring. Risk mitigation is performed all through the lifecycle.</p>
+<p>In mature organizations, risk analysis takes into account the following factors:</p>
+<ul>
+<li>Related work activities</li>
+<li>System behavior analysis</li>
+<li>Risk assessment based on cost</li>
+<li>Analysis of product risk</li>
+<li>Analysis of risk related to end user</li>
+<li>Analysis of liability risk</li>
+</ul>
+<p>In such organizations risk analysis goes beyond <a href="../what-is-software-testing/index.html">software testing</a>. Testing team proposes and becomes part of risk analysis covering the whole program.</p>
+<p>Most of the <a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html">risk based testing techniques</a> combine some methods to utilize risk level for sequencing and prioritizing the tests.</p>
+<p>In this way they also ensure that most of the important defects are identified at the time of test execution and most of the essential components of the product are also covered.</p>
+<p>Sometimes, all tests that are <strong>high risk are executed</strong> <strong>before</strong> any low-risk test executes and that too in the <strong>order of risk</strong>, starting from the highest risk. This is also termed <strong>depth first risk testing technique</strong>.</p>
+<p>Sometimes a <strong>breadth first testing</strong> is used, i.e. a sample group of selected tests is run across all the predefined risk areas. This ensures that <strong>all risk areas are covered</strong> at least one time.</p>
+<p>Depending upon the test process adopting breadth-first or depth-first technique, the time allotted for the testing process might be over before all tests could be executed.</p>
+<p>After doing risk based tests, the testers report to the management about the risks levels that remain to be tested.</p>
+<p>This information helps the management to confirm if they want to do more testing or not.</p>
+<p>If more testing is not done, the <strong>remaining risks must be handled by the customers</strong>, end users, technical support staff, help desk and operational staff or a combination of one or more of them.</p>
+<p>When the test is being executed, the risk based testing enables project manager, product manager, senior managers and other stakeholders to observe and manage the development lifecycle.</p>
+<p>Keeping a tab on the development cycle enables them to take decisions regarding product release, depending on the remainder risk levels.</p>
+<p>However, to allow the stakeholders to monitor the status, the Test Manager must provide risk based testing results in a way that is easily understandable.</p>
+<h2><a name="project_risk_management"></a>Project Risk Management</h2>
+<p>Planning for project testing must also cover potential risks associated with a project. The procedure for identifying such risks is explained above in the section on identifying risks.</p>
+<p>The <strong>detected risks must be communicated</strong> to the project manager so that he/she takes steps to mitigate them as much as possible.</p>
+<p>The test team may not be able to mitigate all the risks but <strong>these risks can be taken care</strong> of:</p>
+<ul>
+<li>Testing environment readiness</li>
+<li>Testing tool readiness</li>
+<li>Availability of well-qualified testing staff</li>
+<li>Unavailability of testing standards, techniques and rules</li>
+</ul>
+<p><strong>Managing project risks includes</strong> the following:</p>
+<ul>
+<li>Organizing testware</li>
+<li>Testing the test environments before they are actually used</li>
+<li>Testing preliminary product versions</li>
+<li>Using difficult test entry conditions</li>
+<li>Strict adherence to testability requirements</li>
+<li>Being part of review teams for preliminary project work products</li>
+<li>Managing changes to project based on defect detection</li>
+<li>Reviewing project progress and product quality</li>
+</ul>
+<p>After risk identification and analysis, these are the <strong>four ways to manage risk</strong>:</p>
+<ol>
+<li>Preventive measures that decrease its occurrence and/or its impact</li>
+<li>Creating emergency plans to handle the risk if it actually occurs</li>
+<li>Transferring the responsibility of risk management to third party</li>
+<li>Ignoring or accepting the risk</li>
+</ol>
+<p>Some of the factors that should be considered while choosing the best possible option out of these four include:</p>
+<ul>
+<li>Advantages and disadvantages of an option</li>
+<li>Cost of implementing an option</li>
+<li>Extra risks related to choosing an option</li>
+</ul>
+<p>In case of contingency plans, <strong>risk trigger as well as plan owner</strong> must be predetermined.</p>
+<p>If you are interested, you can review <a href="../what-is-risk-based-testing/index.html">Risk Based Testing</a> from the perspective of the Foundation Level exam.</p>
+<p>In the next topic we look at the various <a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html">Risk Based Testing (RBT) Techniques</a>.</p>
+<h4>Other popular articles:</h4>
+<ul class="similar-posts">
+<li><a href="../what-is-risk-based-testing/index.html" rel="bookmark" title="What is Risk based testing?">What is Risk based testing?</a></li>
+<li><a href="../what-is-project-risk-in-software-testing/index.html" rel="bookmark" title="What is Project risk in software testing?">What is Project risk in software testing?</a></li>
+<li><a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html" rel="bookmark" title="What are the different Risk Based Testing (RBT) Techniques?">What are the different Risk Based Testing (RBT) Techniques?</a></li>
+<li><a href="../what-is-product-risk-in-software-testing/index.html" rel="bookmark" title="What is Product risk in software testing?">What is Product risk in software testing?</a></li>
+<li><a href="../how-to-assess-quality-risks-in-agile-methodology/index.html" rel="bookmark" title="How to Assess Quality Risks in Agile methodology?">How to Assess Quality Risks in Agile methodology?</a></li>
+</ul>
+<p></p>
+
+<div style><center><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="8321861017" data-ad-format="rectangle"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div><div class="at-below-post addthis_tool" data-url="http://tryqa.com/what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="../category/istqb-test-manager/index.html" rel="category tag">ISTQB Test Manager</a></span> <span class="entry-tags">Tagged With: <a href="../tag/assess-risk/index.html" rel="tag">assess risk</a>, <a href="../tag/assessing-risk/index.html" rel="tag">Assessing risk</a>, <a href="../tag/classifying-risk/index.html" rel="tag">Classifying risk</a>, <a href="../tag/depth-first-risk-testing-technique/index.html" rel="tag">depth first risk testing technique</a>, <a href="../tag/identify-risks/index.html" rel="tag">identify risks</a>, <a href="../tag/identifying-risk/index.html" rel="tag">Identifying risk</a>, <a href="../tag/istqb-advanced-level/index.html" rel="tag">ISTQB Advanced Level</a>, <a href="../tag/istqb-advanced-level-exam/index.html" rel="tag">ISTQB Advanced level exam</a>, <a href="../tag/istqb-advanced-level-test-manager/index.html" rel="tag">ISTQB Advanced Level Test Manager</a>, <a href="../tag/istqb-test-manager-exam/index.html" rel="tag">ISTQB Test Manager Exam</a>, <a href="../tag/lifecycle-risk/index.html" rel="tag">lifecycle risk</a>, <a href="../tag/manage-lifecycle-risk/index.html" rel="tag">manage lifecycle risk</a>, <a href="../tag/managing-risks/index.html" rel="tag">Managing Risks</a>, <a href="../tag/minimizing-risk/index.html" rel="tag">Minimizing risk</a>, <a href="../tag/mitigate-risks/index.html" rel="tag">mitigate risks</a>, <a href="../tag/planning-risks/index.html" rel="tag">planning risks</a>, <a href="../tag/probability-of-risk/index.html" rel="tag">probability of risk</a>, <a href="../tag/product-quality-risks/index.html" rel="tag">product quality risks</a>, <a href="../tag/product-risks/index.html" rel="tag">product risks</a>, <a href="../tag/project-risk-management/index.html" rel="tag">Project Risk Management</a>, <a href="../tag/project-risks/index.html" rel="tag">project risks</a>, <a href="../tag/qa-manager/index.html" rel="tag">qa manager</a>, <a href="../tag/quality-risks/index.html" rel="tag">quality risks</a>, <a href="../tag/risk-based-testing/index.html" rel="tag">Risk based testing</a>, <a href="../tag/risk-level/index.html" rel="tag">Risk level</a>, <a href="../tag/risk-priority-number/index.html" rel="tag">risk priority number</a>, <a href="../tag/risk-triggers/index.html" rel="tag">risk triggers</a>, <a href="../tag/test-manager-certification/index.html" rel="tag">Test Manager Certification</a>, <a href="../tag/test-manager-roles-and-responsibilities/index.html" rel="tag">Test Manager Roles and Responsibilities</a>, <a href="../tag/what-is-risk-based-testing/index.html" rel="tag">what is Risk Based Testing</a>, <a href="../tag/zero-quality-risk/index.html" rel="tag">zero quality risk</a></span></p><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How to manage Experience Based Testing? What are Test Sessions?"><a href="../how-to-manage-experience-based-testing-what-are-test-sessions/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: What are the different Risk Based Testing (RBT) Techniques?"><a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html" rel="next">Next Topic &raquo;</a></div></div></footer></article><h2 class="screen-reader-text">Reader Interactions</h2> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3> <form action="http://tryqa.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value size="30" maxlength="245" aria-required="true" required="required" /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type="hidden" name="comment_post_ID" value="2815" id="comment_post_ID" />
+<input type="hidden" name="comment_parent" id="comment_parent" value="0" />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="00b503961a" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="2" /></p> </form>
+</div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search</h3>
+<div class="textwidget"><form class="iec-search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://tryqa.com/" role="search">
+<meta itemprop="target" content="../index1f8a.html?s={s}">
+<input itemprop="query-input" name="s" placeholder=" Search this website " type="search">&nbsp;&nbsp;
+<input value="Search" type="submit">
+</form></div>
+</div></section>
+<section id="advanced_text-5" class="widget advanced_text"><div class="widget-wrap"><div class="AdvancedText"><h3 class="widgettitle widget-title">ISTQB Advanced Level Test Manager Study Material</h3>
+<table border="0" cellspacing="1">
+<tbody>
+<tr><td class="menuItem"><a title="ISTQB Advanced Level Test Manager Study Material" href="../istqb-advanced-level-test-manager-study-material/index.html">ISTQB Advanced Level Test Manager - Introduction</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 1: Testing Process
+</td>
+</tr>
+<tr><td class="menuItem">1. <a title="What is Test Planning? What are Work Products in Testing?" href="../what-is-test-planning-what-are-work-products-in-testing/index.html">What is Test Planning? What are Work Products in Testing?</a></td></tr>
+<tr><td class="menuItem">2. <a href="../what-is-test-monitoring-and-test-control/index.html">What is Test Monitoring and Test Control?</a></td></tr>
+<tr><td class="menuItem">3. <a href="../what-is-test-condition-test-analysis-advantages-disadvantages-level-of-detail/index.html">What is Test Condition & Test Analysis? Advantages, Disadvantages & Level of Detail</a></td></tr>
+<tr><td class="menuItem">4. <a href="../what-is-test-design-when-to-create-it/index.html">What is Test Design? When to create Test Design?</a></td></tr>
+<tr><td class="menuItem">5. <a href="../what-is-test-implementation-advantages-disadvantage-of-early-implementation/index.html">What is Test Implementation? Advantages & Disadvantage of early implementation</a></td></tr>
+<tr><td class="menuItem">6. <a href="../what-is-test-execution/index.html">What is Test Execution?</a></td></tr>
+<tr><td class="menuItem">7. <a href="../what-are-test-closure-activities-evaluating-exit-criteria-and-reporting/index.html">What Are Test Closure Activities? Evaluating Exit Criteria and Reporting</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 2: Test Management
+</td>
+</tr>
+<tr><td class="menuItem">8. <a href="../how-to-identify-stakeholders-for-testing/index.html">Who are the stakeholders in software testing? How to identify them?</a></td></tr>
+<tr><td class="menuItem">9. <a href="../software-development-lifecycle-activities-work-products-affect-testing/index.html">How Do Software Development Lifecycle Activities & Work Products Affect Testing?</a></td></tr>
+<tr><td class="menuItem">10. <a href="../align-software-testing-activities-with-product-development-lifecycle-activities/index.html">How to align software testing activities with product / development lifecycle activities?</a></td></tr>
+<tr><td class="menuItem">11. <a href="../how-to-manage-non-functional-testing/index.html">How to manage Non-Functional Testing?</a></td></tr>
+<tr><td class="menuItem">12. <a href="../how-to-manage-experience-based-testing-what-are-test-sessions/index.html">How to manage Experience Based Testing? What are Test Sessions?</a></td></tr>
+<tr><td class="menuItem">13. <a href="index.html">What is Risk Based Testing? Identifying, Assessing, Minimizing & Managing Risks</a></td></tr>
+<tr><td class="menuItem">14. <a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html">What are the different Risk Based Testing (RBT) Techniques?</a></td></tr>
+<tr><td class="menuItem">15. <a href="../test-selection-techniques-requirement-model-based-checklists-reactive-testing/index.html">Test selection techniques - Requirement / Model based, Checklists, Reactive testing</a></td></tr>
+<tr><td class="menuItem">16. <a href="../how-to-perform-test-prioritization-effort-allocation-in-test-process/index.html">How to perform test prioritization & effort allocation in test process?</a></td></tr>
+<tr><td class="menuItem">17. <a href="../what-is-test-policy-what-does-it-contain/index.html">What is Test Policy? What does it contain?</a></td></tr>
+<tr><td class="menuItem">18. <a href="../what-is-test-strategy-types-of-strategies-with-examples/index.html">What is Test Strategy? Types of strategies with examples</a></td></tr>
+<tr><td class="menuItem">19. <a href="../what-are-master-test-plans-level-test-plan-examples-when-to-use/index.html">What are Master Test Plans & Level Test Plan? Examples, When to use</a></td></tr>
+<tr><td class="menuItem">20. <a href="../what-is-test-estimation-factors-and-techniques/index.html">What is test estimation? Related Factors, Estimation Techniques</a></td></tr>
+<tr><td class="menuItem">21. <a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></td></tr>
+<tr><td class="menuItem">22. <a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of quality</a></td></tr>
+<tr><td class="menuItem">23. <a href="../what-are-distributed-outsourced-and-insourced-testing/index.html">What are Distributed, Outsourced and Insourced Testing?</a></td></tr>
+<tr><td class="menuItem">24. <a href="../manage-apply-industry-standards-to-software-testing-projects/index.html">How to manage & apply industry standards to software testing projects?</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 3: Reviews
+</td>
+</tr>
+<tr><td class="menuItem">25. <a href="../manage-formal-reviews-management-audits-skills-metrics-responsibilities/index.html">How to manage formal reviews & management audits? Skills, metrics, responsibilities</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 4: Defect Management
+</td>
+</tr>
+<tr><td class="menuItem">26. <a href="../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management for Test / QA Managers</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 5: Improving the Testing Process
+</td>
+</tr>
+<tr><td class="menuItem">27. <a href="../software-testing-process-improvements-for-test-qa-managers/index.html">Software Testing Process Improvements for Test / QA Managers</a></td></tr>
+<tr><td class="menuItem">28. <a href="../ideal-model-for-test-process-improvement/index.html">What is the IDEAL model for test process improvement?</a></td></tr>
+<tr><td class="menuItem">29. <a href="../software-testing-process-improvement-models-tmmi-tpi-next-ctp-step/index.html">Software testing process improvement models - TMMi, TPI Next, CTP, STEP</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 6: Test Tools and Automation
+</td>
+</tr>
+<tr><td class="menuItem">30. <a href="../select-testing-tools-open-source-vendor-tools-custom-development/index.html">How to select a testing tool? Open Source, Vendor Tools & Custom Development</a></td></tr>
+<tr><td class="menuItem">31. <a href="../testing-tool-roi-one-time-recurring-costs-risks-related-to-tools/index.html">What is Testing Tool ROI? One time/Recurring Costs & Risks related to tools?</a></td></tr>
+<tr><td class="menuItem">32. <a href="../parameters-for-selecting-a-testing-tool/index.html">What are the parameters for selecting a testing tool?</a></td></tr>
+<tr><td class="menuItem">33. <a href="../manage-software-testing-tool-lifecycle-and-tool-metrics/index.html">How to manage software testing tool lifecycle and tool metrics?</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 7: People Skills
+</td>
+</tr>
+<tr><td class="menuItem">34. <a href="../assess-manage-develop-skills-in-testers/index.html">How to assess, manage & develop skills in testers as a Test Manager?</a></td></tr>
+<tr><td class="menuItem">35. <a href="../manage-hiring-team-dynamics-as-test-manager/index.html">How to manage hiring & team dynamics as a Test Manager?</a></td></tr>
+<tr><td class="menuItem">36. <a href="../manage-testing-team-different-levels-of-independence/index.html">How to manage testing team at different levels of independence?</a></td></tr>
+<tr><td class="menuItem">37. <a href="../testing-team-motivation-for-test-qa-managers/index.html">How to motivate software testing team as a Test / QA Manager?</a></td></tr>
+<tr><td class="menuItem">38. <a href="../how-to-communicate-effectively-as-a-test-qa-manager/index.html">How to communicate effectively as a Test / QA Manager?</a></td></tr>
+</tbody>
+</table></div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-secondary"><h2 class="genesis-sidebar-title screen-reader-text">Secondary Sidebar</h2><section id="text-11" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Popular Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../what-to-do-team-project-lead-is-burning-you-out/index7caf.html?ref=sidebar">What to do when Team Lead is burning you out?</a></li>
+<li><a href="../interview-question-should-testers-be-paid-same-salary-as-developers/index7caf.html?ref=sidebar">Interview Question: Should Testers be paid same salary as Developers?</a></li>
+<li><a href="../mobile-application-development-and-testing-checklist/index7caf.html?ref=sidebar">Mobile app testing checklist</a></li>
+<li><a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Waterfall model? When to use it?</a></li>
+<li><a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">SDLC</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">What is V-model? When to use it?</a></li>
+<li><a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Spiral model? When to use it?</a></li>
+<li><a href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model - When to use it?</a>
+</li>
+</ul></div>
+</div></section>
+<section id="text-21" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Trending Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html">Guide to crowdtesting - Earn extra income as a freelance tester</a></li>
+<li><a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of Quality (COQ)</a></li>
+<li><a href="index.html">Risk Based Testing - Identifying, Assessing, Mitigating & Managing Risks</a></li>
+<li><a href="../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management</a></li>
+<li><a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></li>
+<li><a href="../beginners-guide-to-career-in-software-testing-growth/index.html">Complete Guide to Career in Software Testing - Career Growth, Roles, Responsibilities</a></li>
+<li><a href="../big-data-testing/index.html">Big Data Testing - Complete beginner's guide for Software Testers</a></li>
+<li><a href="../test-case/index.html">What is a Test Case? Example Template, Types, Best Practices</a></li>
+</ul></div>
+</div></section>
+<section id="categories-3" class="widget widget_categories"><div class="widget-wrap"><h3 class="widgettitle widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-3"><a href="../category/fundamentals-of-testing/index.html">Fundamentals of testing</a> (15)
+</li>
+<li class="cat-item cat-item-814"><a href="../category/agile-testing-certification/index.html">ISTQB Agile Testing Certification</a> (31)
+</li>
+<li class="cat-item cat-item-724"><a href="../category/istqb-certification/index.html" title="Everything you need to know regarding the ISTQB Exam. ISTQB Exam dates, locations, syllabus, basic qualifications or per-requisites etc">ISTQB Certification</a> (14)
+</li>
+<li class="cat-item cat-item-1387"><a href="../category/istqb-test-manager/index.html">ISTQB Test Manager</a> (39)
+</li>
+<li class="cat-item cat-item-1962"><a href="../category/java-tutorials/index.html">Java Tutorials</a> (4)
+</li>
+<li class="cat-item cat-item-777"><a href="../category/software-testing-pro/index.html">Software Testing</a> (29)
+</li>
+<li class="cat-item cat-item-4"><a href="../category/static-techniques/index.html">Static techniques</a> (13)
+</li>
+<li class="cat-item cat-item-6"><a href="../category/test-design-techniques/index.html">Test design techniques</a> (29)
+</li>
+<li class="cat-item cat-item-7"><a href="../category/test-management/index.html">Test Management</a> (22)
+</li>
+<li class="cat-item cat-item-8"><a href="../category/testing-throughout-the-testing-life-cycle/index.html">Testing throughout the testing life cycle</a> (53)
+</li>
+<li class="cat-item cat-item-9"><a href="../category/tool-support-for-testing/index.html">Tool support for testing</a> (22)
+</li>
+</ul>
+</div></section>
+<section id="text-18" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '780848918707398']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<script type="text/javascript">
+var sc_project=8529562; 
+var sc_invisible=1; 
+var sc_security="f7a5d401"; 
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/8529562/0/f7a5d401/1/"
+alt="Web Analytics"></a></div></noscript>
+
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.4"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.27"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":false,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.4","plugin_mode":"AddThis","anonymous_profile_id":"wp-4f9ca8de0eb327b43ae8f1ff2269f594","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc254ae5c3cb48"></script><script type="text/javascript" src="../wp-content/plugins/table-of-contents-plus/front.min6528.js?ver=1509"></script>
+<script type="text/javascript" src="../wp-includes/js/comment-reply.min2754.js?ver=4.7.27"></script>
+<script type="text/javascript" src="../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.args.mina305.js?ver=2.4.2"></script>
+<script type="text/javascript" src="../wp-includes/js/wp-embed.min2754.js?ver=4.7.27"></script>
+<script async="async" type="text/javascript" src="../wp-content/plugins/akismet/_inc/form0235.js?ver=4.1.1"></script>
+</body>
+<!-- Mirrored from tryqa.com/what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:24:56 GMT -->
+</html>

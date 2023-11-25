@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec">
+
+<!-- Mirrored from tryqa.com/tag/testing-of-software-structure/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:51:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>Testing of software structure</title> <meta name="robots" content="noindex,noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="http://s.w.org/" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Testing of software structure Tag Feed" href="feed/index.html" />
+<link rel="canonical" href="index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tryqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.27"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="eleven40-pro-css" href="../../wp-content/themes/eleven40-pro/style950a.css?ver=2.2.3" type="text/css" media="all" />
+<link rel="stylesheet" id="toc-screen-css" href="../../wp-content/plugins/table-of-contents-plus/screen.min6528.css?ver=1509" type="text/css" media="all" />
+<link rel="stylesheet" id="dashicons-css" href="../../wp-includes/css/dashicons.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A400%7COswald%3A400&amp;ver=2.4.2" type="text/css" media="all" />
+<link rel="stylesheet" id="addthis_all_pages-css" href="../../wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<script type="text/javascript" src="../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
+<script type="text/javascript" src="../../wp-content/themes/genesis/lib/js/skip-links2754.js?ver=4.7.27"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://tryqa.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type="text/javascript" src="../../wp-content/themes/eleven40-pro/js/responsive-menu8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="../../wp-content/plugins/optinmonster215a/assets/js/apid63f.js?ver=2.1.5"></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="icon" href="../../wp-content/themes/eleven40-pro/images/favicon.ico" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38219227-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:404843,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+    var isTryMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isTryMobile.Android() || isTryMobile.BlackBerry() || isTryMobile.iOS() || isTryMobile.Opera() || isTryMobile.Windows());
+        }
+    };	
+</script>
+</head>
+<body class="archive tag tag-testing-of-software-structure tag-213 header-full-width sidebar-content-sidebar eleven40-pro-red" itemscope itemtype="http://schema.org/WebPage"><div class="site-container"><section><h2 class="screen-reader-text">Skip links</h2><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li><li><a href="#genesis-sidebar-secondary" class="screen-reader-shortcut"> Skip to secondary sidebar</a></li></ul></section>
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="../../index.html"><img style="height:40px;display:inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAByCAMAAAAcYFjwAAACUlBMVEXmShn///8AAADmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShnmShk3R083R0/mShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShk3R083R083R083R083R083R0/mShnmShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShk3R083R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R08qzSuZAAAAxHRSTlMAAAAportFDnjk9pkiBlnPcg86tchOH5L0/KQqCW/d6H4RA0/J0lgyqrI3GYbw8oll19lkBUbBvECe+/eUJRR95g1dxUv+JJbqhSF346MtAVLLxE2t4pMe7j3UXALvghj5py/GcAuVtzzWYeuEFTB0M8xEqqCIRO40VXf4YDirgBY1szmQIGkEvWYim7vdZojMEfXndjMs8/0o8SdaBztVmY7sPz7pHRsa5eASznXe3NDaCrnt0Ul5+sp7K1FTn3+prDFja9gXxAAACGJJREFUeNrt3fl/E0UUAPA0sgJNyo0WCylbQKIICtYDylUERBbBq7JgOT1AsdKkJDUr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" alt="Genislab">Genislab Technologies</a></h1></div><h2 class="screen-reader-text">Main navigation</h2><nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation"><div class="wrap"><ul id="menu-topnav" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1910"><a href="../../index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-1909" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><a title="Software Testing Blog" href="../../category/software-testing-pro/index.html" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a title="ISTQB Foundation Certification" href="../../istqb-certification-the-definitive-guide/index.html" itemprop="url"><span itemprop="name">ISTQB Foundation Level</span></a></li>
+<li id="menu-item-3025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3025"><a href="../../istqb-advanced-level-test-manager-study-material/index.html" itemprop="url"><span itemprop="name">ISTQB Advanced Level Test Manager</span></a></li>
+<li id="menu-item-1837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="../../istqb-agile-testing-certification/index.html" itemprop="url"><span itemprop="name">Agile Testing Tutorial</span></a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1663"><a href="../../istqb-dumps-download-mock-tests-and-sample-question-papers/index.html" itemprop="url"><span itemprop="name">ISTQB Dumps &#8211; Mock Tests</span></a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1155"><a href="../../contact-us/index.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+<ul class="sub-menu">
+<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="../../privacy-policy/index.html" itemprop="url"><span itemprop="name">Privacy Policy</span></a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="../../terms-of-use/index.html" itemprop="url"><span itemprop="name">Terms of Use</span></a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../../disclaimer/index.html" itemprop="url"><span itemprop="name">Disclaimer</span></a></li>
+<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="../../about-us/index.html" itemprop="url"><span itemprop="name">About Us</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><div class="site-inner"><div class="wrap"><h2 class="site-description" itemprop="description">Study material for ISTQB Exam Certification Foundation level, Premium &amp; Free for ISTQB and ASTQB Exam, Certification questions, answers, software testing tutorials and more</h2><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><div class="archive-description taxonomy-archive-description taxonomy-description"><h1 class="archive-title">Testing of software structure</h1></div><article class="post-299 post type-post status-publish format-standard category-testing-throughout-the-testing-life-cycle tag-clear-box-testing tag-glass-box tag-structural-testing tag-testing-of-software-architecture tag-testing-of-software-structure tag-white-box entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline"><a href="../../what-is-structural-testing-testing-of-software-structurearchitecture/index.html" rel="bookmark">What is Structural testing (Testing of software structure/architecture)?</a></h1>
+</header><div class="entry-content" itemprop="text"><div class="at-above-post-arch-page addthis_tool" data-url="http://tryqa.com/what-is-structural-testing-testing-of-software-structurearchitecture/"></div><ul style="text-align: justify;">
+<li>The structural testing is the testing of the structure of the system or component.</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Structural testing is often referred to as ‘<a href="../../what-is-white-box-or-structure-based-or-structural-testing-techniques/index.html">white box testing</a>’ or ‘glass box’ or ‘clear-box testing’ because in structural testing we are interested in what is happening ‘inside the system/application’.</li>
+</ul>
+<p> <a href="../../what-is-structural-testing-testing-of-software-structurearchitecture/index.html#more-299" class="more-link">[Read more&#8230;] <span class="screen-reader-text">about What is Structural testing (Testing of software structure/architecture)?</span></a></p>
+<div style><center>
+<style>
+  .responsive-test { display: block;}
+  @media(max-width: 768px) { .responsive-test { display: none; } }
+</style>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<div class="at-below-post-arch-page addthis_tool" data-url="http://tryqa.com/what-is-structural-testing-testing-of-software-structurearchitecture/"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="../../category/testing-throughout-the-testing-life-cycle/index.html" rel="category tag">Testing throughout the testing life cycle</a></span> <span class="entry-tags">Tagged With: <a href="../clear-box-testing/index.html" rel="tag">clear-box testing</a>, <a href="../glass-box/index.html" rel="tag">glass box</a>, <a href="../structural-testing/index.html" rel="tag">Structural testing</a>, <a href="../testing-of-software-architecture/index.html" rel="tag">Testing of software architecture</a>, <a href="index.html" rel="tag">Testing of software structure</a>, <a href="../white-box/index.html" rel="tag">white box</a></span></p></footer></article></main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search</h3>
+<div class="textwidget"><form class="iec-search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://tryqa.com/" role="search">
+<meta itemprop="target" content="http://tryqa.com/?s={s}">
+<input itemprop="query-input" name="s" placeholder=" Search this website " type="search">&nbsp;&nbsp;
+<input value="Search" type="submit">
+</form></div>
+</div></section>
+<section id="advanced_text-3" class="widget advanced_text"><div class="widget-wrap"><div class="AdvancedText"><h3 class="widgettitle widget-title">ISTQB Certification Exam Study Material</h3>
+<table border="0" cellspacing="1">
+<tbody>
+<tr>
+<td class="menuHead">Chapter 1. Fundamentals of testing
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="software testing" href="../../what-is-software-testing/index.html">What is Software testing?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="why testing necessary" href="../../why-is-testing-necessary/index.html">Why
+is testing necessary?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software Testing objectives and purpose" href="../../what-is-the-software-testing-objectives-and-purpose/index.html">Software testing objectives and purpose</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="what is defect or bugs" href="../../what-is-defect-or-bugs-or-faults-in-software-testing/index.html">What
+is Defect or bugs or faults?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="what is a failure" href="../../what-is-a-failure-in-software-testing/index.html">What
+is a Failure?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="where do defects and failures arise" href="../../from-where-do-defects-and-failures-in-software-testing-arise/index.html">From
+where do Defects and failures arise?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="when do defects arise" href="../../when-do-defects-in-software-testing-arise/index.html">When
+do defects arise?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="cost of defects" href="../../what-is-the-cost-of-defects-in-software-testing/index.html">What
+is the cost of defects?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="defect life cycle" href="../../what-is-a-defect-life-cycle/index.html">Defect
+or Bug Life Cycle</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What is the difference between Severity and Priority?" href="../../what-is-the-difference-between-severity-and-priority/index.html">What is the difference between Severity and Priority?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="principles of testing" href="../../what-are-the-principles-of-testing/index.html">Principles
+of testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Fundamental test process" href="../../what-is-fundamental-test-process-in-software-testing/index.html">Fundamental
+test process</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Psychology of testing" href="../../what-is-the-psychology-of-testing/index.html">Psychology
+of testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="independent testing" href="../../what-is-independent-testing-its-benefits-and-risks/index.html">Independent
+testing- it’s benefits and risks</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="software quality" href="../../what-is-software-quality/index.html">Software
+Quality</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 2. Testing throughout the testing lifecycle
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Verification in software testing" href="../../what-is-verification-in-software-testing-or-what-is-software-verification/index.html">What
+is Verification?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Validation" href="../../what-is-validation-in-software-testing-or-what-is-software-validation/index.html">What
+is Validation?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="CMM-Levels" href="../../what-is-cmm-capability-maturity-model-what-are-cmm-levels/index.html">Capability
+Maturity Model (CMM-Levels)</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Software
+Development Life Cycle
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software
+Development Life Cycle SDLC phases" href="../../what-are-the-software-development-life-cycle-sdlc-phases/index.html">Software
+Development Life Cycle (SDLC) phases</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software development model" href="../../what-are-the-software-development-models/index.html">Software
+Development Models</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Waterfall model" href="../../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">Waterfall
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="V-model" href="../../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">V-model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incremental model" href="../../what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/index.html">Incremental
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="RAD model" href="../../what-is-rad-model-advantages-disadvantages-and-when-to-use-it/index.html">RAD
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Agile model" href="../../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Iterative model" href="../../what-is-iterative-model-advantages-disadvantages-and-when-to-use-it/index.html">Iterative
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Spiral model" href="../../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">Spiral
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Prototype model" href="../../what-is-prototype-model-advantages-disadvantages-and-when-to-use-it/index.html">Prototype
+Model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software testing levels" href="../../what-are-software-testing-levels/index.html">Software
+Testing Levels</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Unit testing" href="../../what-is-unit-testing/index.html">Unit
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Component testing" href="../../what-is-component-testing/index.html">Component
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Integration testing" href="../../what-is-integration-testing/index.html">Integration
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Big bang integration testing" href="../../what-is-big-bang-integration-testing/index.html">Big
+Bang integration testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="incremental testing" href="../../what-is-incremental-testing-in-software/index.html">Incremental
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="component integration testing" href="../../what-is-component-integration-testing/index.html">Component
+integration testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="system integration testing" href="../../what-is-system-integration-testing/index.html">System
+integration testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="system testing" href="../../what-is-system-testing/index.html">System
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Acceptance testing" href="../../what-is-acceptance-testing/index.html">Acceptance
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Alpha testing" href="../../what-is-alpha-testing/index.html">Alpha
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Beta testing" href="../../what-is-beta-testing/index.html">Beta
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test types" href="../../what-are-software-test-types/index.html">Software
+Test Types</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Functional testing" href="../../what-is-functional-testing-testing-of-functions-in-software/index.html">Functional
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Non-functional testing" href="../../what-is-non-functional-testing-testing-of-software-product-characteristics/index.html">Non functional
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Functionality testing" href="../../what-is-functionality-testing-in-software/index.html">Functionality
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Reliability testing" href="../../what-is-reliability-testing-in-software/index.html">Reliability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Usability testing" href="../../what-is-usability-testing-in-software-and-its-benifits-to-end-user/index.html">Usability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Efficiency testing" href="../../what-is-efficiency-testing-in-software/index.html">Efficiency
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Maintainability testing" href="../../what-is-maintainability-testing-in-software/index.html">Maintainability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Portability testing" href="../../what-is-portability-testing-in-software/index.html">Portability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Baseline testing" href="../../what-is-baseline-testing-in-software/index.html">Baseline
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="compliance testing" href="../../what-is-compliance-testing-in-software/index.html">Compliance
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Documentation testing" href="../../what-is-documentation-testing/index.html">Documentation
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Endurance testing" href="../../what-is-endurance-testing-in-software/index.html">Endurance
+testing</a> </td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Load testing" href="../../what-is-load-testing-in-software/index.html">Load
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Performance testing" href="../../what-is-performance-testing-in-software/index.html">Performance
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Compatibility testing" href="../../what-is-compatibility-testing-in-software/index.html">Compatibility
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Security testing" href="../../what-is-security-testing-in-software/index.html">Security
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Scalability testing" href="../../what-is-scalability-testing-in-software/index.html">Scalability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Volume testing" href="../../what-is-volume-testing-in-software/index.html">Volume
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Stress testing" href="../../what-is-stress-testing-in-software/index.html">Stress
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Difference between Volume, Load and stress testing in software" href="../../difference-between-volume-load-and-stress-testing-in-software/index.html">Difference
+between Volume, Load and stress testing in software</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Recovery testing" href="../../what-is-recovery-testing-in-software/index.html">Recovery
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Internationalization testing and Localization testing" href="../../what-is-internationalization-testing-and-localization-testing-in-software/index.html">Internationalization
+testing and Localization testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Confirmation testing" href="../../what-is-confirmation-testing-in-software/index.html">Confirmation
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Regression testing" href="../../what-is-regression-testing-in-software/index.html">Regression
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Structural testing" href="../../what-is-structural-testing-testing-of-software-structurearchitecture/index.html">Structural
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Maintenance testing" href="../../what-is-maintenance-testing/index.html">Maintenance
+Testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Impact analysis" href="../../what-is-impact-analysis-in-software-testing/index.html">Impact
+analysis</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 3. Static Techniques
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design technique" href="../../what-is-test-design-technique/index.html">Test
+design techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static test technique" href="../../what-is-a-static-test-technique/index.html">Static
+test technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static testing" href="../../what-is-static-testing/index.html">What
+is static Testing?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Uses of static testing" href="../../what-are-the-uses-of-static-testing/index.html">Uses
+of Static Testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Informal reviews" href="../../what-is-informal-reviews/index.html">Informal
+reviews</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Formal reviews" href="../../what-is-formal-review/index.html">Formal
+reviews</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Roles and responsibilities involved during review" href="../../what-are-the-roles-and-responsibilities-involved-during-a-review/index.html">The
+roles and responsibilities of the moderator, author, scribe, reviewers and managers involved during a review</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Types of reviews" href="../../what-are-the-types-of-review/index.html">Types
+of review</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Walkthrough" href="../../what-is-walkthrough-in-software-testing/index.html">Walkthrough</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Technical review" href="../../what-is-technical-review-in-software-testing/index.html">Technical
+review</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Inspection" href="../../what-is-inspection-in-software-testing/index.html">Inspection</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static analysis" href="../../what-is-static-analysis/index.html">What
+is static analysis?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static analysis tools" href="../../what-are-static-analysis-tools/index.html">What
+is a static analysis tools?</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 4. Test design techniques
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test analysis" href="../../what-is-test-analysis-or-how-to-identify-the-test-conditions/index.html">Test
+analysis</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Traceability in testing" href="../../what-is-traceability-in-software-testing/index.html">Traceability</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design" href="../../what-is-test-design-or-how-to-specify-test-cases/index.html">Test
+design</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test implementation" href="../../what-is-test-implementation-or-how-to-specifying-test-procedures-or-scripts/index.html">Test
+implementation</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design technique" href="../../what-is-test-design-technique-2/index.html">Test
+design technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Categories of test design techniques" href="../../what-are-the-categories-of-test-design-techniques/index.html">Categories
+of test design techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Categories of test design techniques" href="../../what-is-static-testing-technique/index.html">Static testing techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Dynamic testing technique" href="../../what-is-dynamic-testing-technique/index.html">Dynamic
+testing technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Black box testing" href="../../what-is-black-box-specification-based-also-known-as-behavioral-testing-techniques/index.html">i.
+Black box testing or Specification-based</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Equivalence partitioning" href="../../what-is-equivalence-partitioning-in-software-testing/index.html">Equivalence
+partitioning (EP)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Dynamic testing technique" href="../../what-is-boundary-value-analysis-in-software-testing/index.html">Boundary Value Analysis (BVA)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Why to do both BVA and EP" href="../../while-testing-why-it-is-important-to-do-both-equivalence-partitioning-and-boundary-value-analysis/index.html">why
+it is important to do both EP and BVA</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Decision table" href="../../what-is-decision-table-in-software-testing/index.html">Decision
+tables</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="State transition testing" href="../../what-is-state-transition-testing-in-software-testing/index.html">State
+transition testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Use case testing" href="../../what-is-use-case-testing-in-software-testing/index.html">Use
+case testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="White box testing" href="../../what-is-white-box-or-structure-based-or-structural-testing-techniques/index.html">ii.
+White box testing or Structure-based</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Experience based" href="../../what-is-experience-based-testing-technique/index.html">iii.
+Experience-based testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Error guessing" href="../../what-is-error-guessing-in-software-testing/index.html">Error
+guessing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Exploratory testing" href="../../what-is-exploratory-testing-in-software-testing/index.html">Exploratory
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Structure based technique" href="../../what-is-structure-based-technique-in-software-testing/index.html">Structure
+based technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test coverage" href="../../what-is-test-coverage-in-software-testing-its-advantages-and-disadvantages/index.html">Test
+coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Where to apply this test coverage?" href="../../where-to-apply-this-test-coverage-in-software-testing/index.html">Where
+to apply this test coverage?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Why to measure code coverage?" href="../../why-to-measure-code-coverage/index.html">Why
+to measure code coverage?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="How we can measure the coverage?" href="../../how-we-can-measure-the-coverage/index.html">How
+we can measure the coverage?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Types of coverage" href="../../what-are-the-types-of-coverage/index.html">Types
+of coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Statement coverage" href="../../what-is-statement-coverage-advantages-and-disadvantages/index.html">Statement
+coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Branch Coverage or Decision coverage" href="../../what-is-decision-coverage-its-advantages-and-disadvantages/index.html">Branch Coverage or Decision
+Coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Condition coverage" href="../../what-is-condition-coverage/index.html">Condition
+coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="How to choose that which technique is best?" href="../../how-to-choose-that-which-testing-technique-is-best/index.html">How
+to choose that which technique is best?</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 5. Test management
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Roles and responsibilities of a Test Leader" href="../../what-are-the-roles-and-responsibilities-of-a-test-leader/index.html">Roles
+and responsibilities of a Test Leader</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Roles and responsibilities of a Tester" href="../../what-are-the-roles-and-responsibilities-of-a-tester/index.html">Roles
+and responsibilities of a Tester</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Purpose of test plans" href="../../what-is-the-purpose-and-importance-of-test-plans/index.html">Purpose
+and importance of test plans</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Things to keep in mind while planning tests" href="../../what-things-to-keep-in-mind-while-planning-tests/index.html">Things
+to keep in mind while planning tests</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What testing will cost" href="../../estimating-what-testing-will-involve-and-what-it-will-cost/index.html">What
+testing will involve and what it will cost?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Estimation techniques" href="../../what-are-the-estimation-techniques-in-software-testing/index.html">Estimation
+techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Factors affecting test effort" href="../../what-are-the-factors-affecting-test-effort-in-software-testing/index.html">Factors
+affecting test effort</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test strategy" href="../../what-are-the-test-approaches-or-strategies-in-software-testing/index.html">Test strategy</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test monitoring" href="../../what-is-test-monitoring-in-software-testing/index.html">Test
+monitoring</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test control" href="../../what-is-test-control/index.html">Test
+control</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Configuration management" href="../../what-is-configuration-management-in-software-testing/index.html">Configuration
+management</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Risk" href="../../what-is-risk-in-software-testing/index.html">Risks
+in software testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Product risk" href="../../what-is-product-risk-in-software-testing/index.html">Product
+risk</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Project risk" href="../../what-is-project-risk-in-software-testing/index.html">Project
+risk</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Risk-based testing" href="../../what-is-risk-based-testing/index.html">Risk-based
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Risk analysis" href="../../what-is-risk-analysis/index.html">Risk
+analysis</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incident management" href="../../what-is-an-incident-in-software-testing/index.html">Incident
+management</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incident logging" href="../../what-is-incident-logging-or-how-to-log-an-incident-in-software-testing/index.html">Incident
+logging Or How to log an Incident</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What are incident reports?" href="../../what-are-incident-reports-in-software-testing/index.html">What
+are incident reports?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="How to write a good incident report?" href="../../how-to-write-a-good-incident-report-in-software-testing/index.html">How
+to write a good incident report?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What is test status report?" href="../../what-is-test-status-report-and-how-to-report-test-status/index.html">What
+is test status report?</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 6. Tool support for testing
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Types of testing tools" href="../../what-are-the-different-types-of-software-testing-tools/index.html">Types
+of test tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Tool
+for management of testing and tests
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test management tools" href="../../what-is-test-management-tools/index.html">Test
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Requirements management tools" href="../../what-is-requirements-management-tools/index.html">Requirements
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incident management tools" href="../../what-is-incident-management-tools/index.html">Incident
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Configuration management tools" href="../../what-is-configuration-management-tools/index.html">Configuration
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Static
+testing tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Review process support tools" href="../../what-is-review-process-support-tools/index.html">Review
+process support tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static analysis tools" href="../../what-is-static-analysis-tools-in-software-testing/index.html">Static
+analysis tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Modelling tools" href="../../what-is-modelling-tools-in-software-testing/index.html">Modelling
+tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Test
+specification tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design tools" href="../../what-is-test-design-tools-in-software-testing/index.html">Test
+design tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test data preparation tools" href="../../what-is-test-data-preparation-tools-in-software-testing/index.html">Test
+data preparation tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Test
+execution and logging tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test execution tools" href="../../what-is-test-execution-tools-in-software-testing/index.html">Test
+execution tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test harness tools" href="../../what-is-test-harness-unit-test-framework-tools-in-software-testing/index.html">Test
+harness/ Unit test framework tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test comparators" href="../../what-is-test-comparators-in-software-testing/index.html">Test
+comparators</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Coverage measurement tools" href="../../what-is-coverage-measurement-tools-in-software-testing/index.html">Coverage
+measurement tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Security tools" href="../../what-is-security-tools-in-software-testing/index.html">Security
+tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Performance
+and monitoring tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Dynamic analysis tools" href="../../what-is-dynamic-analysis-tools-in-software-testing/index.html">Dynamic
+analysis tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Performance,Load, stress testing" href="../../what-is-performance-testing-load-testing-and-stress-testing-tools-in-software-testing/index.html">Performance
+testing, Load testing and stress-testing tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Monitoring tools" href="../../what-is-monitoring-tools-in-software-testing/index.html">Monitoring
+tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Advantages of tools" href="../../what-are-the-advantages-or-benefits-of-using-testing-tools/index.html">Advantages
+and benefits of using testing tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Disadvantages of using testing tools" href="../../what-are-the-risks-or-disadvantages-of-using-the-testing-tools/index.html">Disadvantages
+and risks of testing tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Testing tool selection" href="../../what-are-the-important-factors-for-the-software-testing-tool-selection/index.html">Factors
+for software testing tool selection</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Testing tool evaluation" href="../../what-is-a-proof-of-concept-or-piloting-phase-for-tool-evaluation-in-software-testing/index.html">Proof-of-concept
+or piloting phase for tool evaluation</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-secondary"><h2 class="genesis-sidebar-title screen-reader-text">Secondary Sidebar</h2><section id="text-11" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Popular Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../../what-to-do-team-project-lead-is-burning-you-out/index7caf.html?ref=sidebar">What to do when Team Lead is burning you out?</a></li>
+<li><a href="../../interview-question-should-testers-be-paid-same-salary-as-developers/index7caf.html?ref=sidebar">Interview Question: Should Testers be paid same salary as Developers?</a></li>
+<li><a href="../../mobile-application-development-and-testing-checklist/index7caf.html?ref=sidebar">Mobile app testing checklist</a></li>
+<li><a href="../../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Waterfall model? When to use it?</a></li>
+<li><a href="../../what-are-the-software-development-life-cycle-sdlc-phases/index.html">SDLC</a></li>
+<li><a href="../../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">What is V-model? When to use it?</a></li>
+<li><a href="../../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Spiral model? When to use it?</a></li>
+<li><a href="../../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model - When to use it?</a>
+</li>
+</ul></div>
+</div></section>
+<section id="text-21" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Trending Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../../guide-to-crowdtesting-crowdsourced-testing/index.html">Guide to crowdtesting - Earn extra income as a freelance tester</a></li>
+<li><a href="../../what-is-cost-of-quality-in-software-testing/index.html">Cost of Quality (COQ)</a></li>
+<li><a href="../../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">Risk Based Testing - Identifying, Assessing, Mitigating & Managing Risks</a></li>
+<li><a href="../../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management</a></li>
+<li><a href="../../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></li>
+<li><a href="../../beginners-guide-to-career-in-software-testing-growth/index.html">Complete Guide to Career in Software Testing - Career Growth, Roles, Responsibilities</a></li>
+<li><a href="../../big-data-testing/index.html">Big Data Testing - Complete beginner's guide for Software Testers</a></li>
+<li><a href="../../test-case/index.html">What is a Test Case? Example Template, Types, Best Practices</a></li>
+</ul></div>
+</div></section>
+<section id="categories-3" class="widget widget_categories"><div class="widget-wrap"><h3 class="widgettitle widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-3"><a href="../../category/fundamentals-of-testing/index.html">Fundamentals of testing</a> (15)
+</li>
+<li class="cat-item cat-item-814"><a href="../../category/agile-testing-certification/index.html">ISTQB Agile Testing Certification</a> (31)
+</li>
+<li class="cat-item cat-item-724"><a href="../../category/istqb-certification/index.html" title="Everything you need to know regarding the ISTQB Exam. ISTQB Exam dates, locations, syllabus, basic qualifications or per-requisites etc">ISTQB Certification</a> (14)
+</li>
+<li class="cat-item cat-item-1387"><a href="../../category/istqb-test-manager/index.html">ISTQB Test Manager</a> (39)
+</li>
+<li class="cat-item cat-item-1962"><a href="../../category/java-tutorials/index.html">Java Tutorials</a> (4)
+</li>
+<li class="cat-item cat-item-777"><a href="../../category/software-testing-pro/index.html">Software Testing</a> (29)
+</li>
+<li class="cat-item cat-item-4"><a href="../../category/static-techniques/index.html">Static techniques</a> (13)
+</li>
+<li class="cat-item cat-item-6"><a href="../../category/test-design-techniques/index.html">Test design techniques</a> (29)
+</li>
+<li class="cat-item cat-item-7"><a href="../../category/test-management/index.html">Test Management</a> (22)
+</li>
+<li class="cat-item cat-item-8"><a href="../../category/testing-throughout-the-testing-life-cycle/index.html">Testing throughout the testing life cycle</a> (53)
+</li>
+<li class="cat-item cat-item-9"><a href="../../category/tool-support-for-testing/index.html">Tool support for testing</a> (22)
+</li>
+</ul>
+</div></section>
+<section id="text-18" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="9038480616" data-ad-format="auto"></ins>
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../../../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '780848918707398']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<script type="text/javascript">
+var sc_project=8529562; 
+var sc_invisible=1; 
+var sc_security="f7a5d401"; 
+</script>
+
+
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.4"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.27"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":false,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.4","plugin_mode":"AddThis","anonymous_profile_id":"wp-4f9ca8de0eb327b43ae8f1ff2269f594","page_info":{"template":"archives","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="../../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc254ae5c3cb48"></script><script type="text/javascript" src="../../wp-content/plugins/table-of-contents-plus/front.min6528.js?ver=1509"></script>
+<script type="text/javascript" src="../../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1"></script>
+<script type="text/javascript" src="../../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5"></script>
+<script type="text/javascript" src="../../wp-content/themes/genesis/lib/js/menu/superfish.args.mina305.js?ver=2.4.2"></script>
+<script type="text/javascript" src="../../wp-includes/js/wp-embed.min2754.js?ver=4.7.27"></script>
+</body>
+<!-- Mirrored from tryqa.com/tag/testing-of-software-structure/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:51:56 GMT -->
+</html>

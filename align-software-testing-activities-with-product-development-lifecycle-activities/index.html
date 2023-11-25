@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec">
+
+<!-- Mirrored from tryqa.com/align-software-testing-activities-with-product-development-lifecycle-activities/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:45:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>How to align software testing activities with product / development lifecycle activities?</title> <meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="http://s.w.org/" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; How to align software testing activities with product / development lifecycle activities? Comments Feed" href="feed/index.html" />
+<link rel="canonical" href="index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tryqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.27"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="eleven40-pro-css" href="../wp-content/themes/eleven40-pro/style950a.css?ver=2.2.3" type="text/css" media="all" />
+<link rel="stylesheet" id="toc-screen-css" href="../wp-content/plugins/table-of-contents-plus/screen.min6528.css?ver=1509" type="text/css" media="all" />
+<link rel="stylesheet" id="dashicons-css" href="../wp-includes/css/dashicons.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A400%7COswald%3A400&amp;ver=2.4.2" type="text/css" media="all" />
+<link rel="stylesheet" id="addthis_all_pages-css" href="../wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<script type="text/javascript" src="../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/skip-links2754.js?ver=4.7.27"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://tryqa.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type="text/javascript" src="../wp-content/themes/eleven40-pro/js/responsive-menu8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="../wp-content/plugins/optinmonster215a/assets/js/apid63f.js?ver=2.1.5"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed5512.json?url=http%3A%2F%2Ftryqa.com%2Falign-software-testing-activities-with-product-development-lifecycle-activities%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedb058?url=http%3A%2F%2Ftryqa.com%2Falign-software-testing-activities-with-product-development-lifecycle-activities%2F&amp;format=xml" />
+<link rel="icon" href="../wp-content/themes/eleven40-pro/images/favicon.ico" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38219227-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:404843,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+    var isTryMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isTryMobile.Android() || isTryMobile.BlackBerry() || isTryMobile.iOS() || isTryMobile.Opera() || isTryMobile.Windows());
+        }
+    };	
+</script>
+</head>
+<body class="post-template-default single single-post postid-2821 single-format-standard header-full-width sidebar-content-sidebar eleven40-pro-red" itemscope itemtype="http://schema.org/WebPage"><div class="site-container"><section><h2 class="screen-reader-text">Skip links</h2><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li><li><a href="#genesis-sidebar-secondary" class="screen-reader-shortcut"> Skip to secondary sidebar</a></li></ul></section>
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="../index.html"><img style="height:40px;display:inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAByCAMAAAAcYFjwAAACUlBMVEXmShn///8AAADmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShnmShk3R083R0/mShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShk3R083R083R083R083R083R0/mShnmShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShk3R083R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R08qzSuZAAAAxHRSTlMAAAAportFDnjk9pkiBlnPcg86tchOH5L0/KQqCW/d6H4RA0/J0lgyqrI3GYbw8oll19lkBUbBvECe+/eUJRR95g1dxUv+JJbqhSF346MtAVLLxE2t4pMe7j3UXALvghj5py/GcAuVtzzWYeuEFTB0M8xEqqCIRO40VXf4YDirgBY1szmQIGkEvWYim7vdZojMEfXndjMs8/0o8SdaBztVmY7sPz7pHRsa5eASznXe3NDaCrnt0Ul5+sp7K1FTn3+prDFja9gXxAAACGJJREFUeNrt3fl/E0UUAPA0sgJNyo0WCylbQKIICtYDylUERBbBq7JgOT1AsdKkJDUr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" alt="Genislab">Genislab Technologies</a></h1></div><h2 class="screen-reader-text">Main navigation</h2><nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation"><div class="wrap"><ul id="menu-topnav" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1910"><a href="../index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-1909" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><a title="Software Testing Blog" href="../category/software-testing-pro/index.html" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a title="ISTQB Foundation Certification" href="../istqb-certification-the-definitive-guide/index.html" itemprop="url"><span itemprop="name">ISTQB Foundation Level</span></a></li>
+<li id="menu-item-3025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3025"><a href="../istqb-advanced-level-test-manager-study-material/index.html" itemprop="url"><span itemprop="name">ISTQB Advanced Level Test Manager</span></a></li>
+<li id="menu-item-1837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="../istqb-agile-testing-certification/index.html" itemprop="url"><span itemprop="name">Agile Testing Tutorial</span></a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1663"><a href="../istqb-dumps-download-mock-tests-and-sample-question-papers/index.html" itemprop="url"><span itemprop="name">ISTQB Dumps &#8211; Mock Tests</span></a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1155"><a href="../contact-us/index.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+<ul class="sub-menu">
+<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="../privacy-policy/index.html" itemprop="url"><span itemprop="name">Privacy Policy</span></a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="../terms-of-use/index.html" itemprop="url"><span itemprop="name">Terms of Use</span></a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../disclaimer/index.html" itemprop="url"><span itemprop="name">Disclaimer</span></a></li>
+<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="../about-us/index.html" itemprop="url"><span itemprop="name">About Us</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><div class="site-inner"><div class="wrap"><h2 class="site-description" itemprop="description">Study material for ISTQB Exam Certification Foundation level, Premium &amp; Free for ISTQB and ASTQB Exam, Certification questions, answers, software testing tutorials and more</h2><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-2821 post type-post status-publish format-standard category-istqb-test-manager tag-agile-model tag-align-software-testing-activities tag-customer-product-integration-testing tag-development-lifecycle-activities tag-incremental-lifecycle tag-incremental-models tag-istqb-advanced-level tag-istqb-advanced-level-exam tag-istqb-advanced-level-test-manager tag-istqb-test-manager-exam tag-iterative-models tag-product-lifecycle-activities tag-qa-manager tag-sequential-models tag-spiral-model tag-test-level-features tag-test-manager-certification tag-test-manager-roles-and-responsibilities entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How Do Software Development Lifecycle Activities & Work Products Affect Testing?"><a href="../software-development-lifecycle-activities-work-products-affect-testing/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: How to manage Non-Functional Testing?"><a href="../how-to-manage-non-functional-testing/index.html" rel="next">Next Topic &raquo;</a></div></div><h1 class="entry-title" itemprop="headline">How to align software testing activities with product / development lifecycle activities?</h1>
+</header><div class="entry-content" itemprop="text"><div class="at-above-post addthis_tool" data-url="http://tryqa.com/align-software-testing-activities-with-product-development-lifecycle-activities/"></div><p>Testing must be an essential part of any project, irrespective of whether it uses any models for software development or not.  Test Manager should completely understand the system development lifecycle being used in the organization so that <strong>testing activities may be correctly aligned</strong> to the lifecycle.<span id="more-2821"></span></p>
+<div style><center>
+<style>
+  .responsive-test { display: block;}
+  @media(max-width: 768px) { .responsive-test { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p>Let us look at some of the models that may be used for developing software.</p>
+<h3>Table of contents</h3>
+<ol>
+<li><a href="#sequential_models">Sequential models</a></li>
+<li><a href="#iterative_models">Iterative models</a></li>
+<li><a href="#agile_model">Agile model</a></li>
+<li><a href="#spiral_model">Spiral model</a></li>
+</ol>
+<h2><a name="sequential_models"></a>Sequential models</h2>
+<p>Examples include <a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">V-model</a>, W-model, <a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">Waterfall model</a>, etc. As you must be aware, every model has many developmental phases. Each phase has multiple activities associated with it, like requirement gathering, system design, design implementation and finally testing – <a href="../what-is-unit-testing/index.html">unit testing</a>, <a href="../what-is-integration-testing/index.html">integration testing</a>, <a href="../what-is-system-testing/index.html">system testing</a> and <a href="../what-is-acceptance-testing/index.html">acceptance testing</a>.</p>
+<div style><center>
+<style>
+  .responsive-random { display: block;}
+  @media(min-width: 780px) { .responsive-random { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle responsive-random" data-ad-client="ca-pub-4095780395347512" data-ad-slot="7347353014" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p><strong>In sequential model</strong>, all the developmental activities of a phase <strong>must complete before the next phase can begin</strong>.</p>
+<p><strong>Testing activities</strong> like planning, analysis, design and implementation for products using such models <strong>happen simultaneously with project activities</strong> like planning, requirements analysis, software design, database design and coding.</p>
+<p>The <strong>extent of overlapping</strong> is decided according to the <a href="../what-are-software-testing-levels/index.html"><strong>testing level</strong></a>. As explained in ISTQB Foundation Level syllabus as well as in previous topics, <strong>test execution occurs sequentially</strong>.</p>
+<h2><a name="iterative_models"></a>Iterative models</h2>
+<p>They are also called <a href="../what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/index.html"><strong>incremental models</strong></a>. Examples include <a href="../what-is-rad-model-advantages-disadvantages-and-when-to-use-it/index.html">Rapid Application Development (RAD)</a>, Rational Unified Process (RUP), etc. In iterative model, features that are to be implemented are grouped together on the basis of some criteria like business priority, business risk, etc.</p>
+<p>After the grouping, the project phases as well as their work products and task are <strong>implemented for each group, together</strong>. The phases for each feature group may occur sequentially or simultaneously and the iterations may be sequential or overlapped.</p>
+<p>When the project is initiated, <strong>testing activities</strong> like high-level planning and analysis is <strong>done simultaneously with project activities</strong> like planning and business or requirement analysis.</p>
+<p>Many times the test itself is implemented in an overlapping fashion with the test levels.</p>
+<p>This means that <strong>test levels start as early as practically possible</strong> and can continue even after higher test levels have commenced.</p>
+<h2><a name="agile_model"></a>Agile model</h2>
+<p>Examples include <a href="../what-are-agile-software-development-approaches-scrum-kanban-xp-explained/index.html">SCRUM, Extreme Programming (XP)</a>, etc. <strong>Agile product development model</strong> has incremental lifecycle where <strong>increments are quite short</strong>, sometimes just two to four weeks.</p>
+<p>As in case of iterative or incremental models, <strong>activities and work products</strong> for each iteration <strong>must finish before the next phase can start</strong>.</p>
+<p>Testing in Agile models is same as that for <a href="../what-is-iterative-model-advantages-disadvantages-and-when-to-use-it/index.html">iterative models</a> but there is a greater overlapping of the test activities, including execution, with product development activities.</p>
+<p>However, <strong>all tasks of an iteration</strong>, which also comprises of testing, <strong>must finish before the next iteration can begin</strong>. Test Managers in an Agile environment, must play a technical consultant’s role rather than a direct administration role.</p>
+<h2><a name="spiral_model"></a>Spiral model</h2>
+<p>In <a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">Spiral model</a>, prototyping is done initially to ascertain project feasibility as well as to try out new design and implementation ideas.</p>
+<p>The <strong>prototyping is done</strong> depending on <strong>business priority level</strong> and <strong>technical risks</strong> involved. Prototypes helps the teams to identify the technical difficulties that could not be solved.</p>
+<p>After these problems are fixed, the project can adopt an iterative or sequential model.</p>
+<p>Let us take an example of applying ISTQB <a href="../what-is-fundamental-test-process-in-software-testing/index.html">testing process</a> to a system using V-model for development. The <strong>test process can be executed</strong> as follows:</p>
+<ul>
+<li><strong>Project planning activities and System test planning</strong> tasks for the system can take place together at the same time. Untill system test execution and <a href="../what-are-test-closure-activities-evaluating-exit-criteria-and-reporting/index.html">test closure activities</a> are complete, <a href="../what-is-test-monitoring-and-test-control/index.html#what_is_test_control">Test control</a> will continue to be in effect.</li>
+<li><strong>Analysis and designing of system test activities</strong> can happen with defining specification for requirements, system, high-level (architectural) design and low-level (component) design.</li>
+<li>With the progress of system design, <strong>activities related to system <a href="../what-is-test-implementation-advantages-disadvantage-of-early-implementation/index.html">test implementation</a></strong> may also begin. However, most of the activities would take place during programming and component testing. A few days before system test execution starts, system test implementation tasks come to an end.</li>
+<li>After system test entry conditions for the system are fulfilled or deliberately ignored, <strong>system <a href="../what-is-test-execution/index.html">test execution</a> tasks can start</strong>. This means that at this state, <a href="../what-is-component-testing/index.html">testing for individual components</a> as well as <a href="../what-is-component-integration-testing/index.html">component integration</a> is complete. The <a href="../what-is-system-testing/index.html">system test</a> execution extends till test exit conditions are also fulfilled.</li>
+<li><strong>Assessment of system test exit conditions</strong> and reporting and <strong>recording of test results</strong> take place continuously, all the way through the system test execution. The frequency of assessment and reporting increase as deadline for the project approaches.</li>
+<li>After system test exit conditions are fulfilled and system test execution is announced to be complete, <strong>system <a href="../what-are-test-closure-activities-evaluating-exit-criteria-and-reporting/index.html">test closure tasks</a></strong> are carried out. Sometimes acceptance testing may be completed before system test closure related tasks can be completed.</li>
+</ul>
+<p>Here we took the example of V-model above.</p>
+<p>For an incremental or iterative model, same activities are performed but scheduling and degree may vary.</p>
+<ul>
+<li>For instance, it may be inefficient to implement the complete test environment at the start of the project, rather than as needed depending on iteration level.</li>
+<li><strong>Scope of fundamental test activities increases</strong> the earlier the planning is done in initial stages, for any incremental and iterative model.</li>
+<li>Besides planning, <strong>test execution</strong> and then reporting for each project may be <strong>decided by the <a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">lifecycle model</a></strong> that the team is using.</li>
+</ul>
+<p>For instance, <strong>in an incremental lifecycle</strong>, reporting and post-iteration review activities for each iteration should be done before the next iteration begins.</p>
+<ul>
+<li>Each <strong>iteration is treated as a small project</strong> in itself.</li>
+<li>This enables the team to adjust each iteration on the basis of what happened during the previous iteration.</li>
+<li>As each iteration may be short and have time constraints, reporting and post-iteration reviews could be short in terms of time and effort.</li>
+<li>However, they must not be skipped completely, so that overall test process may be tracked and problem areas may be identified as soon as possible.</li>
+<li>Issues arising out of system processes can affect the next iteration if remedial actions are not taken.</li>
+</ul>
+<p><a href="../what-is-test-strategy-types-of-strategies-with-examples/index.html"><strong>Test strategy</strong></a> may contain information about <strong>how testing activities may be aligned</strong> with other lifecycle activities.</p>
+<p><strong>Test Manager</strong> is responsible for <strong>ensuring this alignment</strong> for each project at every test level as well as any randomly selected group of development lifecycle and test processes. The groups may be selected during test planning or project planning phase.</p>
+<p>According the requirements of the project, product or organization, <strong>extra test levels</strong> other than those explained in <a href="../istqb-certification-the-definitive-guide/index.html">syllabus for ISTQB Foundation Level</a> <strong>may be needed</strong>, like:</p>
+<ul>
+<li>Integration testing of hardware-software</li>
+<li>System integration testing</li>
+<li>Feature interaction testing</li>
+<li>Customer product integration testing</li>
+</ul>
+<p>Test Manager must ensure that <strong>every test level must have these features defined</strong>:</p>
+<ul>
+<li>Feasible goals for every test objective</li>
+<li>Test items and the scope of the test</li>
+<li><a href="../what-is-test-analysis-or-how-to-identify-the-test-conditions/index.html">Basis of the test</a> and <a href="../what-is-traceability-in-software-testing/index.html">traceability</a> or a method for evaluating test basis coverage</li>
+<li>Criteria or condition for test entry and test exit</li>
+<li>Deliverables of testing like reports of test results</li>
+<li><a href="../test-selection-techniques-requirement-model-based-checklists-reactive-testing/index.html">Test techniques</a> to be used must be clearly defined as well as &#8211; how using the test technique, correct degree of coverage can be ensured, should also be documented</li>
+<li>Test entry and test exit conditions, reporting of results along with measurement and <a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">test metrics </a>applicable to test objectives.</li>
+<li>Where relevant, test tools for each test task</li>
+<li>Test environments and any other resources that will be required</li>
+<li>People both internal and external to the test team who are responsible for the testing</li>
+<li>Where relevant, necessary compliance with standards, regulatory requirements, organizational standards etc.</li>
+</ul>
+<p>In the next topic we will learn <a href="../how-to-manage-non-functional-testing/index.html">how to manage non-functional testing.</a></p>
+<h4>Other popular articles:</h4>
+<ul class="similar-posts">
+<li><a href="../what-is-iterative-model-advantages-disadvantages-and-when-to-use-it/index.html" rel="bookmark" title="What is Iterative model- advantages, disadvantages and when to use it?">What is Iterative model- advantages, disadvantages and when to use it?</a></li>
+<li><a href="../what-are-the-software-development-models/index.html" rel="bookmark" title="What are the Software Development Models?">What are the Software Development Models?</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html" rel="bookmark" title="What is V-model- advantages, disadvantages and when to use it?">What is V-model- advantages, disadvantages and when to use it?</a></li>
+<li><a href="../what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/index.html" rel="bookmark" title="What is Incremental model- advantages, disadvantages and when to use it?">What is Incremental model- advantages, disadvantages and when to use it?</a></li>
+<li><a href="../istqb-advanced-level-test-manager-study-material/index.html" rel="bookmark" title="ISTQB Advanced Level Test Manager Study Material">ISTQB Advanced Level Test Manager Study Material</a></li>
+</ul>
+<p></p>
+
+<div style><center><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="8321861017" data-ad-format="rectangle"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div><div class="at-below-post addthis_tool" data-url="http://tryqa.com/align-software-testing-activities-with-product-development-lifecycle-activities/"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="../category/istqb-test-manager/index.html" rel="category tag">ISTQB Test Manager</a></span> <span class="entry-tags">Tagged With: <a href="../tag/agile-model/index.html" rel="tag">Agile model</a>, <a href="../tag/align-software-testing-activities/index.html" rel="tag">Align Software Testing Activities</a>, <a href="../tag/customer-product-integration-testing/index.html" rel="tag">Customer product integration testing</a>, <a href="../tag/development-lifecycle-activities/index.html" rel="tag">Development Lifecycle Activities</a>, <a href="../tag/incremental-lifecycle/index.html" rel="tag">incremental lifecycle</a>, <a href="../tag/incremental-models/index.html" rel="tag">incremental models</a>, <a href="../tag/istqb-advanced-level/index.html" rel="tag">ISTQB Advanced Level</a>, <a href="../tag/istqb-advanced-level-exam/index.html" rel="tag">ISTQB Advanced level exam</a>, <a href="../tag/istqb-advanced-level-test-manager/index.html" rel="tag">ISTQB Advanced Level Test Manager</a>, <a href="../tag/istqb-test-manager-exam/index.html" rel="tag">ISTQB Test Manager Exam</a>, <a href="../tag/iterative-models/index.html" rel="tag">Iterative models</a>, <a href="../tag/product-lifecycle-activities/index.html" rel="tag">product lifecycle activities</a>, <a href="../tag/qa-manager/index.html" rel="tag">qa manager</a>, <a href="../tag/sequential-models/index.html" rel="tag">Sequential models</a>, <a href="../tag/spiral-model/index.html" rel="tag">Spiral model</a>, <a href="../tag/test-level-features/index.html" rel="tag">test level features</a>, <a href="../tag/test-manager-certification/index.html" rel="tag">Test Manager Certification</a>, <a href="../tag/test-manager-roles-and-responsibilities/index.html" rel="tag">Test Manager Roles and Responsibilities</a></span></p><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How Do Software Development Lifecycle Activities & Work Products Affect Testing?"><a href="../software-development-lifecycle-activities-work-products-affect-testing/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: How to manage Non-Functional Testing?"><a href="../how-to-manage-non-functional-testing/index.html" rel="next">Next Topic &raquo;</a></div></div></footer></article><h2 class="screen-reader-text">Reader Interactions</h2> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3> <form action="http://tryqa.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value size="30" maxlength="245" aria-required="true" required="required" /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type="hidden" name="comment_post_ID" value="2821" id="comment_post_ID" />
+<input type="hidden" name="comment_parent" id="comment_parent" value="0" />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dc3d93c92a" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="67" /></p> </form>
+</div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search</h3>
+<div class="textwidget"><form class="iec-search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://tryqa.com/" role="search">
+<meta itemprop="target" content="../index1f8a.html?s={s}">
+<input itemprop="query-input" name="s" placeholder=" Search this website " type="search">&nbsp;&nbsp;
+<input value="Search" type="submit">
+</form></div>
+</div></section>
+<section id="advanced_text-5" class="widget advanced_text"><div class="widget-wrap"><div class="AdvancedText"><h3 class="widgettitle widget-title">ISTQB Advanced Level Test Manager Study Material</h3>
+<table border="0" cellspacing="1">
+<tbody>
+<tr><td class="menuItem"><a title="ISTQB Advanced Level Test Manager Study Material" href="../istqb-advanced-level-test-manager-study-material/index.html">ISTQB Advanced Level Test Manager - Introduction</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 1: Testing Process
+</td>
+</tr>
+<tr><td class="menuItem">1. <a title="What is Test Planning? What are Work Products in Testing?" href="../what-is-test-planning-what-are-work-products-in-testing/index.html">What is Test Planning? What are Work Products in Testing?</a></td></tr>
+<tr><td class="menuItem">2. <a href="../what-is-test-monitoring-and-test-control/index.html">What is Test Monitoring and Test Control?</a></td></tr>
+<tr><td class="menuItem">3. <a href="../what-is-test-condition-test-analysis-advantages-disadvantages-level-of-detail/index.html">What is Test Condition & Test Analysis? Advantages, Disadvantages & Level of Detail</a></td></tr>
+<tr><td class="menuItem">4. <a href="../what-is-test-design-when-to-create-it/index.html">What is Test Design? When to create Test Design?</a></td></tr>
+<tr><td class="menuItem">5. <a href="../what-is-test-implementation-advantages-disadvantage-of-early-implementation/index.html">What is Test Implementation? Advantages & Disadvantage of early implementation</a></td></tr>
+<tr><td class="menuItem">6. <a href="../what-is-test-execution/index.html">What is Test Execution?</a></td></tr>
+<tr><td class="menuItem">7. <a href="../what-are-test-closure-activities-evaluating-exit-criteria-and-reporting/index.html">What Are Test Closure Activities? Evaluating Exit Criteria and Reporting</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 2: Test Management
+</td>
+</tr>
+<tr><td class="menuItem">8. <a href="../how-to-identify-stakeholders-for-testing/index.html">Who are the stakeholders in software testing? How to identify them?</a></td></tr>
+<tr><td class="menuItem">9. <a href="../software-development-lifecycle-activities-work-products-affect-testing/index.html">How Do Software Development Lifecycle Activities & Work Products Affect Testing?</a></td></tr>
+<tr><td class="menuItem">10. <a href="index.html">How to align software testing activities with product / development lifecycle activities?</a></td></tr>
+<tr><td class="menuItem">11. <a href="../how-to-manage-non-functional-testing/index.html">How to manage Non-Functional Testing?</a></td></tr>
+<tr><td class="menuItem">12. <a href="../how-to-manage-experience-based-testing-what-are-test-sessions/index.html">How to manage Experience Based Testing? What are Test Sessions?</a></td></tr>
+<tr><td class="menuItem">13. <a href="../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">What is Risk Based Testing? Identifying, Assessing, Minimizing & Managing Risks</a></td></tr>
+<tr><td class="menuItem">14. <a href="../what-are-the-different-risk-based-testing-rbt-techniques/index.html">What are the different Risk Based Testing (RBT) Techniques?</a></td></tr>
+<tr><td class="menuItem">15. <a href="../test-selection-techniques-requirement-model-based-checklists-reactive-testing/index.html">Test selection techniques - Requirement / Model based, Checklists, Reactive testing</a></td></tr>
+<tr><td class="menuItem">16. <a href="../how-to-perform-test-prioritization-effort-allocation-in-test-process/index.html">How to perform test prioritization & effort allocation in test process?</a></td></tr>
+<tr><td class="menuItem">17. <a href="../what-is-test-policy-what-does-it-contain/index.html">What is Test Policy? What does it contain?</a></td></tr>
+<tr><td class="menuItem">18. <a href="../what-is-test-strategy-types-of-strategies-with-examples/index.html">What is Test Strategy? Types of strategies with examples</a></td></tr>
+<tr><td class="menuItem">19. <a href="../what-are-master-test-plans-level-test-plan-examples-when-to-use/index.html">What are Master Test Plans & Level Test Plan? Examples, When to use</a></td></tr>
+<tr><td class="menuItem">20. <a href="../what-is-test-estimation-factors-and-techniques/index.html">What is test estimation? Related Factors, Estimation Techniques</a></td></tr>
+<tr><td class="menuItem">21. <a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></td></tr>
+<tr><td class="menuItem">22. <a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of quality</a></td></tr>
+<tr><td class="menuItem">23. <a href="../what-are-distributed-outsourced-and-insourced-testing/index.html">What are Distributed, Outsourced and Insourced Testing?</a></td></tr>
+<tr><td class="menuItem">24. <a href="../manage-apply-industry-standards-to-software-testing-projects/index.html">How to manage & apply industry standards to software testing projects?</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 3: Reviews
+</td>
+</tr>
+<tr><td class="menuItem">25. <a href="../manage-formal-reviews-management-audits-skills-metrics-responsibilities/index.html">How to manage formal reviews & management audits? Skills, metrics, responsibilities</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 4: Defect Management
+</td>
+</tr>
+<tr><td class="menuItem">26. <a href="../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management for Test / QA Managers</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 5: Improving the Testing Process
+</td>
+</tr>
+<tr><td class="menuItem">27. <a href="../software-testing-process-improvements-for-test-qa-managers/index.html">Software Testing Process Improvements for Test / QA Managers</a></td></tr>
+<tr><td class="menuItem">28. <a href="../ideal-model-for-test-process-improvement/index.html">What is the IDEAL model for test process improvement?</a></td></tr>
+<tr><td class="menuItem">29. <a href="../software-testing-process-improvement-models-tmmi-tpi-next-ctp-step/index.html">Software testing process improvement models - TMMi, TPI Next, CTP, STEP</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 6: Test Tools and Automation
+</td>
+</tr>
+<tr><td class="menuItem">30. <a href="../select-testing-tools-open-source-vendor-tools-custom-development/index.html">How to select a testing tool? Open Source, Vendor Tools & Custom Development</a></td></tr>
+<tr><td class="menuItem">31. <a href="../testing-tool-roi-one-time-recurring-costs-risks-related-to-tools/index.html">What is Testing Tool ROI? One time/Recurring Costs & Risks related to tools?</a></td></tr>
+<tr><td class="menuItem">32. <a href="../parameters-for-selecting-a-testing-tool/index.html">What are the parameters for selecting a testing tool?</a></td></tr>
+<tr><td class="menuItem">33. <a href="../manage-software-testing-tool-lifecycle-and-tool-metrics/index.html">How to manage software testing tool lifecycle and tool metrics?</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 7: People Skills
+</td>
+</tr>
+<tr><td class="menuItem">34. <a href="../assess-manage-develop-skills-in-testers/index.html">How to assess, manage & develop skills in testers as a Test Manager?</a></td></tr>
+<tr><td class="menuItem">35. <a href="../manage-hiring-team-dynamics-as-test-manager/index.html">How to manage hiring & team dynamics as a Test Manager?</a></td></tr>
+<tr><td class="menuItem">36. <a href="../manage-testing-team-different-levels-of-independence/index.html">How to manage testing team at different levels of independence?</a></td></tr>
+<tr><td class="menuItem">37. <a href="../testing-team-motivation-for-test-qa-managers/index.html">How to motivate software testing team as a Test / QA Manager?</a></td></tr>
+<tr><td class="menuItem">38. <a href="../how-to-communicate-effectively-as-a-test-qa-manager/index.html">How to communicate effectively as a Test / QA Manager?</a></td></tr>
+</tbody>
+</table></div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-secondary"><h2 class="genesis-sidebar-title screen-reader-text">Secondary Sidebar</h2><section id="text-11" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Popular Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../what-to-do-team-project-lead-is-burning-you-out/index7caf.html?ref=sidebar">What to do when Team Lead is burning you out?</a></li>
+<li><a href="../interview-question-should-testers-be-paid-same-salary-as-developers/index7caf.html?ref=sidebar">Interview Question: Should Testers be paid same salary as Developers?</a></li>
+<li><a href="../mobile-application-development-and-testing-checklist/index7caf.html?ref=sidebar">Mobile app testing checklist</a></li>
+<li><a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Waterfall model? When to use it?</a></li>
+<li><a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">SDLC</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">What is V-model? When to use it?</a></li>
+<li><a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Spiral model? When to use it?</a></li>
+<li><a href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model - When to use it?</a>
+</li>
+</ul></div>
+</div></section>
+<section id="text-21" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Trending Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html">Guide to crowdtesting - Earn extra income as a freelance tester</a></li>
+<li><a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of Quality (COQ)</a></li>
+<li><a href="../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">Risk Based Testing - Identifying, Assessing, Mitigating & Managing Risks</a></li>
+<li><a href="../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management</a></li>
+<li><a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></li>
+<li><a href="../beginners-guide-to-career-in-software-testing-growth/index.html">Complete Guide to Career in Software Testing - Career Growth, Roles, Responsibilities</a></li>
+<li><a href="../big-data-testing/index.html">Big Data Testing - Complete beginner's guide for Software Testers</a></li>
+<li><a href="../test-case/index.html">What is a Test Case? Example Template, Types, Best Practices</a></li>
+</ul></div>
+</div></section>
+<section id="categories-3" class="widget widget_categories"><div class="widget-wrap"><h3 class="widgettitle widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-3"><a href="../category/fundamentals-of-testing/index.html">Fundamentals of testing</a> (15)
+</li>
+<li class="cat-item cat-item-814"><a href="../category/agile-testing-certification/index.html">ISTQB Agile Testing Certification</a> (31)
+</li>
+<li class="cat-item cat-item-724"><a href="../category/istqb-certification/index.html" title="Everything you need to know regarding the ISTQB Exam. ISTQB Exam dates, locations, syllabus, basic qualifications or per-requisites etc">ISTQB Certification</a> (14)
+</li>
+<li class="cat-item cat-item-1387"><a href="../category/istqb-test-manager/index.html">ISTQB Test Manager</a> (39)
+</li>
+<li class="cat-item cat-item-1962"><a href="../category/java-tutorials/index.html">Java Tutorials</a> (4)
+</li>
+<li class="cat-item cat-item-777"><a href="../category/software-testing-pro/index.html">Software Testing</a> (29)
+</li>
+<li class="cat-item cat-item-4"><a href="../category/static-techniques/index.html">Static techniques</a> (13)
+</li>
+<li class="cat-item cat-item-6"><a href="../category/test-design-techniques/index.html">Test design techniques</a> (29)
+</li>
+<li class="cat-item cat-item-7"><a href="../category/test-management/index.html">Test Management</a> (22)
+</li>
+<li class="cat-item cat-item-8"><a href="../category/testing-throughout-the-testing-life-cycle/index.html">Testing throughout the testing life cycle</a> (53)
+</li>
+<li class="cat-item cat-item-9"><a href="../category/tool-support-for-testing/index.html">Tool support for testing</a> (22)
+</li>
+</ul>
+</div></section>
+<section id="text-18" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="9038480616" data-ad-format="auto"></ins>
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '780848918707398']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=780848918707398&amp;ev=PixelInitialized" /></noscript>
+
+<script type="text/javascript">
+var sc_project=8529562; 
+var sc_invisible=1; 
+var sc_security="f7a5d401"; 
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/8529562/0/f7a5d401/1/"
+alt="Web Analytics"></a></div></noscript>
+
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.4"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.27"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":false,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.4","plugin_mode":"AddThis","anonymous_profile_id":"wp-4f9ca8de0eb327b43ae8f1ff2269f594","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc254ae5c3cb48"></script><script type="text/javascript" src="../wp-content/plugins/table-of-contents-plus/front.min6528.js?ver=1509"></script>
+<script type="text/javascript" src="../wp-includes/js/comment-reply.min2754.js?ver=4.7.27"></script>
+<script type="text/javascript" src="../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.args.mina305.js?ver=2.4.2"></script>
+<script type="text/javascript" src="../wp-includes/js/wp-embed.min2754.js?ver=4.7.27"></script>
+<script async="async" type="text/javascript" src="../wp-content/plugins/akismet/_inc/form0235.js?ver=4.1.1"></script>
+</body>
+<!-- Mirrored from tryqa.com/align-software-testing-activities-with-product-development-lifecycle-activities/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:45:53 GMT -->
+</html>

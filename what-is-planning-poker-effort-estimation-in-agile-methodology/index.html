@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec">
+
+<!-- Mirrored from tryqa.com/what-is-planning-poker-effort-estimation-in-agile-methodology/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:48:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>What is Planning Poker? Effort estimation in Agile methodology</title> <meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="http://s.w.org/" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="canonical" href="index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tryqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.27"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="eleven40-pro-css" href="../wp-content/themes/eleven40-pro/style950a.css?ver=2.2.3" type="text/css" media="all" />
+<link rel="stylesheet" id="toc-screen-css" href="../wp-content/plugins/table-of-contents-plus/screen.min6528.css?ver=1509" type="text/css" media="all" />
+<link rel="stylesheet" id="dashicons-css" href="../wp-includes/css/dashicons.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A400%7COswald%3A400&amp;ver=2.4.2" type="text/css" media="all" />
+<link rel="stylesheet" id="addthis_all_pages-css" href="../wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min2754.css?ver=4.7.27" type="text/css" media="all" />
+<script type="text/javascript" src="../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/skip-links2754.js?ver=4.7.27"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://tryqa.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type="text/javascript" src="../wp-content/themes/eleven40-pro/js/responsive-menu8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="../wp-content/plugins/optinmonster215a/assets/js/apid63f.js?ver=2.1.5"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed5b4b.json?url=http%3A%2F%2Ftryqa.com%2Fwhat-is-planning-poker-effort-estimation-in-agile-methodology%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed0b19?url=http%3A%2F%2Ftryqa.com%2Fwhat-is-planning-poker-effort-estimation-in-agile-methodology%2F&amp;format=xml" />
+<link rel="icon" href="../wp-content/themes/eleven40-pro/images/favicon.ico" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38219227-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:404843,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+    var isTryMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isTryMobile.Android() || isTryMobile.BlackBerry() || isTryMobile.iOS() || isTryMobile.Opera() || isTryMobile.Windows());
+        }
+    };	
+</script>
+</head>
+<body class="post-template-default single single-post postid-1696 single-format-standard header-full-width sidebar-content-sidebar eleven40-pro-red" itemscope itemtype="http://schema.org/WebPage"><div class="site-container"><section><h2 class="screen-reader-text">Skip links</h2><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li><li><a href="#genesis-sidebar-secondary" class="screen-reader-shortcut"> Skip to secondary sidebar</a></li></ul></section>
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="../index.html"><img style="height:40px;display:inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAByCAMAAAAcYFjwAAACUlBMVEXmShn///8AAADmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShnmShk3R083R0/mShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShk3R083R083R083R083R083R0/mShnmShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShk3R083R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R08qzSuZAAAAxHRSTlMAAAAportFDnjk9pkiBlnPcg86tchOH5L0/KQqCW/d6H4RA0/J0lgyqrI3GYbw8oll19lkBUbBvECe+/eUJRR95g1dxUv+JJbqhSF346MtAVLLxE2t4pMe7j3UXALvghj5py/GcAuVtzzWYeuEFTB0M8xEqqCIRO40VXf4YDirgBY1szmQIGkEvWYim7vdZojMEfXndjMs8/0o8SdaBztVmY7sPz7pHRsa5eASznXe3NDaCrnt0Ul5+sp7K1FTn3+prDFja9gXxAAACGJJREFUeNrt3fl/E0UUAPA0sgJNyo0WCylbQKIICtYDylUERBbBq7JgOT1AsdKkJDUr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" alt="Genislab">Genislab Technologies</a></h1></div><h2 class="screen-reader-text">Main navigation</h2><nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation"><div class="wrap"><ul id="menu-topnav" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1910"><a href="../index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-1909" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><a title="Software Testing Blog" href="../category/software-testing-pro/index.html" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a title="ISTQB Foundation Certification" href="../istqb-certification-the-definitive-guide/index.html" itemprop="url"><span itemprop="name">ISTQB Foundation Level</span></a></li>
+<li id="menu-item-3025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3025"><a href="../istqb-advanced-level-test-manager-study-material/index.html" itemprop="url"><span itemprop="name">ISTQB Advanced Level Test Manager</span></a></li>
+<li id="menu-item-1837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="../istqb-agile-testing-certification/index.html" itemprop="url"><span itemprop="name">Agile Testing Tutorial</span></a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1663"><a href="../istqb-dumps-download-mock-tests-and-sample-question-papers/index.html" itemprop="url"><span itemprop="name">ISTQB Dumps &#8211; Mock Tests</span></a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1155"><a href="../contact-us/index.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+<ul class="sub-menu">
+<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="../privacy-policy/index.html" itemprop="url"><span itemprop="name">Privacy Policy</span></a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="../terms-of-use/index.html" itemprop="url"><span itemprop="name">Terms of Use</span></a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../disclaimer/index.html" itemprop="url"><span itemprop="name">Disclaimer</span></a></li>
+<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="../about-us/index.html" itemprop="url"><span itemprop="name">About Us</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><div class="site-inner"><div class="wrap"><h2 class="site-description" itemprop="description">Study material for ISTQB Exam Certification Foundation level, Premium &amp; Free for ISTQB and ASTQB Exam, Certification questions, answers, software testing tutorials and more</h2><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-1696 post type-post status-publish format-standard category-agile-testing-certification tag-agile-planning-poker tag-effort-estimation tag-effort-estimation-in-agile-methodology tag-effort-estimation-in-agile-with-planning-poker tag-effort-estimation-of-projects tag-planning-poker tag-planning-poker-cards tag-planning-poker-estimation tag-planning-poker-estimation-in-agile tag-planning-poker-scrum tag-planning-poker-technique tag-poker-planning tag-scrum-methodology tag-scrum-planning-poker tag-scrum-process tag-scrum-tools tag-software-effort-estimation entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How to Assess Quality Risks in Agile methodology?"><a href="../how-to-assess-quality-risks-in-agile-methodology/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: What are Testing Techniques in Agile development?"><a href="../what-are-testing-techniques-in-agile-development/index.html" rel="next">Next Topic &raquo;</a></div></div><h1 class="entry-title" itemprop="headline">What is Planning Poker? Effort estimation in Agile methodology</h1>
+</header><div class="entry-content" itemprop="text"><div class="at-above-post addthis_tool" data-url="http://tryqa.com/what-is-planning-poker-effort-estimation-in-agile-methodology/"></div><p>In the Sprint zero as a part of release planning, the Agile team has come up with effort estimation for all the stories in the release. The Planning Poker is a popular method of effort estimation which ensures that the entire team is involved in the estimation exercise.<span id="more-1696"></span></p>
+<div style><center>
+<style>
+  .responsive-test { display: block;}
+  @media(max-width: 768px) { .responsive-test { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p>The Planning Poker is a consensus based technique and is used to size the stories (in terms of story point) or effort estimate (in terms of days).</p>
+<ul>
+<li>It is a non-liner scale of estimation technique.</li>
+<li>Fibonacci series is used while playing the planning poker with higher numbers rounded off (0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 60, 100).</li>
+<li>For example : You have been asked to provide your estimate for a Story, your estimates have to be rounded off to one of the number of the Fibonacci series.</li>
+<li>If you feel the task will take 10 days to complete, the estimate you give will have to be either 8 or 13.</li>
+</ul>
+<p>Each team member takes a deck of cards and estimates the effort independently for each story.</p>
+<div style><center>
+<style>
+  .responsive-random { display: block;}
+  @media(min-width: 780px) { .responsive-random { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle responsive-random" data-ad-client="ca-pub-4095780395347512" data-ad-slot="7347353014" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<ul>
+<li>The stories are wall mapped and arranged relatively with respect to small story which can be coded and tested in a day &#8211; taken as a reference.</li>
+<li>All the stories are arranged relatively with respect to small story from left to right.</li>
+<li>The parameters on which the stories are estimated are complexity, ideal time taken (in days) and uncertainty.</li>
+<li>It is always a good idea to break the bigger stories into small ones to make them fit into a Sprint.</li>
+</ul>
+<p>The following are the steps followed by the team while using the Planning Poker technique:</p>
+<ol start="1">
+<li>Product Owner explains the story and its acceptance criteria in detail</li>
+<li>Team discusses the work involved and asks questions to the Product Owner</li>
+<li>Everyone estimates individually without getting influenced by others.</li>
+<li>Each team member selects a poker card that reflects their estimate of the effort required for that story</li>
+<li>Everyone reveals their estimates simultaneously.</li>
+<li>Team members who voted with the lowest and highest estimates explain their reasoning behind their estimation and any misunderstanding of scope is neutralized.</li>
+<li>After discussion, the team members reselect the cards to reflect their estimates based current discussion.</li>
+<li>Take the agreement of final number as the team estimate.<strong><br/>
+</strong></li>
+<li>Repeat the process for all the stories in the Sprint backlog.</li>
+</ol>
+<p>This estimation technique makes the estimation and planning exercise much more fun. It also ensures that everyone in the team is on the same page in terms of understanding the requirements for a particular story and the complexity involved.</p>
+<h4>Other popular articles:</h4>
+<ul class="similar-posts">
+<li><a href="../what-is-release-and-iteration-planning-in-agile-methodology/index.html" rel="bookmark" title="What is Release and Iteration Planning in Agile methodology?">What is Release and Iteration Planning in Agile methodology?</a></li>
+<li><a href="../what-is-user-story-template-in-agile-software-development/index.html" rel="bookmark" title="What is User Story Template in Agile software development?">What is User Story Template in Agile software development?</a></li>
+<li><a href="../what-are-the-estimation-techniques-in-software-testing/index.html" rel="bookmark" title="What are the estimation techniques in software testing?">What are the estimation techniques in software testing?</a></li>
+<li><a href="../what-is-test-estimation-factors-and-techniques/index.html" rel="bookmark" title="What is test estimation? Related Factors, Estimation Techniques">What is test estimation? Related Factors, Estimation Techniques</a></li>
+<li><a href="../what-is-sprint-planning-in-agile-project-management/index.html" rel="bookmark" title="What is Sprint planning in Agile project management?">What is Sprint planning in Agile project management?</a></li>
+</ul>
+<p></p>
+
+<div style><center><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="8321861017" data-ad-format="rectangle"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div><div class="at-below-post addthis_tool" data-url="http://tryqa.com/what-is-planning-poker-effort-estimation-in-agile-methodology/"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="../category/agile-testing-certification/index.html" rel="category tag">ISTQB Agile Testing Certification</a></span> <span class="entry-tags">Tagged With: <a href="../tag/agile-planning-poker/index.html" rel="tag">Agile Planning Poker</a>, <a href="../tag/effort-estimation/index.html" rel="tag">effort estimation</a>, <a href="../tag/effort-estimation-in-agile-methodology/index.html" rel="tag">Effort estimation in Agile methodology</a>, <a href="../tag/effort-estimation-in-agile-with-planning-poker/index.html" rel="tag">Effort estimation in Agile with Planning Poker</a>, <a href="../tag/effort-estimation-of-projects/index.html" rel="tag">Effort estimation of projects</a>, <a href="../tag/planning-poker/index.html" rel="tag">Planning poker</a>, <a href="../tag/planning-poker-cards/index.html" rel="tag">planning poker cards</a>, <a href="../tag/planning-poker-estimation/index.html" rel="tag">Planning poker estimation</a>, <a href="../tag/planning-poker-estimation-in-agile/index.html" rel="tag">Planning Poker estimation in agile</a>, <a href="../tag/planning-poker-scrum/index.html" rel="tag">planning poker scrum</a>, <a href="../tag/planning-poker-technique/index.html" rel="tag">Planning Poker technique</a>, <a href="../tag/poker-planning/index.html" rel="tag">poker planning</a>, <a href="../tag/scrum-methodology/index.html" rel="tag">scrum methodology</a>, <a href="../tag/scrum-planning-poker/index.html" rel="tag">scrum planning poker</a>, <a href="../tag/scrum-process/index.html" rel="tag">scrum process</a>, <a href="../tag/scrum-tools/index.html" rel="tag">scrum tools</a>, <a href="../tag/software-effort-estimation/index.html" rel="tag">Software effort estimation</a></span></p><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: How to Assess Quality Risks in Agile methodology?"><a href="../how-to-assess-quality-risks-in-agile-methodology/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: What are Testing Techniques in Agile development?"><a href="../what-are-testing-techniques-in-agile-development/index.html" rel="next">Next Topic &raquo;</a></div></div></footer></article><h2 class="screen-reader-text">Reader Interactions</h2></main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search</h3>
+<div class="textwidget"><form class="iec-search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://tryqa.com/" role="search">
+<meta itemprop="target" content="http://tryqa.com/?s={s}">
+<input itemprop="query-input" name="s" placeholder=" Search this website " type="search">&nbsp;&nbsp;
+<input value="Search" type="submit">
+</form></div>
+</div></section>
+<section id="advanced_text-2" class="widget advanced_text"><div class="widget-wrap"><div class="AdvancedText"><h3 class="widgettitle widget-title">Agile Testing Study Material</h3>
+<table border="0" cellspacing="1">
+<tbody>
+<tr>
+<td class="menuHead">Chapter 1: Agile Software Development
+</td>
+</tr>
+<tr><td class="menuItem"><a title="What is Agile methodology? Examples, when to use it, advantages and disadvantages" href="../what-is-agile-methodology-examples-when-to-use-it-advantages-and-disadvantages/index.html">Agile Methodology - When to use it, advantages, disadvantages</a></td></tr>
+<tr><td class="menuItem"><a title="What is Agile Software Development and Agile Manifesto?" href="../what-is-agile-manifesto-and-agile-software-development/index.html">Agile Software Development - Agile Manifesto</a></td></tr>
+<tr><td class="menuItem"><a title="What is Whole-Team Approach in Agile methodology?" href="../what-is-whole-team-approach-in-agile-methodology/index.html">Whole Team Approach</a></td></tr>
+<tr><td class="menuItem"><a title="Why is Early and Frequent Feedback in Agile methodology important?" href="../why-is-early-and-frequent-feedback-in-agile-methodology-important/index.html">Early and Frequent Feedback</a></td></tr>
+<tr><td class="menuItem"><a title="What are Agile Software Development approaches? Scrum, Kanban, XP explained" href="../what-are-agile-software-development-approaches-scrum-kanban-xp-explained/index.html">Agile Software Development Approaches</a></td></tr>
+<tr><td class="menuItem"><a title="What is a Scrum Master, Product Owner? Roles and Responsibilities" href="../roles-and-responsibilities-of-scrum-master-product-owner-in-agile-scrum-team/index.html">What is a Scrum Master, Product Owner - Roles and Responsibilities</a></td></tr>
+<tr><td class="menuItem"><a title="What is User Story Template in Agile software development?" href="../what-is-user-story-template-in-agile-software-development/index.html">User Story Template in Agile software</a></td></tr>
+<tr><td class="menuItem"><a title="What is Retrospective meeting or Retrospection in Agile project management?" href="../what-is-retrospective-meeting-or-retrospection-in-agile-project-management/index.html">Retrospective Meeting or Restrospection</a></td></tr>
+<tr><td class="menuItem"><a title="What is Continuous Integration in Agile methodology?" href="../what-is-continuous-integration-in-agile-methodology/index.html">Continuous Integration</a></td></tr>
+<tr><td class="menuItem"><a title="What is Release and Iteration Planning in Agile methodology?" href="../what-is-release-and-iteration-planning-in-agile-methodology/index.html">Release and Iteration Planning</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 2: Agile Testing Principles, Practices and Processes
+</td>
+</tr>
+<tr><td class="menuItem"><a title="What are Testing and Agile Development Activities?" href="../what-are-testing-and-agile-development-activities/index.html">Agile Testing and Development Activities</a></td></tr>
+<tr><td class="menuItem"><a title="What are Project Work Products in Agile testing?" href="../what-are-project-work-products-in-agile-testing/index.html">Project Work Products</a></td></tr>
+<tr><td class="menuItem"><a title="What are Test Levels in Agile methodology?" href="../what-are-test-levels-in-agile-methodology/index.html">Test Levels in Agile</a></td></tr>
+<tr><td class="menuItem"><a title="What is Testing and Configuration Management in Agile development?" href="../what-is-testing-and-configuration-management-in-agile-development/index.html">Testing and Configuration Management</a></td></tr>
+<tr><td class="menuItem"><a title="What are organizational options for independent testing in Agile development?" href="../what-are-organizational-options-for-independent-testing-in-agile-development/index.html">Independent testing options</a></td></tr>
+<tr><td class="menuItem"><a title="Communicating Test Status, Progress and Product Quality in Agile Methodology" href="../communicating-test-status-progress-and-product-quality-in-agile-methodology/index.html">Communicating Test Status, Progress and Product Quality</a></td></tr>
+<tr><td class="menuItem"><a title="How to manage Regression Risk and evolve manual, automated test cases in Agile methodology?" href="../how-to-manage-regression-risk-and-evolve-manual-automated-test-cases-in-agile-methodology/index.html">Managing Regression Risk, Evolving Manual and automated Test Cases</a></td></tr>
+<tr><td class="menuItem"><a title="What are the different Agile Testing Methodology? Test Driven Development, Behavior Driven Development" href="../what-are-the-different-agile-testing-methodology-test-driven-development-behavior-driven-development/index.html">Agile Testing Methodology - TDD, BDD</a></td></tr>
+<tr><td class="menuItem"><a title="What are Test Pyramid and Testing Quadrants in Agile Testing Methodology?" href="../what-are-test-pyramid-and-testing-quadrants-in-agile-testing-methodology/index.html">Test Pyramid and Agile Testing Quadrants</a></td></tr>
+<tr><td class="menuItem"><a title="What is the Role of a Tester in Agile Methodology?" href="../what-is-the-role-of-a-tester-in-agile-methodology/index.html">Role of a Tester</a></td></tr>
+<tr>
+<td class="menuHead">Chapter 3: Agile Testing Methods, Techniques and Tools
+</td>
+</tr>
+<tr><td class="menuItem"><a title="What is Sprint planning in Agile project management?" href="../what-is-sprint-planning-in-agile-project-management/index.html">Sprint planning in Agile project management</a></td></tr>
+<tr><td class="menuItem"><a title="How to Assess Quality Risks in Agile methodology?" href="../how-to-assess-quality-risks-in-agile-methodology/index.html">Assessing Quality Risks in Agile methodology</a></td></tr>
+<tr><td class="menuItem"><a title="What is Planning Poker? Effort estimation in Agile methodology" href="index.html">Planning Poker - Effort estimation in Agile</a></td></tr>
+<tr><td class="menuItem"><a title="What are Testing Techniques in Agile development?" href="../what-are-testing-techniques-in-agile-development/index.html">Agile Testing Techniques</a></td></tr>
+<tr><td class="menuItem"><a title="What is Definition of Done? Test Levels in Agile software" href="../what-is-definition-of-done-test-levels-in-agile-software/index.html">Definition of Done - Test Levels</a></td></tr>
+<tr><td class="menuItem"><a title="What is Acceptance Test-Driven Development in Agile Methodology?" href="../what-is-acceptance-test-driven-development-in-agile-methodology/index.html">Acceptance Test Driven Development</a></td></tr>
+<tr><td class="menuItem"><a title="What is Exploratory Testing in Agile Methodology?" href="../what-is-exploratory-testing-in-agile-methodology/index.html">Agile Exploratory Testing</a></td></tr>
+<tr><td class="menuItem"><a title="What are the Tools in Agile Projects?" href="../what-are-the-tools-in-agile-projects/index.html">Tools in Agile Projects</a></td></tr>
+<tr><td class="menuItem"><a title="What are Build and Distribution Tools in Agile software testing?" href="../what-are-build-and-distribution-tools-in-agile-software-testing/index.html">Build and Distribution Tools</a></td></tr>
+</tbody>
+</table>
+
+<script src="http://static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100810153); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="../../in.getclicky.com/100810153ns.gif" /></p></noscript>
+
+</div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-secondary"><h2 class="genesis-sidebar-title screen-reader-text">Secondary Sidebar</h2><section id="text-11" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Popular Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../what-to-do-team-project-lead-is-burning-you-out/index7caf.html?ref=sidebar">What to do when Team Lead is burning you out?</a></li>
+<li><a href="../interview-question-should-testers-be-paid-same-salary-as-developers/index7caf.html?ref=sidebar">Interview Question: Should Testers be paid same salary as Developers?</a></li>
+<li><a href="../mobile-application-development-and-testing-checklist/index7caf.html?ref=sidebar">Mobile app testing checklist</a></li>
+<li><a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Waterfall model? When to use it?</a></li>
+<li><a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">SDLC</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">What is V-model? When to use it?</a></li>
+<li><a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Spiral model? When to use it?</a></li>
+<li><a href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model - When to use it?</a>
+</li>
+</ul></div>
+</div></section>
+<section id="text-21" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Trending Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html">Guide to crowdtesting - Earn extra income as a freelance tester</a></li>
+<li><a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of Quality (COQ)</a></li>
+<li><a href="../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">Risk Based Testing - Identifying, Assessing, Mitigating & Managing Risks</a></li>
+<li><a href="../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management</a></li>
+<li><a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></li>
+<li><a href="../beginners-guide-to-career-in-software-testing-growth/index.html">Complete Guide to Career in Software Testing - Career Growth, Roles, Responsibilities</a></li>
+<li><a href="../big-data-testing/index.html">Big Data Testing - Complete beginner's guide for Software Testers</a></li>
+<li><a href="../test-case/index.html">What is a Test Case? Example Template, Types, Best Practices</a></li>
+</ul></div>
+</div></section>
+<section id="categories-3" class="widget widget_categories"><div class="widget-wrap"><h3 class="widgettitle widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-3"><a href="../category/fundamentals-of-testing/index.html">Fundamentals of testing</a> (15)
+</li>
+<li class="cat-item cat-item-814"><a href="../category/agile-testing-certification/index.html">ISTQB Agile Testing Certification</a> (31)
+</li>
+<li class="cat-item cat-item-724"><a href="../category/istqb-certification/index.html" title="Everything you need to know regarding the ISTQB Exam. ISTQB Exam dates, locations, syllabus, basic qualifications or per-requisites etc">ISTQB Certification</a> (14)
+</li>
+<li class="cat-item cat-item-1387"><a href="../category/istqb-test-manager/index.html">ISTQB Test Manager</a> (39)
+</li>
+<li class="cat-item cat-item-1962"><a href="../category/java-tutorials/index.html">Java Tutorials</a> (4)
+</li>
+<li class="cat-item cat-item-777"><a href="../category/software-testing-pro/index.html">Software Testing</a> (29)
+</li>
+<li class="cat-item cat-item-4"><a href="../category/static-techniques/index.html">Static techniques</a> (13)
+</li>
+<li class="cat-item cat-item-6"><a href="../category/test-design-techniques/index.html">Test design techniques</a> (29)
+</li>
+<li class="cat-item cat-item-7"><a href="../category/test-management/index.html">Test Management</a> (22)
+</li>
+<li class="cat-item cat-item-8"><a href="../category/testing-throughout-the-testing-life-cycle/index.html">Testing throughout the testing life cycle</a> (53)
+</li>
+<li class="cat-item cat-item-9"><a href="../category/tool-support-for-testing/index.html">Tool support for testing</a> (22)
+</li>
+</ul>
+</div></section>
+<section id="text-18" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '780848918707398']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<script type="text/javascript">
+var sc_project=8529562; 
+var sc_invisible=1; 
+var sc_security="f7a5d401"; 
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/8529562/0/f7a5d401/1/"
+alt="Web Analytics"></a></div></noscript>
+
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.4"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.27"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":false,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.4","plugin_mode":"AddThis","anonymous_profile_id":"wp-4f9ca8de0eb327b43ae8f1ff2269f594","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc254ae5c3cb48"></script><script type="text/javascript" src="../wp-content/plugins/table-of-contents-plus/front.min6528.js?ver=1509"></script>
+<script type="text/javascript" src="../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.args.mina305.js?ver=2.4.2"></script>
+<script type="text/javascript" src="../wp-includes/js/wp-embed.min2754.js?ver=4.7.27"></script>
+</body>
+<!-- Mirrored from tryqa.com/what-is-planning-poker-effort-estimation-in-agile-methodology/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:48:37 GMT -->
+</html>

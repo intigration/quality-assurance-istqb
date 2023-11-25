@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec">
+
+<!-- Mirrored from tryqa.com/software-development-life-cycle-sdlc/?replytocom=24191 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:56:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>Software Development Life Cycle (SDLC)</title> <meta name="robots" content="noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="http://s.w.org/" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Try QA &raquo; Software Development Life Cycle (SDLC) Comments Feed" href="feed/index.html" />
+<link rel="canonical" href="index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tryqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.26"}};
+			!function(t,a,e){var r,n,i,o=a.createElement("canvas"),l=o.getContext&&o.getContext("2d");function c(t){var e=a.createElement("script");e.src=t,e.defer=e.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(e)}for(i=Array("flag","emoji4"),e.supports={everything:!0,everythingExceptFlag:!0},n=0;n<i.length;n++)e.supports[i[n]]=function(t){var e,a=String.fromCharCode;if(!l||!l.fillText)return!1;switch(l.clearRect(0,0,o.width,o.height),l.textBaseline="top",l.font="600 32px Arial",t){case"flag":return(l.fillText(a(55356,56826,55356,56819),0,0),o.toDataURL().length<3e3)?!1:(l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,65039,8205,55356,57096),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55356,57331,55356,57096),0,0),e!==o.toDataURL());case"emoji4":return l.fillText(a(55357,56425,55356,57341,8205,55357,56507),0,0),e=o.toDataURL(),l.clearRect(0,0,o.width,o.height),l.fillText(a(55357,56425,55356,57341,55357,56507),0,0),e!==o.toDataURL()}return!1}(i[n]),e.supports.everything=e.supports.everything&&e.supports[i[n]],"flag"!==i[n]&&(e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&e.supports[i[n]]);e.supports.everythingExceptFlag=e.supports.everythingExceptFlag&&!e.supports.flag,e.DOMReady=!1,e.readyCallback=function(){e.DOMReady=!0},e.supports.everything||(r=function(){e.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",r,!1),t.addEventListener("load",r,!1)):(t.attachEvent("onload",r),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&e.readyCallback()})),(r=e.source||{}).concatemoji?c(r.concatemoji):r.wpemoji&&r.twemoji&&(c(r.twemoji),c(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="eleven40-pro-css" href="../wp-content/themes/eleven40-pro/style950a.css?ver=2.2.3" type="text/css" media="all" />
+<link rel="stylesheet" id="toc-screen-css" href="../wp-content/plugins/table-of-contents-plus/screen.min6528.css?ver=1509" type="text/css" media="all" />
+<link rel="stylesheet" id="dashicons-css" href="../wp-includes/css/dashicons.minc4fe.css?ver=4.7.26" type="text/css" media="all" />
+<link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A400%7COswald%3A400&amp;ver=2.4.2" type="text/css" media="all" />
+<link rel="stylesheet" id="addthis_all_pages-css" href="../wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.minc4fe.css?ver=4.7.26" type="text/css" media="all" />
+<script type="text/javascript" src="../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/skip-linksc4fe.js?ver=4.7.26"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://tryqa.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type="text/javascript" src="../wp-content/themes/eleven40-pro/js/responsive-menu8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="../wp-content/plugins/optinmonster215a/assets/js/apid63f.js?ver=2.1.5"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<meta name="robots" content="noindex,follow" />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed74e8.json?url=http%3A%2F%2Ftryqa.com%2Fsoftware-development-life-cycle-sdlc%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embeda363?url=http%3A%2F%2Ftryqa.com%2Fsoftware-development-life-cycle-sdlc%2F&amp;format=xml" />
+<link rel="icon" href="../wp-content/themes/eleven40-pro/images/favicon.ico" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38219227-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:404843,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+    var isTryMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isTryMobile.Android() || isTryMobile.BlackBerry() || isTryMobile.iOS() || isTryMobile.Opera() || isTryMobile.Windows());
+        }
+    };	
+</script>
+</head>
+<body class="post-template-default single single-post postid-3087 single-format-standard header-full-width sidebar-content-sidebar eleven40-pro-red" itemscope itemtype="http://schema.org/WebPage"><div class="site-container"><section><h2 class="screen-reader-text">Skip links</h2><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li><li><a href="#genesis-sidebar-secondary" class="screen-reader-shortcut"> Skip to secondary sidebar</a></li></ul></section>
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="../index.html"><img style="height:40px;display:inline" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAByCAMAAAAcYFjwAAACUlBMVEXmShn///8AAADmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShnmShk3R083R0/mShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R0/mShk3R083R083R083R083R083R0/mShnmShnmShk3R0/mShnmShnmShnmShnmShnmShnmShnmShnmShk3R083R0/mShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShnmShk3R08qzSuZAAAAxHRSTlMAAAAportFDnjk9pkiBlnPcg86tchOH5L0/KQqCW/d6H4RA0/J0lgyqrI3GYbw8oll19lkBUbBvECe+/eUJRR95g1dxUv+JJbqhSF346MtAVLLxE2t4pMe7j3UXALvghj5py/GcAuVtzzWYeuEFTB0M8xEqqCIRO40VXf4YDirgBY1szmQIGkEvWYim7vdZojMEfXndjMs8/0o8SdaBztVmY7sPz7pHRsa5eASznXe3NDaCrnt0Ul5+sp7K1FTn3+prDFja9gXxAAACGJJREFUeNrt3fl/E0UUAPA0sgJNyo0WCylbQKIICtYDylUERBbBq7JgOT1AsdKkJDUrIp6YmqaJGkRBGgVvvO/7mvxf5trNHjOzMzsJh7z3G2Q7+ey3k5l5My9bn48eV4yRriS81ARRDTrh2HHjEWoOBAHRM2LLhImoHOMnTQZEb4hTpiIjpk0HRA+IV13dikwx45o2QOREnDkrhGzRPlsGRA7EjjlzESbmXdsCiKyI88OIENddD4hMiAtuWIiIsejGBYDoithy02JEjSU3dwIiHfGWW5Fr3HY7IFIQ25YuQwzRtXwFIBIQV65qR4yxelI3IGIQO9bMQxxxx9oOwLMjmnM8plg3DvCsiOvv7OI03HDXRsAzI3YrmzgJl929GcZEM+KWe+7lJET33Q+zswVx/gMzOAl7Zo2FdaIVsYeTsPXBrZCx2BFVPsOp2yB3diJu4CHc/lAv7OKIIe7YuQv2E8UQd+/ZCzvbgogPr4UzFkHEnkcehdM+McSux1bAubMg4r79UAEhiPj4E51QiyOGeODJPh8UNIkhhp8il5kAHhPi3Om9PkAUQuw52E2tu8M36Pf3K+FIpQVJkgKKEu331zuq7Uf85ycGCuUYwL1GRVx3KOhS/4k1lJUQprFYfW8qqrcbZbo8PkhBYIlCNbgRdz/t84CYCOFbu6CIGg2hoYjPTPH5tvAiBkhDw2WM2Ht4Gxci0fCyRXy26HREfe4oOyLZ8LJFLFXRHSomLGs6GBEVsqFaX8Sg3m7wIkfser6CiNALLzIhyrWDhnDC1GuKodR7kZNQypHwX+yI/Toian7pZQZEoyOqCf/FFRcOsXm+gYhQ6JVjboi1jhj1A6KOuNeEiNCrV7ogJhuzsA6WhoPo+UAcileigYio+bX1VESjzltmuS85GZNKXVeVYknbD8Qqfb84JsiKpDcasV5VfbOw1TsZkCLVbDOmRIPMiHFtIFWoxfBAmoA4kkqVLsykRtJZJsTXN1sREXrjTZmCqKcqYZbuFTCfdqsByySrtyMrliPxUNR5jXnl1O+o1ldjbIi5giMGNSyiOQbiLIjH7YgITZtDRJT1axR3Q8VeMKAqTiDVUVWQoCEmcfcQZUKM44wyWRfEImPWFfGtNiciOmE+NrUgcqx/cWvygBPIudiUyYhYQxFEiyIesZAZckNc9DYGsbTTvRKLmGAeEvF5TcAdEXONMcSqdUc07/kUSIpZF8R3TmIREdp+6l0MosKa4JHymoQ7okpEJDQqhFiIuyKWoKmIC1cQEBHad9o7oqnPqMVZVHV+WE1vFIkliuubmEqE1v9tzOIBpZwhKUqs2LYaZELMapo2Wl7d5IrrnLQxUecdiHlNSxcv0zImaCrijvVERNT6XrdXxJgx2yYrg1nIPiPVPr16siiH7JOW/c1U6oDMudjO61M0eZ04Wt3mLaToiO9vJCMidMYron67Eb3jyRFd1QYUdA4BEgmR/uaciFn98iHyYjttXOMdcfdZj4gJJ1HQ1o0wDUVZEZN1Sfsy9kER8/P6h16jIm7YSkPcxoYYVW0rcMW5pDGma4WIKLv1PGNMjMl1QEwxIOpt5qmIH3xYB0SFdLcJcj/DNeSGmMSv2xuIqE/pKSpi+0eNQIzgrkKWA1AviHKIkB82DFH/v8Ey4gHS1/c+bgQioiAi74i1A4Nylw5628XRqjHMgVgoI7YSnD5Z0EhEykGMJ0Rb3mcdGhkQR/PDlNW2K+IswrepNh29pBD9CZW4peGKGB+mpyyuiL6Ny7GdcVPfpYXol61JucS+nzjilve5I/p8p3HfMP30My5E/AbE+UQsDoySpTP2MyJqhXog+nonnBNFxG+FcSGqoojmJNKsSEc07cmm8h4nluq37j9fbbulLyZzIeI3ZYmICiai4oh+y3Z4hAlRT5ULWtbDEseM6POtD1iHxtBYLkT88YDCfPfUrX+eXDloGhqTLIiGocA6sRZn9pmdvuzmQwzgqhKIGUuwYYjFoTGCrL9QKmLO+SJ/xmKK3lNf1Zy+/oYPMYHZ6Xciht1PYoQRa/N0iAHR0BDJnS3RN9vIApfM5ENsUjFbKQopyVXlBiLaNyzizr1qYUTrLo4tTi5trrz/4hZORAU5FR2IRimSJDcQ0fZ6DnNsIoho2090RPRbb4imjX8pQUI0Ps/6zrbReaJ1RFRs0/OgoZgjn7BkOfYT7Tvbzug8vL10HtXBiVgbFWn1iUFzUqGHZVr3gqiokhQuL5NKJyxh+/CcJ58z1fax8xXF3MgwcbE9omlx7BkLLnbt/A4t4UZsirEUeRKrGCUBRIl62kc8zyuY+12xWxVjkJaxEE/78LH5yPfHuBHZyo0D5w0x7JodW4Y397SPeO5Mivmd/IjkYln30/v6I0Zqc1c2Q0b0Z7wiZnJ+F8Ry8CI21Ra6lJptRa03Iu7Ro5b5PztARswNuiEOu9Xi1BexqSkZoZfaODJc0rkzD2K/oyuG7Ad/oylM8Vd1CZSxVoSN2hGz6XyGWhVWb0Tz19Iq30tLRjFrwqgihYyLAkqi374ICmDqEQOU+sRoolT1UCqpUIsTNa5IfCidT1X7VCZV2rCprb3ThlFGy/qHKlcND1nXQqMasT6x/oiXZGTLJyzxLPcPNgTxsvyWKSACIiACIiACIiACIiACIiACIiACIiACIiD+fxHPAqIwItoPiKKIqw+2AKIY4owxbfD8REHEuT/AQygFEdt/nAxP8hRD/GnMSXgcqiDiz9PhmbKCiBt+keHBvIKIe36FpxsLIp77rRceES2G2L5qMjxnWwzxxJHj8LByQcSJv8MT30UQ/0Box5998Nh8IcS/0N//wN8eEEPsnf1vL/wBBwZEIABEQARECECsZ/wHTHK1Qyj7XwoAAAAASUVORK5CYII=" alt="Genislab">Genislab Technologies</a></h1></div><h2 class="screen-reader-text">Main navigation</h2><nav class="nav-primary" itemscope itemtype="http://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation"><div class="wrap"><ul id="menu-topnav" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-1910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1910"><a href="../index.html" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-1909" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1909"><a title="Software Testing Blog" href="../category/software-testing-pro/index.html" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1839"><a title="ISTQB Foundation Certification" href="../istqb-certification-the-definitive-guide/index.html" itemprop="url"><span itemprop="name">ISTQB Foundation Level</span></a></li>
+<li id="menu-item-3025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3025"><a href="../istqb-advanced-level-test-manager-study-material/index.html" itemprop="url"><span itemprop="name">ISTQB Advanced Level Test Manager</span></a></li>
+<li id="menu-item-1837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1837"><a href="../istqb-agile-testing-certification/index.html" itemprop="url"><span itemprop="name">Agile Testing Tutorial</span></a></li>
+<li id="menu-item-1663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1663"><a href="../istqb-dumps-download-mock-tests-and-sample-question-papers/index.html" itemprop="url"><span itemprop="name">ISTQB Dumps &#8211; Mock Tests</span></a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1155"><a href="../contact-us/index.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+<ul class="sub-menu">
+<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="../privacy-policy/index.html" itemprop="url"><span itemprop="name">Privacy Policy</span></a></li>
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="../terms-of-use/index.html" itemprop="url"><span itemprop="name">Terms of Use</span></a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="../disclaimer/index.html" itemprop="url"><span itemprop="name">Disclaimer</span></a></li>
+<li id="menu-item-1143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1143"><a href="../about-us/index.html" itemprop="url"><span itemprop="name">About Us</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><div class="site-inner"><div class="wrap"><h2 class="site-description" itemprop="description">Study material for ISTQB Exam Certification Foundation level, Premium &amp; Free for ISTQB and ASTQB Exam, Certification questions, answers, software testing tutorials and more</h2><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-3087 post type-post status-publish format-standard category-software-testing-pro tag-agile-model tag-analysis-or-system-analysis tag-big-bang-model tag-deployment tag-design-phase tag-development-phase tag-entry-criteria tag-exit-criteria tag-how-to-select-the-right-software-development-life-cycle-model tag-incremental-model tag-iterative-model tag-lifecycle-models tag-maintenance tag-operation tag-phases-of-software-development-life-cyc tag-project-initiation tag-project-kickoff tag-requirements-gathering tag-sdlc tag-sdlc-entry-and-exit-criteria tag-sdlc-models tag-software-development-life-cycle tag-software-development-life-cycle-sdlc tag-spiral-model tag-stages-of-software-development-life-cycle tag-testing-phase tag-v-model tag-waterfall-model tag-what-is-software-development-life-cycle tag-why-is-software-development-life-cycle-necessary entry" itemscope itemtype="http://schema.org/CreativeWork"><header class="entry-header"><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: Guide to Crowdtesting / Crowdsourced testing - earn extra income as a freelance tester"><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: Mobile Application Security Testing Approaches - Beginners Guide"><a href="../mobile-application-security-testing-beginners-guide/index.html" rel="next">Next Topic &raquo;</a></div></div><h1 class="entry-title" itemprop="headline">Software Development Life Cycle (SDLC)</h1>
+</header><div class="entry-content" itemprop="text"><div class="at-above-post addthis_tool" data-url="http://tryqa.com/software-development-life-cycle-sdlc/"></div><p>In simpler words, Software Development Life Cycle (SDLC) is the set of processes used to develop and deliver high quality software. It’s recommended to follow Software Development Life Cycle when an IT project is under development. Its beneficial to follow SDLC when you need to combine technical and non-technical activities to deliver high <a href="../what-is-software-quality/index.html">quality software</a>.</p>
+<div style><center>
+<style>
+  .responsive-test { display: block;}
+  @media(max-width: 768px) { .responsive-test { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<p>In this article, let us understand what Software Development Life Cycle is all about, it’s purpose, different stages in the life cycle and the different models.<span id="more-3087"></span><br/>
+<div id="toc_container" class="no_bullets"><p class="toc_title">Table Of Contents</p><ul class="toc_list"><li><a href="#What_is_Software_Development_Life_Cycle">What is Software Development Life Cycle?</a></li><li><a href="#Why_is_Software_Development_Life_Cycle_necessary">Why is Software Development Life Cycle necessary?</a></li><li><a href="#Stages_of_Software_Development_Life_Cycle">Stages of Software Development Life Cycle</a><ul><li><a href="#Software_Development_Life_Cycle_Stages">Software Development Life Cycle Stages</a></li><li><a href="#Project_Kickoff_Project_Initiation">Project Kickoff / Project Initiation</a></li><li><a href="#Requirements_Gathering">Requirements Gathering</a></li><li><a href="#Analysis_or_System_Analysis">Analysis or System Analysis</a></li><li><a href="#System_Design">System Design</a></li><li><a href="#Development">Development</a></li><li><a href="#Testing">Testing</a></li><li><a href="#Deployment">Deployment</a></li><li><a href="#Operation_and_Maintenance">Operation and Maintenance</a></li><li><a href="#Entry_and_Exit_criteria_for_each_of_the_stages">Entry and Exit criteria for each of the stages</a></li></ul></li><li><a href="#Software_Development_Life_Cycle_Models">Software Development Life Cycle Models</a><ul><li><a href="#Waterfall_Model">Waterfall Model</a></li><li><a href="#Iterative_Model">Iterative Model</a></li><li><a href="#Spiral_Model">Spiral Model</a></li><li><a href="#V_Model">V Model</a></li><li><a href="#Big_Bang_Model">Big Bang Model</a></li><li><a href="#Agile_Methodology">Agile Methodology</a></li><li><a href="#Agile_Model">Agile Model</a></li></ul></li><li><a href="#How_to_select_the_right_Software_Development_Life_Cycle_Model">How to select the right Software Development Life Cycle Model</a><ul><li><ul><li><a href="#Other_popular_articles">Other popular articles:</a></li></ul></li></ul></li></ul></div>
+</p>
+<h2><span id="What_is_Software_Development_Life_Cycle">What is Software Development Life Cycle?</span></h2>
+<p>Software Development Life Cycle is generally termed as SDLC. SDLC is the conceptual framework which clearly defines what tasks must be performed at each stage and by whom, within scheduled timeframe and at operational cost.</p>
+<div style><center>
+<style>
+  .responsive-random { display: block;}
+  @media(min-width: 780px) { .responsive-random { display: none; } }
+</style>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle responsive-random" data-ad-client="ca-pub-4095780395347512" data-ad-slot="7347353014" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div>
+<h2><span id="Why_is_Software_Development_Life_Cycle_necessary">Why is Software Development Life Cycle necessary?</span></h2>
+<p>Software Development Life Cycle is needed in any of the project for the below reasons:</p>
+<ul>
+<li>Enhance the quality of the software</li>
+<li>Define the goals to the team so that developers know what to build and testers know what and how to test</li>
+<li>Reduce the rate of vulnerabilities (fewer or none)</li>
+<li>Management control</li>
+<li>Effective documentation and reduced dependencies</li>
+<li>Effective resource utilization</li>
+<li>Effective cost and time definition</li>
+<li>Ensure the architecture and design are secure</li>
+<li>Define and adhere to the set processes and objectives</li>
+<li>Meet and exceed Customer’s expectations</li>
+</ul>
+<h2><span id="Stages_of_Software_Development_Life_Cycle">Stages of Software Development Life Cycle</span></h2>
+<p>While the term SDLC may indicate that its closely associated with development, a <a href="../software-tester/index.html">good software tester</a> should have sound knowledge of this concept since it will be beneficial in their <a href="../beginners-guide-to-career-in-software-testing-growth/index.html">software testing career path</a>.</p>
+<p>Right from inception to delivering high-quality software, any software development project follows the series of tasks in the predefined manner.</p>
+<p>These tasks are grouped and categorized into stages and the series of these stages forms the Software Development Life Cycle.<img class="aligncenter size-full wp-image-3093" src="../wp-content/uploads/2018/08/Software_Development_Life_Cycle-SDLC.png" alt width="501" height="478" srcset="../wp-content/uploads/2018/08/Software_Development_Life_Cycle-SDLC.png 501w, http://tryqa.com/wp-content/uploads/2018/08/Software_Development_Life_Cycle-SDLC-300x286.png 300w" sizes="(max-width: 501px) 100vw, 501px" /></p>
+<p>At each of the stage in the Software Development Life Cycle, the responsibilities of the tasks are predefined to the specific roles.</p>
+<p>Software Development Life Cycle has many <a href="../what-are-the-software-development-models/index.html">models</a> (which are described in the next section of the article) and the project can choose any among them based on the strategies, schedules, complexity and many more business factors.</p>
+<p>Note: Testing follows a life cycle called <a href="../what-is-software-testing-life-cycle-stlc/index.html">Software Testing Life Cycle (STLC)</a>, which is similar to the SDLC but specific to the testing process.</p>
+<p>All the Software Development Life Cycle models have almost all the below described stages.</p>
+<h3><span id="Software_Development_Life_Cycle_Stages"><strong>Software Development Life Cycle Stages</strong></span></h3>
+<ul>
+<li>Project Kickoff / Project Initiation</li>
+<li>Requirements Gathering</li>
+<li>Analysis</li>
+<li>Design</li>
+<li>Development</li>
+<li>Testing</li>
+<li>Deployment</li>
+<li>Operation and Maintenance</li>
+</ul>
+<h3><span id="Project_Kickoff_Project_Initiation">Project Kickoff / Project Initiation</span></h3>
+<ul>
+<li>This is the first stage in Software Development Life Cycle where the project is initiated.</li>
+<li>The high level scope, problems and solutions are determined and planning is carried out accordingly for other stages.</li>
+<li>Other components that are to be considered in this stage are: Resources, time / schedules, milestones, cost, business benefits and deadlines.</li>
+<li>In case of enhancements to existing projects, the strengths and weaknesses of the current software is studied and the improvements are set as goal, along with the collected requirements.</li>
+</ul>
+<h3><span id="Requirements_Gathering">Requirements Gathering</span></h3>
+<p>Here two things are mainly focused:</p>
+<ul>
+<li>What is needed?</li>
+<li>What is not needed?</li>
+</ul>
+<p>In “What is needed?” part, the requirements are further analyzed to understand what are:</p>
+<ul>
+<li>Functional Requirements</li>
+<li>Non-functional Requirements</li>
+</ul>
+<p>End-user requirements from the customer and other stakeholders (sales people, domain / industry experts, etc.) are collected.</p>
+<p><strong>Requirements can be gathered using the following tools / techniques:</strong></p>
+<ul>
+<li>Interviews</li>
+<li>Workshops</li>
+<li>Surveys and questionnaires</li>
+<li>Focus Groups</li>
+<li>Observations / time study</li>
+<li>Brainstorming Sessions</li>
+<li>Document Analysis (Ex: Regulatory requirements)</li>
+<li>Mind Mapping</li>
+<li>Benchmarks</li>
+</ul>
+<h3><span id="Analysis_or_System_Analysis">Analysis or System Analysis</span></h3>
+<ul>
+<li>In this stage we analyze each and every achievable requirement.</li>
+<li>These are documented as Software Requirements Specifications (SRS) or Functional Requirements Specifications (FRS).</li>
+<li>Risks are predicted and the action items to mitigate those risks are well-planned at this stage.</li>
+<li>Also, each and every user requirement are analyzed to ensure that they can be met.</li>
+<li>This activity is termed also as System analysis, which helps in enhancing the way the software should behave.</li>
+<li>Entire system is divided into smaller feasible chunks, so that the requirements can be prioritized and taken up for development in the order.</li>
+<li>This is effectively manageable for all the resources (developers, designers, testers, project managers and any other possible roles) to work on the chunks at all the stages in Software Development Life Cycle.</li>
+<li>In many cases requirements gathering and analysis can be carried out at the same time.</li>
+</ul>
+<h3><span id="System_Design">System Design</span></h3>
+<ul>
+<li>This is the stage which states “How to achieve what is needed?”</li>
+<li>Software Requirements Specifications (SRS) are now converted to the system design plan, which is commonly known as “Design Specification”.</li>
+<li>All the technical details like technologies to use, project constraints, team’s capability, etc goes into the design specification document.</li>
+<li>The technical architects and developers develop the logical plan of the system which is then reviewed by all the stakeholders.</li>
+<li>The feedback and suggestions collected from the stakeholders are again incorporated into the already developed logical plan.</li>
+</ul>
+<p>The most challenging part in this stage is to ensure that the design has the tight security and has less or no exposure to vulnerabilities.</p>
+<p>If something goes wrong at this stage, it must be corrected at high priority, failing which has the higher rate of project failure and cost overruns.</p>
+<h3><span id="Development">Development</span></h3>
+<p>This stage in simpler terms is where the &#8220;real work begins&#8221; and we &#8220;build what is needed&#8221;.</p>
+<ul>
+<li>The developers start to code as per the requirements and the developed design.</li>
+<li>Along with the coding, all the other required set-up will begin. i.e., the database set up by database admin, interface and GUI creation by front-end developers, etc.</li>
+<li>Along with coding, it is also important for developers to develop unit tests for their module, peer review other module’s unit tests, deploy builds to the intended environment and execute unit tests.</li>
+</ul>
+<h3><span id="Testing">Testing</span></h3>
+<p>This stage is the one where the quality check takes place. The developed software is assessed to ensure that all the specified requirements are met.</p>
+<p>This is performed by testing team and the focus is to find the defects.</p>
+<p>During test case execution, all the <a href="../what-is-defect-or-bugs-or-faults-in-software-testing/index.html">defects</a> found are reported in the <a href="../what-is-test-management-tools/index.html">test management tool</a> and the decision of considering the defect as Valid or Invalid depends on developers.</p>
+<p>If the defect is Invalid, it is just rejected and closed.</p>
+<p>If the defect is Valid, then it is fixed in the code by the developer and the code fix is provided in the next build for the tester to test whether the defect is fixed or not.</p>
+<p>Each defect that is found will have to go through the <a href="../what-is-a-defect-life-cycle/index.html">Defect Life Cycle</a> in the defect management tool.</p>
+<p>Again, the testing approach that the project choose depends on various factors: complexity of the project, team’s capability, time, etc.</p>
+<h3><span id="Deployment">Deployment</span></h3>
+<p>Once the testing is completed and there are no open high priority issues, then comes the time to deploy the build to the Production environment. This is the environment which is accessible by real users. Real users can then use the software as per their needs.</p>
+<p>Deploying the build to production can be a complicated process. If the project is an existing application,  technology migration is being carried out etc, it can be an extensive procedure.</p>
+<p>Depending on business criticality deployment teams may need to ensure that the application continues to function, while the deployment is in progress.</p>
+<p>Due to the high cut-over time, the Production deployment usually takes place during non-peak hours and / or weekends.</p>
+<h3><span id="Operation_and_Maintenance">Operation and Maintenance</span></h3>
+<p>This stage is when the &#8220;fine tuning&#8221; of the software takes place. Once the build is deployed to Production environment, any issues that the real users face are considered as Post-Production issues.</p>
+<p>These Post-Production issues are addressed and resolved by the internal team usually termed as Maintenance team.</p>
+<p>This stage also addresses minor change requests, code fixes, etc. and deploys them in short intervals.</p>
+<h3><span id="Entry_and_Exit_criteria_for_each_of_the_stages">Entry and Exit criteria for each of the stages</span></h3>
+<p>Each stage has specific set of entry and exit criteria.</p>
+<p>Entry criteria are the conditions that are required to begin the processing of the current stage and exit criteria are the conditions which sets the stage as completed so that the next stage comes into action.</p>
+<p>In general, the exit criteria of the current stage acts as entry criteria to the next stage.</p>
+<p>Setting entry and exit criteria helps in determining whether the software development is in the right track and the entire team can focus on the tasks and conditions set for the stage.</p>
+<p>It also enhances the effectiveness, efficiency and quality of the software to the greater extent, as the common goal to reach exit criteria of the stage is predefined.</p>
+<p>Below is the table which at a high level mentions the entry and exit criteria for each of the stage in Software Development Life Cycle.</p>
+<table width="623">
+<tbody>
+<tr>
+<td width="208">Phase</td>
+<td width="208">Entry Criteria</td>
+<td width="208">Exit Criteria</td>
+</tr>
+<tr>
+<td width="208">Project Kickoff / Project Initiation / Planning</td>
+<td width="208">Inputs / user-requirements collection from customers and other stakeholders</td>
+<td width="208">Acceptance of the project and planning</td>
+</tr>
+<tr>
+<td width="208">System Analysis and Requirements</td>
+<td width="208">Requirements</p>
+<p>Change requests</td>
+<td width="208">Software Requirements Specifications Document</td>
+</tr>
+<tr>
+<td width="208">Design</td>
+<td width="208">Software Requirements Specifications Document</td>
+<td width="208">Design Specifications Document</td>
+</tr>
+<tr>
+<td width="208">Development</td>
+<td width="208">Software Requirements Specifications Document</p>
+<p>Design Specifications Document</td>
+<td width="208">Build</p>
+<p>Unit tests</p>
+<p>Set-up</td>
+</tr>
+<tr>
+<td width="208">Testing</td>
+<td width="208">Software Requirements Specifications Document</p>
+<p>Deployed build</td>
+<td width="208">Test Cases</p>
+<p>System Testing</p>
+<p>Defects and their closure</td>
+</tr>
+<tr>
+<td width="208">Deployment</td>
+<td width="208">No high priority defects</td>
+<td width="208">Build deployment to Production</td>
+</tr>
+<tr>
+<td width="208">Operation and Maintenance</td>
+<td width="208">Real users to use the software and report any issues they find</p>
+<p>Change requests</td>
+<td width="208">Rectify the issues and deploy code fix to Production</td>
+</tr>
+</tbody>
+</table>
+<h2><span id="Software_Development_Life_Cycle_Models">Software Development Life Cycle Models</span></h2>
+<p>The Software Development Life Cycle provides the great flexibility within itself. The each of the stages can be tweaked as per the project constraints and requirements. The different models / methodologies have emerged out from the basic Software Development Life Cycle and to choose from them for the project depends on various factors.</p>
+<h3><span id="Waterfall_Model">Waterfall Model</span></h3>
+<p>The <a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">Waterfall Model</a> is also known as Linear sequential Model.</p>
+<ul>
+<li>Its called waterfall because all the stages in the Software Development Life Cycle are followed step-by-step and there is no going back between the stages.</li>
+<li>This is the very rigid structure where until completion of the current stage the next stage cannot be started.</li>
+<li>The outcome of the current stage acts as input to the next stage and there is no overlapping of the stages.</li>
+<li>If at all there is any changes in requirements to be handled, then there is no process that defines how to go back to the previous stages(s) to handle it.</li>
+<li>The current cycle must be completed and then the changes must start from the first stage of the cycle.</li>
+</ul>
+<p><strong><img class="aligncenter size-full wp-image-3094" src="../wp-content/uploads/2018/08/Waterfall-model.png" alt width="390" height="557" srcset="../wp-content/uploads/2018/08/Waterfall-model.png 390w, http://tryqa.com/wp-content/uploads/2018/08/Waterfall-model-210x300.png 210w" sizes="(max-width: 390px) 100vw, 390px" />Waterfall Model is best suitable when:</strong></p>
+<ul>
+<li>Requirements are stable and clearly documented</li>
+<li>Requirements are clear and complete, so there is no ambiguity</li>
+<li>Static technology</li>
+<li>Short duration project</li>
+</ul>
+<p><strong>Pros of Waterfall Model</strong></p>
+<ul>
+<li>Easily understandable and simple to use</li>
+<li>Managing each stage is simple as they have well-defined activities to follow, deliverables and reviews</li>
+<li>Sequential stages and no overlapping keeps the stage easy and manageable</li>
+<li>Milestones are clear</li>
+<li>Documentation is strictly maintained so that the chances of dependencies are less</li>
+<li>Small or mid-sized projects can easily adapt this model</li>
+</ul>
+<p><strong>Cons of Waterfall Model</strong></p>
+<ul>
+<li>Dependency on the previous stage to complete may cause delays</li>
+<li>High maintenance cost</li>
+<li>Uncertainties and risks are very high</li>
+<li>By the completion of the cycle, the software may be not competitive enough in the market to maintain the standards</li>
+<li>Complex, long-term projects cannot rely on this model</li>
+<li>Cannot handle change requests between the cycle is in progress</li>
+</ul>
+<h3><span id="Iterative_Model">Iterative Model</span></h3>
+<p><a href="../what-is-iterative-model-advantages-disadvantages-and-when-to-use-it/index.html">Iterative model</a> is the one where the complete software is developed in multiple iterations, where the iteration follows Waterfall model.<img class="aligncenter size-full wp-image-3095" src="../wp-content/uploads/2018/08/Iterative-Incremental-Model.png" alt width="549" height="462" srcset="../wp-content/uploads/2018/08/Iterative-Incremental-Model.png 549w, http://tryqa.com/wp-content/uploads/2018/08/Iterative-Incremental-Model-300x252.png 300w, http://tryqa.com/wp-content/uploads/2018/08/Iterative-Incremental-Model-230x195.png 230w" sizes="(max-width: 549px) 100vw, 549px" /></p>
+<ul>
+<li>In each iteration, the subset of requirements is considered for development and they are integrated with the previous iteration.</li>
+<li>Tailoring the iterations leads to the software development in incremental way.</li>
+<li>Therefore, the Iterative model is sometimes referred to as &#8220;Iterative or Incremental Model&#8221;.</li>
+<li>It is basically developing the basic modules in the first iteration and then adding the other modules to it in the next iterations.</li>
+</ul>
+<p>The main thing to focus here is to prioritize the modules that goes into different iterations.</p>
+<p>This usually is taken care in the design stage. This model ensures that each iteration undergoes rigorous validation of the developed requirements.</p>
+<p>Every cycle / iteration here will have the tests to repeat for the previous cycle / iteration and the tests for new modules added.</p>
+<p><strong>Iterative Model is applicable when:</strong></p>
+<ul>
+<li>Final software’s requirements are well-defined</li>
+<li>Large-sized projects</li>
+<li>Basic and main tasks are clear and they may get enhanced later</li>
+<li>Market constraints are well-known and by the time the software gets released it still be applicable</li>
+<li>Scope for new technology to incorporate</li>
+</ul>
+<p><strong>Pros of Iterative Model</strong></p>
+<ul>
+<li>Basic modules / functions can be developed first and then the remaining ones can be added in chunks</li>
+<li>Supports parallel development</li>
+<li>Measurable progress</li>
+<li>Easy to test and debug</li>
+<li>Risks are easy to control and mitigate within the iteration</li>
+<li>Each iteration is a lesson to improvise the process and eliminate the repetition of mistakes</li>
+<li>Every iteration results in partial operational software</li>
+<li>Can incorporate the change requests in the next iterations</li>
+<li>Customer evaluation and feedback is facilitated which enhances the quality of the software being developed</li>
+<li>As the iterations have defined timelines, the project ending can be pre-determined and defined</li>
+<li>Documentation effort is reduced and design is focused</li>
+</ul>
+<p><strong>Cons of Iterative Model</strong></p>
+<ul>
+<li>Small-sized projects cannot adapt Iterative model</li>
+<li>Management is the continuous activity to be handled</li>
+<li>No scope for change in design</li>
+<li>Need of more resources and planning</li>
+<li>Risks cannot be determined for the later stages</li>
+<li>Risk Management requires highly skilled resources</li>
+<li>Large effort needed for rigorous validations when the code fixes are done at later iterations</li>
+<li>Usually, Documentation and Configuration Management are not followed strictly which leads to difficulties in tracing developed software back to the requirements</li>
+<li>Project management is not intensive which leads in deviating from formal processes to be followed</li>
+</ul>
+<h3><span id="Spiral_Model">Spiral Model</span></h3>
+<p>The combination of Waterfall and Iterative models leads to <a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">Spiral Model</a>. This model is mainly to analyze the risks and to know when to move to the next stage.  This Model works quite differently. There are four different phases in this model which are basically the predetermined time frames.</p>
+<p><strong><img class="aligncenter size-full wp-image-3099" src="../wp-content/uploads/2018/08/Spiral-model.png" alt width="530" srcset="../wp-content/uploads/2018/08/Spiral-model.png 742w, http://tryqa.com/wp-content/uploads/2018/08/Spiral-model-300x276.png 300w" sizes="(max-width: 742px) 100vw, 742px" />Determine Objectives, Alternatives, Constraints</strong></p>
+<p>The baseline here captures the business requirements. At the subsequent spirals, it enhances the identification of system, subsystem and unit requirements from the business requirements.</p>
+<p>It helps the software to mature in terms of clear, complete and concise requirements through continuous review process.</p>
+<p><strong>Identify and Resolve Risks</strong></p>
+<p>This is the phase where the risks are identified and the measures to control and prevent them are defined.</p>
+<p>The risk analysis and planning to resolve them must be taken care by highly-skilled professionals as this entire model mainly focuses on Risk-Management.</p>
+<p>With subsequent spirals, the risk analysis grows stronger and can foresee the risks that may arise at the later stages.</p>
+<p><strong>Develop and Test</strong></p>
+<p>At the baseline of the spiral, the Proof of Concept (POC) is developed, where the prototype and the likely design of the software is developed.</p>
+<p>The customer feedback is collected on the POC and then the actual work is started. The subsequent spirals encourage building the actual software with high clarity on requirements and design.</p>
+<p>Each of the software build is version numbered and tested against the requirements.</p>
+<p><strong>Plan the Next Iteration</strong></p>
+<p>Upon collecting the customer feedback on the software build, plan the next iteration.</p>
+<p>This phase is to analyze and take the corrective measures in the next iteration to avoid schedule slippage and cost overrun.</p>
+<p>The plan is made ahead so that the movement to next stage happens on-time even though the previous stage has not yet completed.</p>
+<p>The plan is derived out from the previous experiences, statistic data and the measures.</p>
+<p><strong>Spiral Model is best adaptable when:</strong></p>
+<ul>
+<li>Budget constraint</li>
+<li>Risk evaluation factor is high priority task</li>
+<li>Long-term projects and requirements change over time</li>
+<li>Requirements are not clearly known to customer himself</li>
+<li>Proof of Concept is needed</li>
+<li>Customer feedback is needed at the end of every spiral to adapt any changing requirements</li>
+<li>Requirements needs evaluation</li>
+</ul>
+<p><strong>Pros of Spiral Model</strong></p>
+<ul>
+<li>Facilitates early user involvement in the development process</li>
+<li>Changing requirements can be accommodated in well-defined manner</li>
+<li>Requirements can be evaluated for accuracy before staring the actual design</li>
+<li>Highly controlled Risk Management</li>
+<li>New features can be added at the later stages also</li>
+<li>Earlier working prototypes helps in collecting actual feedback on the software and enhance as per usability requirements</li>
+<li>High scalable</li>
+<li>Phase can be tweaked to finish it early if the risk is high at the next phase</li>
+</ul>
+<p><strong>Cons of Spiral Model</strong></p>
+<ul>
+<li>Expensive and time consuming to reach final software</li>
+<li>Highly skilled professionals are required for risk management</li>
+<li>Poorer the risk-management, higher the project failure rate</li>
+<li>Not suitable for small, simple projects</li>
+<li>Documentation is more and time consuming</li>
+</ul>
+<h3><span id="V_Model">V Model</span></h3>
+<p>The <a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">V Model</a> is the tweak to Waterfall model, where the development and testing activities go together.</p>
+<p>Instead of having the stages in linear way, the V Model takes the stages after implementation in the upward direction, forming the shape of alphabet “V”.</p>
+<p><img class="aligncenter size-full wp-image-3096" src="../wp-content/uploads/2018/08/V-Model.png" alt width="530" srcset="../wp-content/uploads/2018/08/V-Model.png 677w, http://tryqa.com/wp-content/uploads/2018/08/V-Model-300x260.png 300w" sizes="(max-width: 677px) 100vw, 677px" />Early test planning makes the V Model to be different from that of Waterfall Model.</p>
+<p>The Left side of V Model are all the Verification activities (Requirement Analysis, Architecture, Design) and the right side are all the Validation activities (Unit Testing, Integration Testing, System and Acceptance Testing). These two sides are connected through the Development Stage.</p>
+<p><strong>Understanding the V-Model:</strong></p>
+<ol>
+<li>During the requirements stage, the System and Acceptance test cases are identified and documented.</li>
+<li>These Test Cases are executed during the System and Acceptance Testing Stage in development cycle.</li>
+<li>During the Architecture stage, the Integration test cases are identified and documented. These Test Cases are executed during Integration testing stage in development cycle.</li>
+<li>During the Design stage, the unit test cases are identified and documented by developers. These test cases are executed during the Unit testing stage in development cycle by developers.</li>
+</ol>
+<p><strong>V Model is best adaptable when:</strong></p>
+<ul>
+<li>Requirements are clear and well-documented and stable</li>
+<li>Static technology and the project team is aware of the technology</li>
+<li>No ambiguity in requirements</li>
+<li>Short-term projects</li>
+<li>Highly-skilled professionals are needed</li>
+<li>Early-testing is required</li>
+</ul>
+<p><strong>Pros of V Model</strong></p>
+<ul>
+<li>Early testing helps in identifying the defects at initial stages</li>
+<li>Requirement gaps can be identified very early</li>
+<li>Milestone can be reached sooner</li>
+<li>Short-term, small projects do not benefit from V Model</li>
+<li>Easy to control and manage as the stages are highly disciplined</li>
+</ul>
+<p><strong>Cons of V Model</strong></p>
+<ul>
+<li>Rigid, lack of flexibility</li>
+<li>Complex and object-oriented projects cannot rely on V Model</li>
+<li>Ongoing projects do not benefit</li>
+<li>Changing requirements cannot be supported to higher extent</li>
+<li>Once the actual testing stage is reached, it is not very feasible to go back and change the functionalities</li>
+<li>Working software is not available until the end of life cycle</li>
+</ul>
+<h3><span id="Big_Bang_Model">Big Bang Model</span></h3>
+<p>Big Bang Model is the model which do not follow any process as such.  The project starts with the set amount of money, time and resources. As and when the requirements start to come-in, the development stage starts.</p>
+<p>The primary focus is coding and delivering the software. There is no planning or formal methods to follow in this model.</p>
+<p>Each module is validated at their level and when all the modules are ready individually, they are integrated at once.</p>
+<p>Any integration defects found, will be debugged at modules level by detaching them from the entire software.</p>
+<p><strong>Big Bang Model is suitable when:</strong></p>
+<ul>
+<li>Customer is not sure on what is needed</li>
+<li>Small projects – school, enterprises, etc</li>
+</ul>
+<p><strong>Pros of Big Bang Model</strong></p>
+<ul>
+<li>Very simple model and easily understandable</li>
+<li>No formal planning or heavy processes</li>
+<li>Limited resources</li>
+<li>Provides flexibility to incorporate ideas while developing</li>
+<li>Managing is easy</li>
+</ul>
+<p><strong>Cons of Big Bang Model</strong></p>
+<ul>
+<li>Not suitable for complex, object-oriented projects</li>
+<li>May become expensive at times</li>
+<li>Long term projects cannot rely on this model</li>
+<li>Involves many complexities throughout the project</li>
+</ul>
+<h3><span id="Agile_Methodology">Agile Methodology</span></h3>
+<p><a href="../what-is-agile-methodology-examples-when-to-use-it-advantages-and-disadvantages/index.html">Agile Methodology</a> and Waterfall Approach are very different in nature. The way they handle the entire life cycle is complete different and have their own terms of benefits and drawbacks.</p>
+<h3><span id="Agile_Model">Agile Model</span></h3>
+<p><a href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model</a> is covered in detail in our articles on Agile. The following explanation is intended to give you a high level overview of the model.</p>
+<p><img class="aligncenter size-full wp-image-3097" src="../wp-content/uploads/2018/08/Agile-Model.png" alt width="530" srcset="../wp-content/uploads/2018/08/Agile-Model.png 845w, http://tryqa.com/wp-content/uploads/2018/08/Agile-Model-300x205.png 300w, http://tryqa.com/wp-content/uploads/2018/08/Agile-Model-768x525.png 768w" sizes="(max-width: 845px) 100vw, 845px" />Agile is the methodology where the requirements, development and testing stages are all ongoing processes and the system analysts, developers, testers and customers all work together as a single team.</p>
+<p>Here the releases are shorter, usually 6 &#8211; 8 weeks and each release has the timeframe called “Sprints” which is of 2 weeks (typically). Each sprint produces a work product.</p>
+<p>The collected requirements (user stories) are prioritized for the release and they are again prioritized for sprints. All the resources in the team work towards the identified user stories for the sprint.</p>
+<p>When the developers are coding the user stories, testers identify acceptance test cases, system test cases, regression test cases for the user stories.</p>
+<p>When the build is deployed, testers execute the identified test cases and reports defects and developers focus on fixing the defects and makes sure to close all the defects within the sprint itself. Once one sprint ends the next spring begins.</p>
+<p>This goes on in all the other sprints which keeps including new features and enhancements to the existing features.</p>
+<p>Customer interaction is very high in this methodology and the feedback and suggestions are collected at regular intervals to enhance the quality of the software.</p>
+<p><strong>Principles of Agile:</strong></p>
+<ul>
+<li>Individuals and interactions are given more priority than processes.</li>
+<li>Working software is considered than heavy documentation of the software</li>
+<li>Customer collaboration is very extensive and the continuous feedback, suggestions and discussions helps in improving the software to meet user needs</li>
+<li>Respond to change in requirements dynamically. High priority requirements if coming in later stages, then the medium or low-level priority items are moved right to accommodate the high priority ones.</li>
+</ul>
+<p><strong>Agile Methodology is best suitable when:</strong></p>
+<ul>
+<li>Dynamic change in user requirements</li>
+<li>Early returns of Investment</li>
+<li>Low budget for changing requirements</li>
+</ul>
+<p><strong>Pros of Agile Model</strong></p>
+<ul>
+<li>People oriented, more focus is on enhancing skill sets</li>
+<li>Minimum documentation saves time</li>
+<li>Supports dynamically changing requirements</li>
+<li>Helps in focusing on common goal</li>
+<li>High customer interaction improvises the quality continuously</li>
+<li>Highly flexible and realistic approach</li>
+<li>Early partial working software</li>
+<li>Less resources and equally distributed tasks</li>
+<li>Minimized risks</li>
+</ul>
+<p><strong>Cons of Agile Model</strong></p>
+<ul>
+<li>Cannot finalize on the cost</li>
+<li>Client-oriented team</li>
+<li>Does not address dependencies</li>
+<li>Lack of detailed documentation causes challenging situation for the new members in the team</li>
+</ul>
+<h2><span id="How_to_select_the_right_Software_Development_Life_Cycle_Model">How to select the right Software Development Life Cycle Model</span></h2>
+<p>As the Software Development Life Cycle has many models, it is very important and the broader issue to select the right model for the project.</p>
+<p>This is very challenging and crucial for most of the organizations, as the model selected and the criteria used to select it adds the value to the organization.</p>
+<p>Selecting the right Software Development Life Cycle requires the below steps to be followed:</p>
+<ul>
+<li>Learn and get insight to all the SDLC models. Understand the flow, processes involved, stages, advantages, disadvantages and relate them to the business impacts.</li>
+<li>Select the SDLC model and focus and learn the domain, business criteria, business objectives, technical capability of the team, technology constraints and stakeholder concerns</li>
+<li>Understand whether the selected SDLC model fulfills the general criteria like:
+<ul>
+<li>Size of the team</li>
+<li>Skill sets that the team members possess</li>
+<li>Technology for implantation</li>
+<li>Business and stakeholder priorities</li>
+<li>Local or distributed team structure</li>
+<li>Complexity of the software</li>
+<li>Quality of the requirements</li>
+<li>Type of the project</li>
+<li>Documentation</li>
+<li>Reusability</li>
+<li>Project Management</li>
+<li>Complex system</li>
+<li>Reliable system</li>
+<li>Duration and milestones</li>
+<li>Cost limitations</li>
+</ul>
+</li>
+<li>Decide whether to go with the selected model or evaluate if any other SDLC models closely matches the criteria.</li>
+<li>Once the decision is taken, clearly document all the criteria chosen for selection and send it to stakeholders for review and agreement</li>
+</ul>
+<p>Any mistake or misunderstanding in selecting the right SDLC model will result in high failure rate for the project. In the end, any SDLC model selected should fulfill both Business and Organizational objectives.</p>
+<h4><span id="Other_popular_articles">Other popular articles:</span></h4>
+<ul class="similar-posts">
+<li><a href="../what-is-iterative-model-advantages-disadvantages-and-when-to-use-it/index.html" rel="bookmark" title="What is Iterative model- advantages, disadvantages and when to use it?">What is Iterative model- advantages, disadvantages and when to use it?</a></li>
+<li><a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html" rel="bookmark" title="What are the Software Development Life Cycle (SDLC) phases?">What are the Software Development Life Cycle (SDLC) phases?</a></li>
+<li><a href="../what-are-the-software-development-models/index.html" rel="bookmark" title="What are the Software Development Models?">What are the Software Development Models?</a></li>
+<li><a href="../what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/index.html" rel="bookmark" title="What is Incremental model- advantages, disadvantages and when to use it?">What is Incremental model- advantages, disadvantages and when to use it?</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html" rel="bookmark" title="What is V-model- advantages, disadvantages and when to use it?">What is V-model- advantages, disadvantages and when to use it?</a></li>
+</ul>
+<p></p>
+
+<div style><center><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="8321861017" data-ad-format="rectangle"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></div><div class="at-below-post addthis_tool" data-url="http://tryqa.com/software-development-life-cycle-sdlc/"></div></div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="../category/software-testing-pro/index.html" rel="category tag">Software Testing</a></span> <span class="entry-tags">Tagged With: <a href="../tag/agile-model/index.html" rel="tag">Agile model</a>, <a href="../tag/analysis-or-system-analysis/index.html" rel="tag">Analysis or System Analysis</a>, <a href="../tag/big-bang-model/index.html" rel="tag">big bang model</a>, <a href="../tag/deployment/index.html" rel="tag">Deployment</a>, <a href="../tag/design-phase/index.html" rel="tag">design phase</a>, <a href="../tag/development-phase/index.html" rel="tag">development phase</a>, <a href="../tag/entry-criteria/index.html" rel="tag">entry criteria</a>, <a href="../tag/exit-criteria/index.html" rel="tag">exit criteria</a>, <a href="../tag/how-to-select-the-right-software-development-life-cycle-model/index.html" rel="tag">How to select the right Software Development Life Cycle Model</a>, <a href="../tag/incremental-model/index.html" rel="tag">Incremental model</a>, <a href="../tag/iterative-model/index.html" rel="tag">Iterative model</a>, <a href="../tag/lifecycle-models/index.html" rel="tag">lifecycle models</a>, <a href="../tag/maintenance/index.html" rel="tag">Maintenance</a>, <a href="../tag/operation/index.html" rel="tag">operation</a>, <a href="../tag/phases-of-software-development-life-cyc/index.html" rel="tag">Phases of Software Development Life Cyc</a>, <a href="../tag/project-initiation/index.html" rel="tag">Project Initiation</a>, <a href="../tag/project-kickoff/index.html" rel="tag">Project Kickoff</a>, <a href="../tag/requirements-gathering/index.html" rel="tag">Requirements Gathering</a>, <a href="../tag/sdlc/index.html" rel="tag">sdlc</a>, <a href="../tag/sdlc-entry-and-exit-criteria/index.html" rel="tag">sdlc entry and exit criteria</a>, <a href="../tag/sdlc-models/index.html" rel="tag">sdlc models</a>, <a href="../tag/software-development-life-cycle/index.html" rel="tag">Software Development Life Cycle</a>, <a href="../tag/software-development-life-cycle-sdlc/index.html" rel="tag">Software Development Life Cycle (SDLC)</a>, <a href="../tag/spiral-model/index.html" rel="tag">Spiral model</a>, <a href="../tag/stages-of-software-development-life-cycle/index.html" rel="tag">Stages of Software Development Life Cycle</a>, <a href="../tag/testing-phase/index.html" rel="tag">testing phase</a>, <a href="../tag/v-model/index.html" rel="tag">v model</a>, <a href="../tag/waterfall-model/index.html" rel="tag">Waterfall model</a>, <a href="../tag/what-is-software-development-life-cycle/index.html" rel="tag">What is Software Development Life Cycle</a>, <a href="../tag/why-is-software-development-life-cycle-necessary/index.html" rel="tag">Why is Software Development Life Cycle necessary</a></span></p><div class="prev-next-post-links"><div class="ak-previous-post-link" title="Previous Post: Guide to Crowdtesting / Crowdsourced testing - earn extra income as a freelance tester"><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html" rel="prev">&laquo; Previous Topic</a></div><div class="ak-next-post-link" title="Next Post: Mobile Application Security Testing Approaches - Beginners Guide"><a href="../mobile-application-security-testing-beginners-guide/index.html" rel="next">Next Topic &raquo;</a></div></div></footer></article><h2 class="screen-reader-text">Reader Interactions</h2><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list">
+<li class="comment even thread-even depth-1" id="comment-24191">
+<article itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name">mani</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2018-12-13T01:50:42+00:00" itemprop="datePublished"><a href="index.html#comment-24191" class="comment-time-link" itemprop="url">December 13, 2018 at 1:50 am</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>can you provide scenerio based questions of models?</p>
+</div>
+<div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="indexb11c.html?replytocom=24191#respond" onclick="return addComment.moveForm( &quot;comment-24191&quot;, &quot;24191&quot;, &quot;respond&quot;, &quot;3087&quot; )" aria-label="Reply to mani">Reply</a></div>
+</article>
+</li>
+</ol></div> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="#comment-24191">mani</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond">Cancel reply</a></small></h3> <form action="http://tryqa.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value size="30" maxlength="245" aria-required="true" required="required" /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type="hidden" name="comment_post_ID" value="3087" id="comment_post_ID" />
+<input type="hidden" name="comment_parent" id="comment_parent" value="24191" />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8e8a9891ee" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="24" /></p> </form>
+</div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-20" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search</h3>
+<div class="textwidget"><form class="iec-search-form" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" method="get" action="http://tryqa.com/" role="search">
+<meta itemprop="target" content="../index1f8a.html?s={s}">
+<input itemprop="query-input" name="s" placeholder=" Search this website " type="search">&nbsp;&nbsp;
+<input value="Search" type="submit">
+</form></div>
+</div></section>
+<section id="advanced_text-3" class="widget advanced_text"><div class="widget-wrap"><div class="AdvancedText"><h3 class="widgettitle widget-title">ISTQB Certification Exam Study Material</h3>
+<table border="0" cellspacing="1">
+<tbody>
+<tr>
+<td class="menuHead">Chapter 1. Fundamentals of testing
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="software testing" href="../what-is-software-testing/index.html">What is Software testing?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="why testing necessary" href="../why-is-testing-necessary/index.html">Why
+is testing necessary?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software Testing objectives and purpose" href="../what-is-the-software-testing-objectives-and-purpose/index.html">Software testing objectives and purpose</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="what is defect or bugs" href="../what-is-defect-or-bugs-or-faults-in-software-testing/index.html">What
+is Defect or bugs or faults?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="what is a failure" href="../what-is-a-failure-in-software-testing/index.html">What
+is a Failure?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="where do defects and failures arise" href="../from-where-do-defects-and-failures-in-software-testing-arise/index.html">From
+where do Defects and failures arise?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="when do defects arise" href="../when-do-defects-in-software-testing-arise/index.html">When
+do defects arise?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="cost of defects" href="../what-is-the-cost-of-defects-in-software-testing/index.html">What
+is the cost of defects?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="defect life cycle" href="../what-is-a-defect-life-cycle/index.html">Defect
+or Bug Life Cycle</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What is the difference between Severity and Priority?" href="../what-is-the-difference-between-severity-and-priority/index.html">What is the difference between Severity and Priority?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="principles of testing" href="../what-are-the-principles-of-testing/index.html">Principles
+of testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Fundamental test process" href="../what-is-fundamental-test-process-in-software-testing/index.html">Fundamental
+test process</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Psychology of testing" href="../what-is-the-psychology-of-testing/index.html">Psychology
+of testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="independent testing" href="../what-is-independent-testing-its-benefits-and-risks/index.html">Independent
+testing- it’s benefits and risks</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="software quality" href="../what-is-software-quality/index.html">Software
+Quality</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 2. Testing throughout the testing lifecycle
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Verification in software testing" href="../what-is-verification-in-software-testing-or-what-is-software-verification/index.html">What
+is Verification?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Validation" href="../what-is-validation-in-software-testing-or-what-is-software-validation/index.html">What
+is Validation?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="CMM-Levels" href="../what-is-cmm-capability-maturity-model-what-are-cmm-levels/index.html">Capability
+Maturity Model (CMM-Levels)</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Software
+Development Life Cycle
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software
+Development Life Cycle SDLC phases" href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">Software
+Development Life Cycle (SDLC) phases</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software development model" href="../what-are-the-software-development-models/index.html">Software
+Development Models</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Waterfall model" href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">Waterfall
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="V-model" href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">V-model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incremental model" href="../what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/index.html">Incremental
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="RAD model" href="../what-is-rad-model-advantages-disadvantages-and-when-to-use-it/index.html">RAD
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Agile model" href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Iterative model" href="../what-is-iterative-model-advantages-disadvantages-and-when-to-use-it/index.html">Iterative
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Spiral model" href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">Spiral
+model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Prototype model" href="../what-is-prototype-model-advantages-disadvantages-and-when-to-use-it/index.html">Prototype
+Model</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Software testing levels" href="../what-are-software-testing-levels/index.html">Software
+Testing Levels</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Unit testing" href="../what-is-unit-testing/index.html">Unit
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Component testing" href="../what-is-component-testing/index.html">Component
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Integration testing" href="../what-is-integration-testing/index.html">Integration
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Big bang integration testing" href="../what-is-big-bang-integration-testing/index.html">Big
+Bang integration testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="incremental testing" href="../what-is-incremental-testing-in-software/index.html">Incremental
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="component integration testing" href="../what-is-component-integration-testing/index.html">Component
+integration testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="system integration testing" href="../what-is-system-integration-testing/index.html">System
+integration testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="system testing" href="../what-is-system-testing/index.html">System
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Acceptance testing" href="../what-is-acceptance-testing/index.html">Acceptance
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Alpha testing" href="../what-is-alpha-testing/index.html">Alpha
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Beta testing" href="../what-is-beta-testing/index.html">Beta
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test types" href="../what-are-software-test-types/index.html">Software
+Test Types</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Functional testing" href="../what-is-functional-testing-testing-of-functions-in-software/index.html">Functional
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Non-functional testing" href="../what-is-non-functional-testing-testing-of-software-product-characteristics/index.html">Non functional
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Functionality testing" href="../what-is-functionality-testing-in-software/index.html">Functionality
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Reliability testing" href="../what-is-reliability-testing-in-software/index.html">Reliability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Usability testing" href="../what-is-usability-testing-in-software-and-its-benifits-to-end-user/index.html">Usability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Efficiency testing" href="../what-is-efficiency-testing-in-software/index.html">Efficiency
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Maintainability testing" href="../what-is-maintainability-testing-in-software/index.html">Maintainability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Portability testing" href="../what-is-portability-testing-in-software/index.html">Portability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Baseline testing" href="../what-is-baseline-testing-in-software/index.html">Baseline
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="compliance testing" href="../what-is-compliance-testing-in-software/index.html">Compliance
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Documentation testing" href="../what-is-documentation-testing/index.html">Documentation
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Endurance testing" href="../what-is-endurance-testing-in-software/index.html">Endurance
+testing</a> </td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Load testing" href="../what-is-load-testing-in-software/index.html">Load
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Performance testing" href="../what-is-performance-testing-in-software/index.html">Performance
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Compatibility testing" href="../what-is-compatibility-testing-in-software/index.html">Compatibility
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Security testing" href="../what-is-security-testing-in-software/index.html">Security
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Scalability testing" href="../what-is-scalability-testing-in-software/index.html">Scalability
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Volume testing" href="../what-is-volume-testing-in-software/index.html">Volume
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Stress testing" href="../what-is-stress-testing-in-software/index.html">Stress
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Difference between Volume, Load and stress testing in software" href="../difference-between-volume-load-and-stress-testing-in-software/index.html">Difference
+between Volume, Load and stress testing in software</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Recovery testing" href="../what-is-recovery-testing-in-software/index.html">Recovery
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Internationalization testing and Localization testing" href="../what-is-internationalization-testing-and-localization-testing-in-software/index.html">Internationalization
+testing and Localization testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Confirmation testing" href="../what-is-confirmation-testing-in-software/index.html">Confirmation
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Regression testing" href="../what-is-regression-testing-in-software/index.html">Regression
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Structural testing" href="../what-is-structural-testing-testing-of-software-structurearchitecture/index.html">Structural
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Maintenance testing" href="../what-is-maintenance-testing/index.html">Maintenance
+Testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Impact analysis" href="../what-is-impact-analysis-in-software-testing/index.html">Impact
+analysis</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 3. Static Techniques
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design technique" href="../what-is-test-design-technique/index.html">Test
+design techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static test technique" href="../what-is-a-static-test-technique/index.html">Static
+test technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static testing" href="../what-is-static-testing/index.html">What
+is static Testing?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Uses of static testing" href="../what-are-the-uses-of-static-testing/index.html">Uses
+of Static Testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Informal reviews" href="../what-is-informal-reviews/index.html">Informal
+reviews</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Formal reviews" href="../what-is-formal-review/index.html">Formal
+reviews</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Roles and responsibilities involved during review" href="../what-are-the-roles-and-responsibilities-involved-during-a-review/index.html">The
+roles and responsibilities of the moderator, author, scribe, reviewers and managers involved during a review</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Types of reviews" href="../what-are-the-types-of-review/index.html">Types
+of review</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Walkthrough" href="../what-is-walkthrough-in-software-testing/index.html">Walkthrough</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Technical review" href="../what-is-technical-review-in-software-testing/index.html">Technical
+review</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Inspection" href="../what-is-inspection-in-software-testing/index.html">Inspection</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static analysis" href="../what-is-static-analysis/index.html">What
+is static analysis?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static analysis tools" href="../what-are-static-analysis-tools/index.html">What
+is a static analysis tools?</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 4. Test design techniques
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test analysis" href="../what-is-test-analysis-or-how-to-identify-the-test-conditions/index.html">Test
+analysis</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Traceability in testing" href="../what-is-traceability-in-software-testing/index.html">Traceability</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design" href="../what-is-test-design-or-how-to-specify-test-cases/index.html">Test
+design</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test implementation" href="../what-is-test-implementation-or-how-to-specifying-test-procedures-or-scripts/index.html">Test
+implementation</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design technique" href="../what-is-test-design-technique-2/index.html">Test
+design technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Categories of test design techniques" href="../what-are-the-categories-of-test-design-techniques/index.html">Categories
+of test design techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Categories of test design techniques" href="../what-is-static-testing-technique/index.html">Static testing techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Dynamic testing technique" href="../what-is-dynamic-testing-technique/index.html">Dynamic
+testing technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Black box testing" href="../what-is-black-box-specification-based-also-known-as-behavioral-testing-techniques/index.html">i.
+Black box testing or Specification-based</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Equivalence partitioning" href="../what-is-equivalence-partitioning-in-software-testing/index.html">Equivalence
+partitioning (EP)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Dynamic testing technique" href="../what-is-boundary-value-analysis-in-software-testing/index.html">Boundary Value Analysis (BVA)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Why to do both BVA and EP" href="../while-testing-why-it-is-important-to-do-both-equivalence-partitioning-and-boundary-value-analysis/index.html">why
+it is important to do both EP and BVA</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Decision table" href="../what-is-decision-table-in-software-testing/index.html">Decision
+tables</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="State transition testing" href="../what-is-state-transition-testing-in-software-testing/index.html">State
+transition testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Use case testing" href="../what-is-use-case-testing-in-software-testing/index.html">Use
+case testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="White box testing" href="../what-is-white-box-or-structure-based-or-structural-testing-techniques/index.html">ii.
+White box testing or Structure-based</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Experience based" href="../what-is-experience-based-testing-technique/index.html">iii.
+Experience-based testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Error guessing" href="../what-is-error-guessing-in-software-testing/index.html">Error
+guessing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Exploratory testing" href="../what-is-exploratory-testing-in-software-testing/index.html">Exploratory
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Structure based technique" href="../what-is-structure-based-technique-in-software-testing/index.html">Structure
+based technique</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test coverage" href="../what-is-test-coverage-in-software-testing-its-advantages-and-disadvantages/index.html">Test
+coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Where to apply this test coverage?" href="../where-to-apply-this-test-coverage-in-software-testing/index.html">Where
+to apply this test coverage?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Why to measure code coverage?" href="../why-to-measure-code-coverage/index.html">Why
+to measure code coverage?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="How we can measure the coverage?" href="../how-we-can-measure-the-coverage/index.html">How
+we can measure the coverage?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Types of coverage" href="../what-are-the-types-of-coverage/index.html">Types
+of coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Statement coverage" href="../what-is-statement-coverage-advantages-and-disadvantages/index.html">Statement
+coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Branch Coverage or Decision coverage" href="../what-is-decision-coverage-its-advantages-and-disadvantages/index.html">Branch Coverage or Decision
+Coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Condition coverage" href="../what-is-condition-coverage/index.html">Condition
+coverage</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="How to choose that which technique is best?" href="../how-to-choose-that-which-testing-technique-is-best/index.html">How
+to choose that which technique is best?</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 5. Test management
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Roles and responsibilities of a Test Leader" href="../what-are-the-roles-and-responsibilities-of-a-test-leader/index.html">Roles
+and responsibilities of a Test Leader</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Roles and responsibilities of a Tester" href="../what-are-the-roles-and-responsibilities-of-a-tester/index.html">Roles
+and responsibilities of a Tester</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Purpose of test plans" href="../what-is-the-purpose-and-importance-of-test-plans/index.html">Purpose
+and importance of test plans</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Things to keep in mind while planning tests" href="../what-things-to-keep-in-mind-while-planning-tests/index.html">Things
+to keep in mind while planning tests</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What testing will cost" href="../estimating-what-testing-will-involve-and-what-it-will-cost/index.html">What
+testing will involve and what it will cost?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Estimation techniques" href="../what-are-the-estimation-techniques-in-software-testing/index.html">Estimation
+techniques</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Factors affecting test effort" href="../what-are-the-factors-affecting-test-effort-in-software-testing/index.html">Factors
+affecting test effort</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test strategy" href="../what-are-the-test-approaches-or-strategies-in-software-testing/index.html">Test strategy</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test monitoring" href="../what-is-test-monitoring-in-software-testing/index.html">Test
+monitoring</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test control" href="../what-is-test-control/index.html">Test
+control</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Configuration management" href="../what-is-configuration-management-in-software-testing/index.html">Configuration
+management</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Risk" href="../what-is-risk-in-software-testing/index.html">Risks
+in software testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Product risk" href="../what-is-product-risk-in-software-testing/index.html">Product
+risk</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Project risk" href="../what-is-project-risk-in-software-testing/index.html">Project
+risk</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Risk-based testing" href="../what-is-risk-based-testing/index.html">Risk-based
+testing</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Risk analysis" href="../what-is-risk-analysis/index.html">Risk
+analysis</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incident management" href="../what-is-an-incident-in-software-testing/index.html">Incident
+management</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incident logging" href="../what-is-incident-logging-or-how-to-log-an-incident-in-software-testing/index.html">Incident
+logging Or How to log an Incident</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What are incident reports?" href="../what-are-incident-reports-in-software-testing/index.html">What
+are incident reports?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="How to write a good incident report?" href="../how-to-write-a-good-incident-report-in-software-testing/index.html">How
+to write a good incident report?</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="What is test status report?" href="../what-is-test-status-report-and-how-to-report-test-status/index.html">What
+is test status report?</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Chapter 6. Tool support for testing
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Types of testing tools" href="../what-are-the-different-types-of-software-testing-tools/index.html">Types
+of test tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Tool
+for management of testing and tests
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test management tools" href="../what-is-test-management-tools/index.html">Test
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Requirements management tools" href="../what-is-requirements-management-tools/index.html">Requirements
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Incident management tools" href="../what-is-incident-management-tools/index.html">Incident
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Configuration management tools" href="../what-is-configuration-management-tools/index.html">Configuration
+management tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Static
+testing tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Review process support tools" href="../what-is-review-process-support-tools/index.html">Review
+process support tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Static analysis tools" href="../what-is-static-analysis-tools-in-software-testing/index.html">Static
+analysis tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Modelling tools" href="../what-is-modelling-tools-in-software-testing/index.html">Modelling
+tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Test
+specification tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test design tools" href="../what-is-test-design-tools-in-software-testing/index.html">Test
+design tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test data preparation tools" href="../what-is-test-data-preparation-tools-in-software-testing/index.html">Test
+data preparation tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Test
+execution and logging tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test execution tools" href="../what-is-test-execution-tools-in-software-testing/index.html">Test
+execution tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test harness tools" href="../what-is-test-harness-unit-test-framework-tools-in-software-testing/index.html">Test
+harness/ Unit test framework tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Test comparators" href="../what-is-test-comparators-in-software-testing/index.html">Test
+comparators</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Coverage measurement tools" href="../what-is-coverage-measurement-tools-in-software-testing/index.html">Coverage
+measurement tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Security tools" href="../what-is-security-tools-in-software-testing/index.html">Security
+tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuHead">Performance
+and monitoring tools
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Dynamic analysis tools" href="../what-is-dynamic-analysis-tools-in-software-testing/index.html">Dynamic
+analysis tools (D)</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Performance,Load, stress testing" href="../what-is-performance-testing-load-testing-and-stress-testing-tools-in-software-testing/index.html">Performance
+testing, Load testing and stress-testing tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Monitoring tools" href="../what-is-monitoring-tools-in-software-testing/index.html">Monitoring
+tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Advantages of tools" href="../what-are-the-advantages-or-benefits-of-using-testing-tools/index.html">Advantages
+and benefits of using testing tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Disadvantages of using testing tools" href="../what-are-the-risks-or-disadvantages-of-using-the-testing-tools/index.html">Disadvantages
+and risks of testing tools</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Testing tool selection" href="../what-are-the-important-factors-for-the-software-testing-tool-selection/index.html">Factors
+for software testing tool selection</a>
+</td>
+</tr>
+<tr>
+<td class="menuItem">
+<a title="Testing tool evaluation" href="../what-is-a-proof-of-concept-or-piloting-phase-for-tool-evaluation-in-software-testing/index.html">Proof-of-concept
+or piloting phase for tool evaluation</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="http://schema.org/WPSideBar" id="genesis-sidebar-secondary"><h2 class="genesis-sidebar-title screen-reader-text">Secondary Sidebar</h2><section id="text-11" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Popular Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../what-to-do-team-project-lead-is-burning-you-out/index7caf.html?ref=sidebar">What to do when Team Lead is burning you out?</a></li>
+<li><a href="../interview-question-should-testers-be-paid-same-salary-as-developers/index7caf.html?ref=sidebar">Interview Question: Should Testers be paid same salary as Developers?</a></li>
+<li><a href="../mobile-application-development-and-testing-checklist/index7caf.html?ref=sidebar">Mobile app testing checklist</a></li>
+<li><a href="../what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Waterfall model? When to use it?</a></li>
+<li><a href="../what-are-the-software-development-life-cycle-sdlc-phases/index.html">SDLC</a></li>
+<li><a href="../what-is-v-model-advantages-disadvantages-and-when-to-use-it/index.html">What is V-model? When to use it?</a></li>
+<li><a href="../what-is-spiral-model-advantages-disadvantages-and-when-to-use-it/index.html">What is Spiral model? When to use it?</a></li>
+<li><a href="../what-is-agile-model-advantages-disadvantages-and-when-to-use-it/index.html">Agile model - When to use it?</a>
+</li>
+</ul></div>
+</div></section>
+<section id="text-21" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">Trending Posts</h3>
+<div class="textwidget"><ul>
+<li><a href="../guide-to-crowdtesting-crowdsourced-testing/index.html">Guide to crowdtesting - Earn extra income as a freelance tester</a></li>
+<li><a href="../what-is-cost-of-quality-in-software-testing/index.html">Cost of Quality (COQ)</a></li>
+<li><a href="../what-is-risk-based-testing-identifying-assessing-minimizing-managing-risks/index.html">Risk Based Testing - Identifying, Assessing, Mitigating & Managing Risks</a></li>
+<li><a href="../complete-guide-to-defect-management-for-test-qa-managers/index.html">Complete guide to defect management</a></li>
+<li><a href="../how-to-define-track-report-validate-use-metrics-in-software-testing/index.html">How to define, track, report & validate metrics in software testing?</a></li>
+<li><a href="../beginners-guide-to-career-in-software-testing-growth/index.html">Complete Guide to Career in Software Testing - Career Growth, Roles, Responsibilities</a></li>
+<li><a href="../big-data-testing/index.html">Big Data Testing - Complete beginner's guide for Software Testers</a></li>
+<li><a href="../test-case/index.html">What is a Test Case? Example Template, Types, Best Practices</a></li>
+</ul></div>
+</div></section>
+<section id="categories-3" class="widget widget_categories"><div class="widget-wrap"><h3 class="widgettitle widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-3"><a href="../category/fundamentals-of-testing/index.html">Fundamentals of testing</a> (15)
+</li>
+<li class="cat-item cat-item-814"><a href="../category/agile-testing-certification/index.html">ISTQB Agile Testing Certification</a> (31)
+</li>
+<li class="cat-item cat-item-724"><a href="../category/istqb-certification/index.html" title="Everything you need to know regarding the ISTQB Exam. ISTQB Exam dates, locations, syllabus, basic qualifications or per-requisites etc">ISTQB Certification</a> (14)
+</li>
+<li class="cat-item cat-item-1387"><a href="../category/istqb-test-manager/index.html">ISTQB Test Manager</a> (39)
+</li>
+<li class="cat-item cat-item-1962"><a href="../category/java-tutorials/index.html">Java Tutorials</a> (4)
+</li>
+<li class="cat-item cat-item-777"><a href="../category/software-testing-pro/index.html">Software Testing</a> (29)
+</li>
+<li class="cat-item cat-item-4"><a href="../category/static-techniques/index.html">Static techniques</a> (13)
+</li>
+<li class="cat-item cat-item-6"><a href="../category/test-design-techniques/index.html">Test design techniques</a> (29)
+</li>
+<li class="cat-item cat-item-7"><a href="../category/test-management/index.html">Test Management</a> (22)
+</li>
+<li class="cat-item cat-item-8"><a href="../category/testing-throughout-the-testing-life-cycle/index.html">Testing throughout the testing life cycle</a> (53)
+</li>
+<li class="cat-item cat-item-9"><a href="../category/tool-support-for-testing/index.html">Tool support for testing</a> (22)
+</li>
+</ul>
+</div></section>
+<section id="text-18" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4095780395347512" data-ad-slot="9038480616" data-ad-format="auto"></ins>
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '../../connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '780848918707398']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<script type="text/javascript">
+var sc_project=8529562; 
+var sc_invisible=1; 
+var sc_security="f7a5d401"; 
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/8529562/0/f7a5d401/1/"
+alt="Web Analytics"></a></div></noscript>
+
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.4"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.26"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":false,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.4","plugin_mode":"AddThis","anonymous_profile_id":"wp-4f9ca8de0eb327b43ae8f1ff2269f594","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc254ae5c3cb48"></script><script type="text/javascript" src="../wp-content/plugins/table-of-contents-plus/front.min6528.js?ver=1509"></script>
+<script type="text/javascript" src="../wp-includes/js/comment-reply.minc4fe.js?ver=4.7.26"></script>
+<script type="text/javascript" src="../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5"></script>
+<script type="text/javascript" src="../wp-content/themes/genesis/lib/js/menu/superfish.args.mina305.js?ver=2.4.2"></script>
+<script type="text/javascript" src="../wp-includes/js/wp-embed.minc4fe.js?ver=4.7.26"></script>
+<script async="async" type="text/javascript" src="../wp-content/plugins/akismet/_inc/form0235.js?ver=4.1.1"></script>
+</body>
+<!-- Mirrored from tryqa.com/software-development-life-cycle-sdlc/?replytocom=24191 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 05:56:17 GMT -->
+</html>
