@@ -1,4 +1,4 @@
-Chapter 1: Agile Software Development
+Chapter 1: Agile Software Development -
 
 [Agile Methodology - When to use it, advantages, disadvantages](https://ai.genislab.com/what-is-agile-methodology-examples-when-to-use-it-advantages-and-disadvantages/ "What is Agile methodology? Examples, when to use it, advantages and disadvantages")
 
